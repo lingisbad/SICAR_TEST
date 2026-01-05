@@ -1,0 +1,42 @@
+﻿FUNCTION "LGF_BitsToWord" : Word
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      bit0 : Bool;
+      bit1 : Bool;
+      bit2 : Bool;
+      bit3 : Bool;
+      bit4 : Bool;
+      bit5 : Bool;
+      bit6 : Bool;
+      bit7 : Bool;
+      bit8 : Bool;
+      bit9 : Bool;
+      bit10 : Bool;
+      bit11 : Bool;
+      bit12 : Bool;
+      bit13 : Bool;
+      bit14 : Bool;
+      bit15 : Bool;
+   END_VAR
+
+
+BEGIN
+	#LGF_BitsToWord.%X0 := #bit0;
+	#LGF_BitsToWord.%X1 := #bit1;
+	#LGF_BitsToWord.%X2 := #bit2;
+	#LGF_BitsToWord.%X3 := #bit3;
+	#LGF_BitsToWord.%X4 := #bit4;
+	#LGF_BitsToWord.%X5 := #bit5;
+	#LGF_BitsToWord.%X6 := #bit6;
+	#LGF_BitsToWord.%X7 := #bit7;
+	#LGF_BitsToWord.%X8 := #bit8;
+	#LGF_BitsToWord.%X9 := #bit9;
+	#LGF_BitsToWord.%X10 := #bit10;
+	#LGF_BitsToWord.%X11 := #bit11;
+	#LGF_BitsToWord.%X12 := #bit12;
+	#LGF_BitsToWord.%X13 := #bit13;
+	#LGF_BitsToWord.%X14 := #bit14;
+	#LGF_BitsToWord.%X15 := #bit15;
+END_FUNCTION
+

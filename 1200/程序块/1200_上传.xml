@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="位1" Datatype="Bool" />
+    <Member Name="位2" Datatype="Bool" />
+    <Member Name="位3" Datatype="Bool" />
+    <Member Name="位4" Datatype="Bool" />
+    <Member Name="位5" Datatype="Bool" />
+    <Member Name="位6" Datatype="Bool" />
+    <Member Name="位7" Datatype="Bool" />
+    <Member Name="位8" Datatype="Bool" />
+    <Member Name="位9" Datatype="Bool" />
+    <Member Name="位10" Datatype="Bool" />
+    <Member Name="位11" Datatype="Bool" />
+    <Member Name="位12" Datatype="Bool" />
+    <Member Name="位13" Datatype="Bool" />
+    <Member Name="位14" Datatype="Bool" />
+    <Member Name="位15" Datatype="Bool" />
+    <Member Name="位16" Datatype="Bool" />
+    <Member Name="位17" Datatype="Bool" />
+    <Member Name="位18" Datatype="Bool" />
+    <Member Name="位19" Datatype="Bool" />
+    <Member Name="位20" Datatype="Bool" />
+    <Member Name="位21" Datatype="Bool" />
+    <Member Name="位22" Datatype="Bool" />
+    <Member Name="位23" Datatype="Bool" />
+    <Member Name="位24" Datatype="Bool" />
+    <Member Name="位25" Datatype="Bool" />
+    <Member Name="位26" Datatype="Bool" />
+    <Member Name="位27" Datatype="Bool" />
+    <Member Name="位28" Datatype="Bool" />
+    <Member Name="位29" Datatype="Bool" />
+    <Member Name="位30" Datatype="Bool" />
+    <Member Name="整型1" Datatype="Int" />
+    <Member Name="整型2" Datatype="Int" />
+    <Member Name="整型3" Datatype="Int" />
+    <Member Name="整型4" Datatype="Int" />
+    <Member Name="整型5" Datatype="Int" />
+    <Member Name="整型6" Datatype="Int" />
+    <Member Name="整型7" Datatype="Int" />
+    <Member Name="整型8" Datatype="Int" />
+    <Member Name="整型9" Datatype="Int" />
+    <Member Name="整型10" Datatype="Int" />
+    <Member Name="浮点数1" Datatype="Real" />
+    <Member Name="浮点数2" Datatype="Real" />
+    <Member Name="浮点数3" Datatype="Real" />
+    <Member Name="浮点数4" Datatype="Real" />
+    <Member Name="浮点数5" Datatype="Real" />
+    <Member Name="浮点数6" Datatype="Real" />
+    <Member Name="浮点数7" Datatype="Real" />
+    <Member Name="浮点数8" Datatype="Real" />
+    <Member Name="浮点数9" Datatype="Real" />
+    <Member Name="浮点数10" Datatype="Real" />
+    <Member Name="浮点数11" Datatype="Real" />
+    <Member Name="浮点数12" Datatype="Real" />
+    <Member Name="浮点数13" Datatype="Real" />
+    <Member Name="浮点数14" Datatype="Real" />
+    <Member Name="浮点数15" Datatype="Real" />
+    <Member Name="浮点数16" Datatype="Real" />
+    <Member Name="浮点数17" Datatype="Real" />
+    <Member Name="浮点数18" Datatype="Real" />
+    <Member Name="浮点数19" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>1200_上传</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="State" Datatype="DWord">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Status Tec_Unit</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">State Tec_unit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Plant_Identifier" Datatype="WString[24]">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Betriebsmittel Kennzeichen</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Plant identifier</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Move" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schnittstelle Bewegungen</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Interface Movement/Position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Position" Datatype="DWord">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schnittstelle Positionen 1-8</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Interface Position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Alarm" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Störungen</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Alarms</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="State_Colour" Datatype="SInt">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Status Farbschema</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">State colour code</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HMI_Control_No" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">HMI-Control Nummer</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">HMI-Control number</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OPModeArea" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">BA-Bereich</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">OPMode area</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>MOTOR_LOCK_HMI_UDT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

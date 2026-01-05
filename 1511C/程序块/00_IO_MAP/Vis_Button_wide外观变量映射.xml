@@ -1,0 +1,1681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="x1" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Vis_Button_wide外观变量映射</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="dStruct_Pos16" />
+        <Component Name="Axis_Control_Data" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="I_Para_rJog_Speed" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="GLOBAL_Axis_HMI_IF_DB" />
+        <Component Name="Axis" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Parametet" />
+        <Component Name="Para_rJog_Speed" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="dStruct_Pos16" />
+        <Component Name="Axis_Control_Data" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="I_Para_rJog_Speed" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="GLOBAL_Axis_HMI_IF_DB" />
+        <Component Name="Axis" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+        <Component Name="Parametet" />
+        <Component Name="Para_rJog_Speed" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="25" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="26" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="27">
+      <Powerrail />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="25" Name="eno" />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="30">
+      <NameCon UId="25" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="26" Name="out1" />
+      <IdentCon UId="24" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text>轴1轴2点动速度映射</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Access Scope="GlobalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="HMI变量汇总" UId="23">
+        <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="25" />
+      <Component Name="Vis_Button_wideX1" UId="26" />
+    </Symbol>
+  </Access>
+  <Blank UId="27" />
+  <Token Text=":=" UId="28" />
+  <Blank UId="29" />
+  <Access Scope="GlobalVariable" UId="30">
+    <Symbol UId="31">
+      <Component Name="IF_HMI_FB_IDB" UId="32">
+        <BooleanAttribute Name="HasQuotes" UId="33">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="34" />
+      <Component Name="IF" UId="35" />
+      <Token Text="." UId="36" />
+      <Component Name="HMI" UId="37">
+        <Token Text="[" UId="38" />
+        <Access Scope="LiteralConstant" UId="39">
+          <Constant UId="40">
+            <ConstantValue UId="42">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="43" />
+      </Component>
+      <Token Text="." UId="44" />
+      <Component Name="Vis_Button_wide" UId="45" />
+      <Token Text="." UId="46" />
+      <Token Text="%X1" UId="47" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="48" />
+  <NewLine UId="49" />
+  <Access Scope="GlobalVariable" UId="50">
+    <Symbol UId="51">
+      <Component Name="HMI变量汇总" UId="52">
+        <BooleanAttribute Name="HasQuotes" UId="53">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="54" />
+      <Component Name="Vis_Button_wideX2" UId="55" />
+    </Symbol>
+  </Access>
+  <Blank UId="56" />
+  <Token Text=":=" UId="57" />
+  <Blank UId="58" />
+  <Access Scope="GlobalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="IF_HMI_FB_IDB" UId="61">
+        <BooleanAttribute Name="HasQuotes" UId="62">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="63" />
+      <Component Name="IF" UId="64" />
+      <Token Text="." UId="65" />
+      <Component Name="HMI" UId="66">
+        <Token Text="[" UId="67" />
+        <Access Scope="LiteralConstant" UId="68">
+          <Constant UId="69">
+            <ConstantValue UId="71">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="72" />
+      </Component>
+      <Token Text="." UId="73" />
+      <Component Name="Vis_Button_wide" UId="74" />
+      <Token Text="." UId="75" />
+      <Token Text="%X2" UId="76" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="77" />
+  <NewLine UId="78" />
+  <Access Scope="GlobalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="HMI变量汇总" UId="81">
+        <BooleanAttribute Name="HasQuotes" UId="82">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="83" />
+      <Component Name="Vis_Button_wideX3" UId="84" />
+    </Symbol>
+  </Access>
+  <Blank UId="85" />
+  <Token Text=":=" UId="86" />
+  <Blank UId="87" />
+  <Access Scope="GlobalVariable" UId="88">
+    <Symbol UId="89">
+      <Component Name="IF_HMI_FB_IDB" UId="90">
+        <BooleanAttribute Name="HasQuotes" UId="91">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="92" />
+      <Component Name="IF" UId="93" />
+      <Token Text="." UId="94" />
+      <Component Name="HMI" UId="95">
+        <Token Text="[" UId="96" />
+        <Access Scope="LiteralConstant" UId="97">
+          <Constant UId="98">
+            <ConstantValue UId="100">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="101" />
+      </Component>
+      <Token Text="." UId="102" />
+      <Component Name="Vis_Button_wide" UId="103" />
+      <Token Text="." UId="104" />
+      <Token Text="%X3" UId="105" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="106" />
+  <NewLine UId="107" />
+  <Access Scope="GlobalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="HMI变量汇总" UId="110">
+        <BooleanAttribute Name="HasQuotes" UId="111">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="112" />
+      <Component Name="Vis_Button_wideX4" UId="113" />
+    </Symbol>
+  </Access>
+  <Blank UId="114" />
+  <Token Text=":=" UId="115" />
+  <Blank UId="116" />
+  <Access Scope="GlobalVariable" UId="117">
+    <Symbol UId="118">
+      <Component Name="IF_HMI_FB_IDB" UId="119">
+        <BooleanAttribute Name="HasQuotes" UId="120">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="121" />
+      <Component Name="IF" UId="122" />
+      <Token Text="." UId="123" />
+      <Component Name="HMI" UId="124">
+        <Token Text="[" UId="125" />
+        <Access Scope="LiteralConstant" UId="126">
+          <Constant UId="127">
+            <ConstantValue UId="129">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="130" />
+      </Component>
+      <Token Text="." UId="131" />
+      <Component Name="Vis_Button_wide" UId="132" />
+      <Token Text="." UId="133" />
+      <Token Text="%X4" UId="134" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="135" />
+  <NewLine UId="136" />
+  <Access Scope="GlobalVariable" UId="137">
+    <Symbol UId="138">
+      <Component Name="HMI变量汇总" UId="139">
+        <BooleanAttribute Name="HasQuotes" UId="140">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="141" />
+      <Component Name="Vis_Button_wideX5" UId="142" />
+    </Symbol>
+  </Access>
+  <Blank UId="143" />
+  <Token Text=":=" UId="144" />
+  <Blank UId="145" />
+  <Access Scope="GlobalVariable" UId="146">
+    <Symbol UId="147">
+      <Component Name="IF_HMI_FB_IDB" UId="148">
+        <BooleanAttribute Name="HasQuotes" UId="149">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="150" />
+      <Component Name="IF" UId="151" />
+      <Token Text="." UId="152" />
+      <Component Name="HMI" UId="153">
+        <Token Text="[" UId="154" />
+        <Access Scope="LiteralConstant" UId="155">
+          <Constant UId="156">
+            <ConstantValue UId="158">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="159" />
+      </Component>
+      <Token Text="." UId="160" />
+      <Component Name="Vis_Button_wide" UId="161" />
+      <Token Text="." UId="162" />
+      <Token Text="%X5" UId="163" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="164" />
+  <NewLine UId="165" />
+  <Access Scope="GlobalVariable" UId="166">
+    <Symbol UId="167">
+      <Component Name="HMI变量汇总" UId="168">
+        <BooleanAttribute Name="HasQuotes" UId="169">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="170" />
+      <Component Name="Vis_Button_wideX6" UId="171" />
+    </Symbol>
+  </Access>
+  <Blank UId="172" />
+  <Token Text=":=" UId="173" />
+  <Blank UId="174" />
+  <Access Scope="GlobalVariable" UId="175">
+    <Symbol UId="176">
+      <Component Name="IF_HMI_FB_IDB" UId="177">
+        <BooleanAttribute Name="HasQuotes" UId="178">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="179" />
+      <Component Name="IF" UId="180" />
+      <Token Text="." UId="181" />
+      <Component Name="HMI" UId="182">
+        <Token Text="[" UId="183" />
+        <Access Scope="LiteralConstant" UId="184">
+          <Constant UId="185">
+            <ConstantValue UId="187">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="188" />
+      </Component>
+      <Token Text="." UId="189" />
+      <Component Name="Vis_Button_wide" UId="190" />
+      <Token Text="." UId="191" />
+      <Token Text="%X6" UId="192" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="193" />
+  <NewLine UId="194" />
+  <Access Scope="GlobalVariable" UId="195">
+    <Symbol UId="196">
+      <Component Name="HMI变量汇总" UId="197">
+        <BooleanAttribute Name="HasQuotes" UId="198">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="199" />
+      <Component Name="Vis_Button_wideX7" UId="200" />
+    </Symbol>
+  </Access>
+  <Blank UId="201" />
+  <Token Text=":=" UId="202" />
+  <Blank UId="203" />
+  <Access Scope="GlobalVariable" UId="204">
+    <Symbol UId="205">
+      <Component Name="IF_HMI_FB_IDB" UId="206">
+        <BooleanAttribute Name="HasQuotes" UId="207">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="208" />
+      <Component Name="IF" UId="209" />
+      <Token Text="." UId="210" />
+      <Component Name="HMI" UId="211">
+        <Token Text="[" UId="212" />
+        <Access Scope="LiteralConstant" UId="213">
+          <Constant UId="214">
+            <ConstantValue UId="216">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="217" />
+      </Component>
+      <Token Text="." UId="218" />
+      <Component Name="Vis_Button_wide" UId="219" />
+      <Token Text="." UId="220" />
+      <Token Text="%X7" UId="221" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="222" />
+  <NewLine UId="223" />
+  <Access Scope="GlobalVariable" UId="224">
+    <Symbol UId="225">
+      <Component Name="HMI变量汇总" UId="226">
+        <BooleanAttribute Name="HasQuotes" UId="227">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="228" />
+      <Component Name="Vis_Button_wideX8" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank UId="230" />
+  <Token Text=":=" UId="231" />
+  <Blank UId="232" />
+  <Access Scope="GlobalVariable" UId="233">
+    <Symbol UId="234">
+      <Component Name="IF_HMI_FB_IDB" UId="235">
+        <BooleanAttribute Name="HasQuotes" UId="236">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="237" />
+      <Component Name="IF" UId="238" />
+      <Token Text="." UId="239" />
+      <Component Name="HMI" UId="240">
+        <Token Text="[" UId="241" />
+        <Access Scope="LiteralConstant" UId="242">
+          <Constant UId="243">
+            <ConstantValue UId="245">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="246" />
+      </Component>
+      <Token Text="." UId="247" />
+      <Component Name="Vis_Button_wide" UId="248" />
+      <Token Text="." UId="249" />
+      <Token Text="%X8" UId="250" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="251" />
+  <NewLine UId="252" />
+  <Access Scope="GlobalVariable" UId="253">
+    <Symbol UId="254">
+      <Component Name="HMI变量汇总" UId="255">
+        <BooleanAttribute Name="HasQuotes" UId="256">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="257" />
+      <Component Name="Vis_Button_wideX9" UId="258" />
+    </Symbol>
+  </Access>
+  <Blank UId="259" />
+  <Token Text=":=" UId="260" />
+  <Blank UId="261" />
+  <Access Scope="GlobalVariable" UId="262">
+    <Symbol UId="263">
+      <Component Name="IF_HMI_FB_IDB" UId="264">
+        <BooleanAttribute Name="HasQuotes" UId="265">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="266" />
+      <Component Name="IF" UId="267" />
+      <Token Text="." UId="268" />
+      <Component Name="HMI" UId="269">
+        <Token Text="[" UId="270" />
+        <Access Scope="LiteralConstant" UId="271">
+          <Constant UId="272">
+            <ConstantValue UId="274">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="275" />
+      </Component>
+      <Token Text="." UId="276" />
+      <Component Name="Vis_Button_wide" UId="277" />
+      <Token Text="." UId="278" />
+      <Token Text="%X9" UId="279" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="280" />
+  <NewLine UId="281" />
+  <Access Scope="GlobalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="HMI变量汇总" UId="284">
+        <BooleanAttribute Name="HasQuotes" UId="285">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="286" />
+      <Component Name="Vis_Button_wideX10" UId="287" />
+    </Symbol>
+  </Access>
+  <Blank UId="288" />
+  <Token Text=":=" UId="289" />
+  <Blank UId="290" />
+  <Access Scope="GlobalVariable" UId="291">
+    <Symbol UId="292">
+      <Component Name="IF_HMI_FB_IDB" UId="293">
+        <BooleanAttribute Name="HasQuotes" UId="294">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="295" />
+      <Component Name="IF" UId="296" />
+      <Token Text="." UId="297" />
+      <Component Name="HMI" UId="298">
+        <Token Text="[" UId="299" />
+        <Access Scope="LiteralConstant" UId="300">
+          <Constant UId="301">
+            <ConstantValue UId="303">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="304" />
+      </Component>
+      <Token Text="." UId="305" />
+      <Component Name="Vis_Button_wide" UId="306" />
+      <Token Text="." UId="307" />
+      <Token Text="%X10" UId="308" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="309" />
+  <NewLine UId="310" />
+  <Access Scope="GlobalVariable" UId="311">
+    <Symbol UId="312">
+      <Component Name="HMI变量汇总" UId="313">
+        <BooleanAttribute Name="HasQuotes" UId="314">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="315" />
+      <Component Name="Vis_Button_wideX11" UId="316" />
+    </Symbol>
+  </Access>
+  <Blank UId="317" />
+  <Token Text=":=" UId="318" />
+  <Blank UId="319" />
+  <Access Scope="GlobalVariable" UId="320">
+    <Symbol UId="321">
+      <Component Name="IF_HMI_FB_IDB" UId="322">
+        <BooleanAttribute Name="HasQuotes" UId="323">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="324" />
+      <Component Name="IF" UId="325" />
+      <Token Text="." UId="326" />
+      <Component Name="HMI" UId="327">
+        <Token Text="[" UId="328" />
+        <Access Scope="LiteralConstant" UId="329">
+          <Constant UId="330">
+            <ConstantValue UId="332">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="333" />
+      </Component>
+      <Token Text="." UId="334" />
+      <Component Name="Vis_Button_wide" UId="335" />
+      <Token Text="." UId="336" />
+      <Token Text="%X11" UId="337" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="338" />
+  <NewLine UId="339" />
+  <Access Scope="GlobalVariable" UId="340">
+    <Symbol UId="341">
+      <Component Name="HMI变量汇总" UId="342">
+        <BooleanAttribute Name="HasQuotes" UId="343">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="344" />
+      <Component Name="Vis_Button_wideX12" UId="345" />
+    </Symbol>
+  </Access>
+  <Blank UId="346" />
+  <Token Text=":=" UId="347" />
+  <Blank UId="348" />
+  <Access Scope="GlobalVariable" UId="349">
+    <Symbol UId="350">
+      <Component Name="IF_HMI_FB_IDB" UId="351">
+        <BooleanAttribute Name="HasQuotes" UId="352">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="353" />
+      <Component Name="IF" UId="354" />
+      <Token Text="." UId="355" />
+      <Component Name="HMI" UId="356">
+        <Token Text="[" UId="357" />
+        <Access Scope="LiteralConstant" UId="358">
+          <Constant UId="359">
+            <ConstantValue UId="361">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="362" />
+      </Component>
+      <Token Text="." UId="363" />
+      <Component Name="Vis_Button_wide" UId="364" />
+      <Token Text="." UId="365" />
+      <Token Text="%X12" UId="366" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="367" />
+  <NewLine Num="2" UId="368" />
+  <Access Scope="GlobalVariable" UId="369">
+    <Symbol UId="370">
+      <Component Name="HMI变量汇总" UId="371">
+        <BooleanAttribute Name="HasQuotes" UId="372">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="373" />
+      <Component Name="Vis_Button_small1" UId="374" />
+    </Symbol>
+  </Access>
+  <Blank UId="375" />
+  <Token Text=":=" UId="376" />
+  <Blank UId="377" />
+  <Access Scope="GlobalVariable" UId="378">
+    <Symbol UId="379">
+      <Component Name="IF_HMI_FB_IDB" UId="380">
+        <BooleanAttribute Name="HasQuotes" UId="381">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="382" />
+      <Component Name="IF" UId="383" />
+      <Token Text="." UId="384" />
+      <Component Name="HMI" UId="385">
+        <Token Text="[" UId="386" />
+        <Access Scope="LiteralConstant" UId="387">
+          <Constant UId="388">
+            <ConstantValue UId="390">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="391" />
+      </Component>
+      <Token Text="." UId="392" />
+      <Component Name="Vis_Button_small" UId="393" />
+      <Token Text="." UId="394" />
+      <Token Text="%X1" UId="395" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="396" />
+  <NewLine UId="397" />
+  <Access Scope="GlobalVariable" UId="398">
+    <Symbol UId="399">
+      <Component Name="HMI变量汇总" UId="400">
+        <BooleanAttribute Name="HasQuotes" UId="401">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="402" />
+      <Component Name="Vis_Button_small2" UId="403" />
+    </Symbol>
+  </Access>
+  <Blank UId="404" />
+  <Token Text=":=" UId="405" />
+  <Blank UId="406" />
+  <Access Scope="GlobalVariable" UId="407">
+    <Symbol UId="408">
+      <Component Name="IF_HMI_FB_IDB" UId="409">
+        <BooleanAttribute Name="HasQuotes" UId="410">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="411" />
+      <Component Name="IF" UId="412" />
+      <Token Text="." UId="413" />
+      <Component Name="HMI" UId="414">
+        <Token Text="[" UId="415" />
+        <Access Scope="LiteralConstant" UId="416">
+          <Constant UId="417">
+            <ConstantValue UId="419">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="420" />
+      </Component>
+      <Token Text="." UId="421" />
+      <Component Name="Vis_Button_small" UId="422" />
+      <Token Text="." UId="423" />
+      <Token Text="%X2" UId="424" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="425" />
+  <NewLine UId="426" />
+  <Access Scope="GlobalVariable" UId="427">
+    <Symbol UId="428">
+      <Component Name="HMI变量汇总" UId="429">
+        <BooleanAttribute Name="HasQuotes" UId="430">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="431" />
+      <Component Name="Vis_Button_small3" UId="432" />
+    </Symbol>
+  </Access>
+  <Blank UId="433" />
+  <Token Text=":=" UId="434" />
+  <Blank UId="435" />
+  <Access Scope="GlobalVariable" UId="436">
+    <Symbol UId="437">
+      <Component Name="IF_HMI_FB_IDB" UId="438">
+        <BooleanAttribute Name="HasQuotes" UId="439">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="440" />
+      <Component Name="IF" UId="441" />
+      <Token Text="." UId="442" />
+      <Component Name="HMI" UId="443">
+        <Token Text="[" UId="444" />
+        <Access Scope="LiteralConstant" UId="445">
+          <Constant UId="446">
+            <ConstantValue UId="448">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="449" />
+      </Component>
+      <Token Text="." UId="450" />
+      <Component Name="Vis_Button_small" UId="451" />
+      <Token Text="." UId="452" />
+      <Token Text="%X3" UId="453" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="454" />
+  <NewLine UId="455" />
+  <Access Scope="GlobalVariable" UId="456">
+    <Symbol UId="457">
+      <Component Name="HMI变量汇总" UId="458">
+        <BooleanAttribute Name="HasQuotes" UId="459">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="460" />
+      <Component Name="Vis_Button_small4" UId="461" />
+    </Symbol>
+  </Access>
+  <Blank UId="462" />
+  <Token Text=":=" UId="463" />
+  <Blank UId="464" />
+  <Access Scope="GlobalVariable" UId="465">
+    <Symbol UId="466">
+      <Component Name="IF_HMI_FB_IDB" UId="467">
+        <BooleanAttribute Name="HasQuotes" UId="468">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="469" />
+      <Component Name="IF" UId="470" />
+      <Token Text="." UId="471" />
+      <Component Name="HMI" UId="472">
+        <Token Text="[" UId="473" />
+        <Access Scope="LiteralConstant" UId="474">
+          <Constant UId="475">
+            <ConstantValue UId="477">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="478" />
+      </Component>
+      <Token Text="." UId="479" />
+      <Component Name="Vis_Button_small" UId="480" />
+      <Token Text="." UId="481" />
+      <Token Text="%X4" UId="482" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="483" />
+  <NewLine UId="484" />
+  <Access Scope="GlobalVariable" UId="485">
+    <Symbol UId="486">
+      <Component Name="HMI变量汇总" UId="487">
+        <BooleanAttribute Name="HasQuotes" UId="488">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="489" />
+      <Component Name="Vis_Button_small5" UId="490" />
+    </Symbol>
+  </Access>
+  <Blank UId="491" />
+  <Token Text=":=" UId="492" />
+  <Blank UId="493" />
+  <Access Scope="GlobalVariable" UId="494">
+    <Symbol UId="495">
+      <Component Name="IF_HMI_FB_IDB" UId="496">
+        <BooleanAttribute Name="HasQuotes" UId="497">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="498" />
+      <Component Name="IF" UId="499" />
+      <Token Text="." UId="500" />
+      <Component Name="HMI" UId="501">
+        <Token Text="[" UId="502" />
+        <Access Scope="LiteralConstant" UId="503">
+          <Constant UId="504">
+            <ConstantValue UId="506">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="507" />
+      </Component>
+      <Token Text="." UId="508" />
+      <Component Name="Vis_Button_small" UId="509" />
+      <Token Text="." UId="510" />
+      <Token Text="%X5" UId="511" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="512" />
+  <NewLine UId="513" />
+  <Access Scope="GlobalVariable" UId="514">
+    <Symbol UId="515">
+      <Component Name="HMI变量汇总" UId="516">
+        <BooleanAttribute Name="HasQuotes" UId="517">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="518" />
+      <Component Name="Vis_Button_small6" UId="519" />
+    </Symbol>
+  </Access>
+  <Blank UId="520" />
+  <Token Text=":=" UId="521" />
+  <Blank UId="522" />
+  <Access Scope="GlobalVariable" UId="523">
+    <Symbol UId="524">
+      <Component Name="IF_HMI_FB_IDB" UId="525">
+        <BooleanAttribute Name="HasQuotes" UId="526">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="527" />
+      <Component Name="IF" UId="528" />
+      <Token Text="." UId="529" />
+      <Component Name="HMI" UId="530">
+        <Token Text="[" UId="531" />
+        <Access Scope="LiteralConstant" UId="532">
+          <Constant UId="533">
+            <ConstantValue UId="535">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="536" />
+      </Component>
+      <Token Text="." UId="537" />
+      <Component Name="Vis_Button_small" UId="538" />
+      <Token Text="." UId="539" />
+      <Token Text="%X6" UId="540" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="541" />
+  <NewLine UId="542" />
+  <Access Scope="GlobalVariable" UId="543">
+    <Symbol UId="544">
+      <Component Name="HMI变量汇总" UId="545">
+        <BooleanAttribute Name="HasQuotes" UId="546">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="547" />
+      <Component Name="Vis_Button_small7" UId="548" />
+    </Symbol>
+  </Access>
+  <Blank UId="549" />
+  <Token Text=":=" UId="550" />
+  <Blank UId="551" />
+  <Access Scope="GlobalVariable" UId="552">
+    <Symbol UId="553">
+      <Component Name="IF_HMI_FB_IDB" UId="554">
+        <BooleanAttribute Name="HasQuotes" UId="555">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="556" />
+      <Component Name="IF" UId="557" />
+      <Token Text="." UId="558" />
+      <Component Name="HMI" UId="559">
+        <Token Text="[" UId="560" />
+        <Access Scope="LiteralConstant" UId="561">
+          <Constant UId="562">
+            <ConstantValue UId="564">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="565" />
+      </Component>
+      <Token Text="." UId="566" />
+      <Component Name="Vis_Button_small" UId="567" />
+      <Token Text="." UId="568" />
+      <Token Text="%X7" UId="569" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="570" />
+  <NewLine UId="571" />
+  <Access Scope="GlobalVariable" UId="572">
+    <Symbol UId="573">
+      <Component Name="HMI变量汇总" UId="574">
+        <BooleanAttribute Name="HasQuotes" UId="575">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="576" />
+      <Component Name="Vis_Button_small8" UId="577" />
+    </Symbol>
+  </Access>
+  <Blank UId="578" />
+  <Token Text=":=" UId="579" />
+  <Blank UId="580" />
+  <Access Scope="GlobalVariable" UId="581">
+    <Symbol UId="582">
+      <Component Name="IF_HMI_FB_IDB" UId="583">
+        <BooleanAttribute Name="HasQuotes" UId="584">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="585" />
+      <Component Name="IF" UId="586" />
+      <Token Text="." UId="587" />
+      <Component Name="HMI" UId="588">
+        <Token Text="[" UId="589" />
+        <Access Scope="LiteralConstant" UId="590">
+          <Constant UId="591">
+            <ConstantValue UId="593">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="594" />
+      </Component>
+      <Token Text="." UId="595" />
+      <Component Name="Vis_Button_small" UId="596" />
+      <Token Text="." UId="597" />
+      <Token Text="%X8" UId="598" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="599" />
+  <NewLine UId="600" />
+  <Access Scope="GlobalVariable" UId="601">
+    <Symbol UId="602">
+      <Component Name="HMI变量汇总" UId="603">
+        <BooleanAttribute Name="HasQuotes" UId="604">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="605" />
+      <Component Name="Vis_Button_small9" UId="606" />
+    </Symbol>
+  </Access>
+  <Blank UId="607" />
+  <Token Text=":=" UId="608" />
+  <Blank UId="609" />
+  <Access Scope="GlobalVariable" UId="610">
+    <Symbol UId="611">
+      <Component Name="IF_HMI_FB_IDB" UId="612">
+        <BooleanAttribute Name="HasQuotes" UId="613">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="614" />
+      <Component Name="IF" UId="615" />
+      <Token Text="." UId="616" />
+      <Component Name="HMI" UId="617">
+        <Token Text="[" UId="618" />
+        <Access Scope="LiteralConstant" UId="619">
+          <Constant UId="620">
+            <ConstantValue UId="622">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="623" />
+      </Component>
+      <Token Text="." UId="624" />
+      <Component Name="Vis_Button_small" UId="625" />
+      <Token Text="." UId="626" />
+      <Token Text="%X9" UId="627" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="628" />
+  <NewLine UId="629" />
+  <Access Scope="GlobalVariable" UId="630">
+    <Symbol UId="631">
+      <Component Name="HMI变量汇总" UId="632">
+        <BooleanAttribute Name="HasQuotes" UId="633">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="634" />
+      <Component Name="Vis_Button_small10" UId="635" />
+    </Symbol>
+  </Access>
+  <Blank UId="636" />
+  <Token Text=":=" UId="637" />
+  <Blank UId="638" />
+  <Access Scope="GlobalVariable" UId="639">
+    <Symbol UId="640">
+      <Component Name="IF_HMI_FB_IDB" UId="641">
+        <BooleanAttribute Name="HasQuotes" UId="642">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="643" />
+      <Component Name="IF" UId="644" />
+      <Token Text="." UId="645" />
+      <Component Name="HMI" UId="646">
+        <Token Text="[" UId="647" />
+        <Access Scope="LiteralConstant" UId="648">
+          <Constant UId="649">
+            <ConstantValue UId="651">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="652" />
+      </Component>
+      <Token Text="." UId="653" />
+      <Component Name="Vis_Button_small" UId="654" />
+      <Token Text="." UId="655" />
+      <Token Text="%X10" UId="656" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="657" />
+  <NewLine UId="658" />
+  <Access Scope="GlobalVariable" UId="659">
+    <Symbol UId="660">
+      <Component Name="HMI变量汇总" UId="661">
+        <BooleanAttribute Name="HasQuotes" UId="662">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="663" />
+      <Component Name="Vis_Button_small11" UId="664" />
+    </Symbol>
+  </Access>
+  <Blank UId="665" />
+  <Token Text=":=" UId="666" />
+  <Blank UId="667" />
+  <Access Scope="GlobalVariable" UId="668">
+    <Symbol UId="669">
+      <Component Name="IF_HMI_FB_IDB" UId="670">
+        <BooleanAttribute Name="HasQuotes" UId="671">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="672" />
+      <Component Name="IF" UId="673" />
+      <Token Text="." UId="674" />
+      <Component Name="HMI" UId="675">
+        <Token Text="[" UId="676" />
+        <Access Scope="LiteralConstant" UId="677">
+          <Constant UId="678">
+            <ConstantValue UId="680">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="681" />
+      </Component>
+      <Token Text="." UId="682" />
+      <Component Name="Vis_Button_small" UId="683" />
+      <Token Text="." UId="684" />
+      <Token Text="%X11" UId="685" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="686" />
+  <NewLine UId="687" />
+  <Access Scope="GlobalVariable" UId="688">
+    <Symbol UId="689">
+      <Component Name="HMI变量汇总" UId="690">
+        <BooleanAttribute Name="HasQuotes" UId="691">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="692" />
+      <Component Name="Vis_Button_small12" UId="693" />
+    </Symbol>
+  </Access>
+  <Blank UId="694" />
+  <Token Text=":=" UId="695" />
+  <Blank UId="696" />
+  <Access Scope="GlobalVariable" UId="697">
+    <Symbol UId="698">
+      <Component Name="IF_HMI_FB_IDB" UId="699">
+        <BooleanAttribute Name="HasQuotes" UId="700">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="701" />
+      <Component Name="IF" UId="702" />
+      <Token Text="." UId="703" />
+      <Component Name="HMI" UId="704">
+        <Token Text="[" UId="705" />
+        <Access Scope="LiteralConstant" UId="706">
+          <Constant UId="707">
+            <ConstantValue UId="709">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="710" />
+      </Component>
+      <Token Text="." UId="711" />
+      <Component Name="Vis_Button_small" UId="712" />
+      <Token Text="." UId="713" />
+      <Token Text="%X12" UId="714" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="715" />
+  <NewLine Num="5" UId="716" />
+  <Access Scope="LocalVariable" UId="717">
+    <Symbol UId="718">
+      <Component Name="x1" UId="719" />
+    </Symbol>
+  </Access>
+  <Blank UId="720" />
+  <Token Text=":=" UId="721" />
+  <Blank UId="722" />
+  <Access Scope="GlobalVariable" UId="723">
+    <Symbol UId="724">
+      <Component Name="IF_HMI_FB_IDB" UId="725">
+        <BooleanAttribute Name="HasQuotes" UId="726">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="727" />
+      <Component Name="IF" UId="728" />
+      <Token Text="." UId="729" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="730">
+        <Token Text="[" UId="731" />
+        <Access Scope="LiteralConstant" UId="732">
+          <Constant UId="733">
+            <ConstantValue UId="735">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="736" />
+      </Component>
+      <Token Text="." UId="737" />
+      <Token Text="%X0" UId="738" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="739" />
+  <NewLine UId="740" />
+  <Access Scope="LocalVariable" UId="741">
+    <Symbol UId="742">
+      <Component Name="x1" UId="743" />
+    </Symbol>
+  </Access>
+  <Blank UId="744" />
+  <Token Text=":=" UId="745" />
+  <Blank UId="746" />
+  <Access Scope="GlobalVariable" UId="747">
+    <Symbol UId="748">
+      <Component Name="IF_HMI_FB_IDB" UId="749">
+        <BooleanAttribute Name="HasQuotes" UId="750">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="751" />
+      <Component Name="IF" UId="752" />
+      <Token Text="." UId="753" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="754">
+        <Token Text="[" UId="755" />
+        <Access Scope="LiteralConstant" UId="756">
+          <Constant UId="757">
+            <ConstantValue UId="759">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="760" />
+      </Component>
+      <Token Text="." UId="761" />
+      <Token Text="%X1" UId="762" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="763" />
+  <NewLine UId="764" />
+  <Access Scope="LocalVariable" UId="765">
+    <Symbol UId="766">
+      <Component Name="x1" UId="767" />
+    </Symbol>
+  </Access>
+  <Blank UId="768" />
+  <Token Text=":=" UId="769" />
+  <Blank UId="770" />
+  <Access Scope="GlobalVariable" UId="771">
+    <Symbol UId="772">
+      <Component Name="IF_HMI_FB_IDB" UId="773">
+        <BooleanAttribute Name="HasQuotes" UId="774">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="775" />
+      <Component Name="IF" UId="776" />
+      <Token Text="." UId="777" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="778">
+        <Token Text="[" UId="779" />
+        <Access Scope="LiteralConstant" UId="780">
+          <Constant UId="781">
+            <ConstantValue UId="783">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="784" />
+      </Component>
+      <Token Text="." UId="785" />
+      <Token Text="%X2" UId="786" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="787" />
+  <NewLine UId="788" />
+  <Access Scope="LocalVariable" UId="789">
+    <Symbol UId="790">
+      <Component Name="x1" UId="791" />
+    </Symbol>
+  </Access>
+  <Blank UId="792" />
+  <Token Text=":=" UId="793" />
+  <Blank UId="794" />
+  <Access Scope="GlobalVariable" UId="795">
+    <Symbol UId="796">
+      <Component Name="IF_HMI_FB_IDB" UId="797">
+        <BooleanAttribute Name="HasQuotes" UId="798">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="799" />
+      <Component Name="IF" UId="800" />
+      <Token Text="." UId="801" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="802">
+        <Token Text="[" UId="803" />
+        <Access Scope="LiteralConstant" UId="804">
+          <Constant UId="805">
+            <ConstantValue UId="807">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="808" />
+      </Component>
+      <Token Text="." UId="809" />
+      <Token Text="%X3" UId="810" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="811" />
+  <NewLine UId="812" />
+  <Access Scope="LocalVariable" UId="813">
+    <Symbol UId="814">
+      <Component Name="x1" UId="815" />
+    </Symbol>
+  </Access>
+  <Blank UId="816" />
+  <Token Text=":=" UId="817" />
+  <Blank UId="818" />
+  <Access Scope="GlobalVariable" UId="819">
+    <Symbol UId="820">
+      <Component Name="IF_HMI_FB_IDB" UId="821">
+        <BooleanAttribute Name="HasQuotes" UId="822">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="823" />
+      <Component Name="IF" UId="824" />
+      <Token Text="." UId="825" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="826">
+        <Token Text="[" UId="827" />
+        <Access Scope="LiteralConstant" UId="828">
+          <Constant UId="829">
+            <ConstantValue UId="831">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="832" />
+      </Component>
+      <Token Text="." UId="833" />
+      <Token Text="%X4" UId="834" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="835" />
+  <NewLine UId="836" />
+  <Access Scope="LocalVariable" UId="837">
+    <Symbol UId="838">
+      <Component Name="x1" UId="839" />
+    </Symbol>
+  </Access>
+  <Blank UId="840" />
+  <Token Text=":=" UId="841" />
+  <Blank UId="842" />
+  <Access Scope="GlobalVariable" UId="843">
+    <Symbol UId="844">
+      <Component Name="IF_HMI_FB_IDB" UId="845">
+        <BooleanAttribute Name="HasQuotes" UId="846">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="847" />
+      <Component Name="IF" UId="848" />
+      <Token Text="." UId="849" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="850">
+        <Token Text="[" UId="851" />
+        <Access Scope="LiteralConstant" UId="852">
+          <Constant UId="853">
+            <ConstantValue UId="855">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="856" />
+      </Component>
+      <Token Text="." UId="857" />
+      <Token Text="%X5" UId="858" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="859" />
+  <NewLine UId="860" />
+  <Access Scope="LocalVariable" UId="861">
+    <Symbol UId="862">
+      <Component Name="x1" UId="863" />
+    </Symbol>
+  </Access>
+  <Blank UId="864" />
+  <Token Text=":=" UId="865" />
+  <Blank UId="866" />
+  <Access Scope="GlobalVariable" UId="867">
+    <Symbol UId="868">
+      <Component Name="IF_HMI_FB_IDB" UId="869">
+        <BooleanAttribute Name="HasQuotes" UId="870">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="871" />
+      <Component Name="IF" UId="872" />
+      <Token Text="." UId="873" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="874">
+        <Token Text="[" UId="875" />
+        <Access Scope="LiteralConstant" UId="876">
+          <Constant UId="877">
+            <ConstantValue UId="879">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="880" />
+      </Component>
+      <Token Text="." UId="881" />
+      <Token Text="%X6" UId="882" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="883" />
+  <NewLine UId="884" />
+  <Access Scope="LocalVariable" UId="885">
+    <Symbol UId="886">
+      <Component Name="x1" UId="887" />
+    </Symbol>
+  </Access>
+  <Blank UId="888" />
+  <Token Text=":=" UId="889" />
+  <Blank UId="890" />
+  <Access Scope="GlobalVariable" UId="891">
+    <Symbol UId="892">
+      <Component Name="IF_HMI_FB_IDB" UId="893">
+        <BooleanAttribute Name="HasQuotes" UId="894">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="895" />
+      <Component Name="IF" UId="896" />
+      <Token Text="." UId="897" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="898">
+        <Token Text="[" UId="899" />
+        <Access Scope="LiteralConstant" UId="900">
+          <Constant UId="901">
+            <ConstantValue UId="903">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="904" />
+      </Component>
+      <Token Text="." UId="905" />
+      <Token Text="%X7" UId="906" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="907" />
+  <NewLine UId="908" />
+  <Access Scope="LocalVariable" UId="909">
+    <Symbol UId="910">
+      <Component Name="x1" UId="911" />
+    </Symbol>
+  </Access>
+  <Blank UId="912" />
+  <Token Text=":=" UId="913" />
+  <Blank UId="914" />
+  <Access Scope="GlobalVariable" UId="915">
+    <Symbol UId="916">
+      <Component Name="IF_HMI_FB_IDB" UId="917">
+        <BooleanAttribute Name="HasQuotes" UId="918">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="919" />
+      <Component Name="IF" UId="920" />
+      <Token Text="." UId="921" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="922">
+        <Token Text="[" UId="923" />
+        <Access Scope="LiteralConstant" UId="924">
+          <Constant UId="925">
+            <ConstantValue UId="927">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="928" />
+      </Component>
+      <Token Text="." UId="929" />
+      <Token Text="%X8" UId="930" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="931" />
+  <NewLine UId="932" />
+  <Access Scope="LocalVariable" UId="933">
+    <Symbol UId="934">
+      <Component Name="x1" UId="935" />
+    </Symbol>
+  </Access>
+  <Blank UId="936" />
+  <Token Text=":=" UId="937" />
+  <Blank UId="938" />
+  <Access Scope="GlobalVariable" UId="939">
+    <Symbol UId="940">
+      <Component Name="IF_HMI_FB_IDB" UId="941">
+        <BooleanAttribute Name="HasQuotes" UId="942">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="943" />
+      <Component Name="IF" UId="944" />
+      <Token Text="." UId="945" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="946">
+        <Token Text="[" UId="947" />
+        <Access Scope="LiteralConstant" UId="948">
+          <Constant UId="949">
+            <ConstantValue UId="951">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="952" />
+      </Component>
+      <Token Text="." UId="953" />
+      <Token Text="%X9" UId="954" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="955" />
+  <NewLine UId="956" />
+  <Access Scope="LocalVariable" UId="957">
+    <Symbol UId="958">
+      <Component Name="x1" UId="959" />
+    </Symbol>
+  </Access>
+  <Blank UId="960" />
+  <Token Text=":=" UId="961" />
+  <Blank UId="962" />
+  <Access Scope="GlobalVariable" UId="963">
+    <Symbol UId="964">
+      <Component Name="IF_HMI_FB_IDB" UId="965">
+        <BooleanAttribute Name="HasQuotes" UId="966">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="967" />
+      <Component Name="IF" UId="968" />
+      <Token Text="." UId="969" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="970">
+        <Token Text="[" UId="971" />
+        <Access Scope="LiteralConstant" UId="972">
+          <Constant UId="973">
+            <ConstantValue UId="975">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="976" />
+      </Component>
+      <Token Text="." UId="977" />
+      <Token Text="%X10" UId="978" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="979" />
+  <NewLine UId="980" />
+  <Access Scope="LocalVariable" UId="981">
+    <Symbol UId="982">
+      <Component Name="x1" UId="983" />
+    </Symbol>
+  </Access>
+  <Blank UId="984" />
+  <Token Text=":=" UId="985" />
+  <Blank UId="986" />
+  <Access Scope="GlobalVariable" UId="987">
+    <Symbol UId="988">
+      <Component Name="IF_HMI_FB_IDB" UId="989">
+        <BooleanAttribute Name="HasQuotes" UId="990">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="991" />
+      <Component Name="IF" UId="992" />
+      <Token Text="." UId="993" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="994">
+        <Token Text="[" UId="995" />
+        <Access Scope="LiteralConstant" UId="996">
+          <Constant UId="997">
+            <ConstantValue UId="999">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1000" />
+      </Component>
+      <Token Text="." UId="1001" />
+      <Token Text="%X11" UId="1002" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1003" />
+  <NewLine UId="1004" />
+  <Access Scope="LocalVariable" UId="1005">
+    <Symbol UId="1006">
+      <Component Name="x1" UId="1007" />
+    </Symbol>
+  </Access>
+  <Blank UId="1008" />
+  <Token Text=":=" UId="1009" />
+  <Blank UId="1010" />
+  <Access Scope="GlobalVariable" UId="1011">
+    <Symbol UId="1012">
+      <Component Name="IF_HMI_FB_IDB" UId="1013">
+        <BooleanAttribute Name="HasQuotes" UId="1014">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1015" />
+      <Component Name="IF" UId="1016" />
+      <Token Text="." UId="1017" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="1018">
+        <Token Text="[" UId="1019" />
+        <Access Scope="LiteralConstant" UId="1020">
+          <Constant UId="1021">
+            <ConstantValue UId="1023">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1024" />
+      </Component>
+      <Token Text="." UId="1025" />
+      <Token Text="%X12" UId="1026" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1027" />
+  <NewLine UId="1028" />
+  <Access Scope="LocalVariable" UId="1029">
+    <Symbol UId="1030">
+      <Component Name="x1" UId="1031" />
+    </Symbol>
+  </Access>
+  <Blank UId="1032" />
+  <Token Text=":=" UId="1033" />
+  <Blank UId="1034" />
+  <Access Scope="GlobalVariable" UId="1035">
+    <Symbol UId="1036">
+      <Component Name="IF_HMI_FB_IDB" UId="1037">
+        <BooleanAttribute Name="HasQuotes" UId="1038">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1039" />
+      <Component Name="IF" UId="1040" />
+      <Token Text="." UId="1041" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="1042">
+        <Token Text="[" UId="1043" />
+        <Access Scope="LiteralConstant" UId="1044">
+          <Constant UId="1045">
+            <ConstantValue UId="1047">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1048" />
+      </Component>
+      <Token Text="." UId="1049" />
+      <Token Text="%X13" UId="1050" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1051" />
+  <NewLine UId="1052" />
+  <Access Scope="LocalVariable" UId="1053">
+    <Symbol UId="1054">
+      <Component Name="x1" UId="1055" />
+    </Symbol>
+  </Access>
+  <Blank UId="1056" />
+  <Token Text=":=" UId="1057" />
+  <Blank UId="1058" />
+  <Access Scope="GlobalVariable" UId="1059">
+    <Symbol UId="1060">
+      <Component Name="IF_HMI_FB_IDB" UId="1061">
+        <BooleanAttribute Name="HasQuotes" UId="1062">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1063" />
+      <Component Name="IF" UId="1064" />
+      <Token Text="." UId="1065" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="1066">
+        <Token Text="[" UId="1067" />
+        <Access Scope="LiteralConstant" UId="1068">
+          <Constant UId="1069">
+            <ConstantValue UId="1071">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1072" />
+      </Component>
+      <Token Text="." UId="1073" />
+      <Token Text="%X14" UId="1074" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1075" />
+  <NewLine UId="1076" />
+  <Access Scope="LocalVariable" UId="1077">
+    <Symbol UId="1078">
+      <Component Name="x1" UId="1079" />
+    </Symbol>
+  </Access>
+  <Blank UId="1080" />
+  <Token Text=":=" UId="1081" />
+  <Blank UId="1082" />
+  <Access Scope="GlobalVariable" UId="1083">
+    <Symbol UId="1084">
+      <Component Name="IF_HMI_FB_IDB" UId="1085">
+        <BooleanAttribute Name="HasQuotes" UId="1086">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1087" />
+      <Component Name="IF" UId="1088" />
+      <Token Text="." UId="1089" />
+      <Component Name="StateHeader_ForHMIAnimation" UId="1090">
+        <Token Text="[" UId="1091" />
+        <Access Scope="LiteralConstant" UId="1092">
+          <Constant UId="1093">
+            <ConstantValue UId="1095">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1096" />
+      </Component>
+      <Token Text="." UId="1097" />
+      <Token Text="%X15" UId="1098" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1099" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="13" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="17" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="18" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="19" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="1A" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="TrfInSetBegin" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Command in from Graph</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Load Begin: condition to start transfer IN set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetIntlkOk" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer IN Interlock Set OK</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer IN Interlock Set OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResIntlkOk" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer IN Interlock Reset OKt</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer IN Interlock Reset OKt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetBegin" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Unload Begin: condition to start transfer OUT set</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Unload Begin: condition to start transfer OUT set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetIntlkOk" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer Out Interlock Set Ok</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer Out Interlock Set Ok</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResIntlkOk" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer OUT Interlock Reset Ok</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer OUT Interlock Reset Ok</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResBegin" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>InPut</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

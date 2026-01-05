@@ -1,0 +1,49 @@
+﻿FUNCTION "FC_AxisChange" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_TEMP 
+      i : Int;
+   END_VAR
+
+
+BEGIN
+	//切换轴
+	(*
+	IF "dGlobal".Old_Axis_Select <> "dGlobal".gbo_Axis_Select THEN//刚切换
+	    "dStruct_Axis".gs_Axis[#i].I_HMI := "dStruct_Axis".gs_Axis_HMI_Init;
+	    
+	    "dGlobal".Old_Axis_Select := "dGlobal".gbo_Axis_Select;
+	ELSE
+	    "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_HMI := "dStruct_Axis".gs_Axis[0].I_HMI;
+	 //   "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_CMD := "dStruct_Axis".gs_Axis[0].I_CMD;
+	    "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_Para.rJerk_Set[0] := "dStruct_Axis".gs_Axis[0].I_Para.rJerk_Set[0];
+	    
+	    "dStruct_Axis".gs_Axis[0].I_InLock := "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_InLock;
+	    "dStruct_Axis".gs_Axis[0].I_SS := "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_SS;
+	    "dStruct_Axis".gs_Axis[0].O_Status := "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].O_Status;
+	
+	END_IF;
+	*)
+	
+	//保存显示值到设定 读取设定到显示
+	//切换定位段
+	IF "dGlobal".Old_Pos_Select <> "dGlobal".gbo_Pos_Select THEN//刚切换
+	    "dStruct_Axis".gs_Axis[0].I_Para.rPos_Abs[0]   := "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_Para.rPos_Abs["dGlobal".gbo_Pos_Select];
+	    "dStruct_Axis".gs_Axis[0].I_Para.rSpeed_Abs[0] := "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_Para.rSpeed_Abs["dGlobal".gbo_Pos_Select];
+	    
+	    "dGlobal".Old_Pos_Select := "dGlobal".gbo_Pos_Select;
+	ELSE
+	    "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_Para.rPos_Abs["dGlobal".gbo_Pos_Select] := "dStruct_Axis".gs_Axis[0].I_Para.rPos_Abs[0];
+	    "dStruct_Axis".gs_Axis["dGlobal".gbo_Axis_Select].I_Para.rSpeed_Abs["dGlobal".gbo_Pos_Select] := "dStruct_Axis".gs_Axis[0].I_Para.rSpeed_Abs[0];
+	END_IF;
+	
+	
+	
+	
+	
+	
+	    
+	    
+	    
+END_FUNCTION
+

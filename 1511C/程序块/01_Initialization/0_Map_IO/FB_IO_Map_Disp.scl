@@ -1,0 +1,44 @@
+﻿FUNCTION_BLOCK "FB_IO_Map_Disp"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      Start_Address_IByte : UInt;
+      Start_Address_OByte : UInt;
+      Start_Address_SIByte : UDInt := 30000;
+      Start_Address_SOByte : UDInt := 30000;
+      Loop_I : Int;
+      Input : Array[0..15] of Bool;
+      SInput : Array[0..15] of Bool;
+      Loop_O : Int;
+      Output : Array[0..15] of Bool;
+      SOutput : Array[0..15] of Bool;
+   END_VAR
+
+
+BEGIN
+	
+	IF #Start_Address_IByte < 1000 AND #Start_Address_OByte < 1000 THEN
+	    FOR #Loop_I := 0 TO 7 DO
+	        #Input[#Loop_I] := PEEK_BOOL(area := 16#81, dbNumber := 0, byteOffset := #Start_Address_IByte, bitOffset := #Loop_I);
+	        #Input[#Loop_I + 8] := PEEK_BOOL(area := 16#81, dbNumber := 0, byteOffset := #Start_Address_IByte + 1, bitOffset := #Loop_I);
+	    END_FOR;
+	    FOR #Loop_O := 0 TO 7 DO
+	        #Output[#Loop_O] := PEEK_BOOL(area := 16#82, dbNumber := 0, byteOffset := #Start_Address_OByte, bitOffset := #Loop_O);
+	        #Output[#Loop_O + 8] := PEEK_BOOL(area := 16#82, dbNumber := 0, byteOffset := #Start_Address_OByte + 1, bitOffset := #Loop_O);
+	    END_FOR;
+	END_IF;
+	
+	
+	IF #Start_Address_SIByte >= 30000  AND #Start_Address_SOByte >= 30000 THEN
+	    FOR #Loop_I := 0 TO 7 DO
+	        #SInput[#Loop_I] := PEEK_BOOL(area := 16#81, dbNumber := 0, byteOffset := #Start_Address_SIByte, bitOffset := #Loop_I);
+	        #SInput[#Loop_I + 8] := PEEK_BOOL(area := 16#81, dbNumber := 0, byteOffset := #Start_Address_SIByte + 1, bitOffset := #Loop_I);
+	    END_FOR;
+	    FOR #Loop_O := 0 TO 7 DO
+	        #SOutput[#Loop_O] := PEEK_BOOL(area := 16#82, dbNumber := 0, byteOffset := #Start_Address_SOByte, bitOffset := #Loop_O);
+	        #SOutput[#Loop_O + 8] := PEEK_BOOL(area := 16#82, dbNumber := 0, byteOffset := #Start_Address_SOByte + 1, bitOffset := #Loop_O);
+	    END_FOR;
+	END_IF;
+	
+END_FUNCTION_BLOCK
+

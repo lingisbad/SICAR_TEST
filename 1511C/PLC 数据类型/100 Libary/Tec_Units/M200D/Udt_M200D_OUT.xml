@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Motor CW" Datatype="Bool" />
+    <Member Name="Motor CCW" Datatype="Bool" />
+    <Member Name="Control for brake" Datatype="Bool" />
+    <Member Name="Trip reset" Datatype="Bool" />
+    <Member Name="Emergency start" Datatype="Bool" />
+    <Member Name="Self-test" Datatype="Bool" />
+    <Member Name="Unassigned1" Datatype="Bool" />
+    <Member Name="Unassigned2" Datatype="Bool" />
+    <Member Name="Output 1" Datatype="Bool" />
+    <Member Name="Output 2" Datatype="Bool" />
+    <Member Name="Unassigned3" Datatype="Bool" />
+    <Member Name="Unassigned4" Datatype="Bool" />
+    <Member Name="Unassigned5" Datatype="Bool" />
+    <Member Name="Unassigned6" Datatype="Bool" />
+    <Member Name="Unassigned7" Datatype="Bool" />
+    <Member Name="Disable quick stop" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>Udt_M200D_OUT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

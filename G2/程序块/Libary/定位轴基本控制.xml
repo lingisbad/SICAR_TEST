@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="轴号" Datatype="TO_PositioningAxis" Version="8.0" />
+    <Member Name="使能" Datatype="Bool" />
+    <Member Name="回原" Datatype="Bool" />
+    <Member Name="回原模式" Datatype="Int" />
+    <Member Name="绝对定位" Datatype="Bool" />
+    <Member Name="相对定位" Datatype="Bool" />
+    <Member Name="暂停" Datatype="Bool" />
+    <Member Name="复位" Datatype="Bool" />
+    <Member Name="绝对位置" Datatype="Real" />
+    <Member Name="绝对速度" Datatype="Real" />
+    <Member Name="相对位置" Datatype="Real" />
+    <Member Name="相对速度" Datatype="Real" />
+    <Member Name="点动正转" Datatype="Bool" />
+    <Member Name="点动反转" Datatype="Bool" />
+    <Member Name="点动速度" Datatype="Real" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="轴已启用" Datatype="Bool" />
+    <Member Name="使能错误" Datatype="Bool" />
+    <Member Name="回原完成" Datatype="Bool" />
+    <Member Name="回原错误" Datatype="Bool" />
+    <Member Name="绝对定位完成" Datatype="Bool" />
+    <Member Name="绝对定位错误" Datatype="Bool" />
+    <Member Name="相对定位完成" Datatype="Bool" />
+    <Member Name="相对定位错误" Datatype="Bool" />
+    <Member Name="点动中" Datatype="Bool" />
+    <Member Name="点动错误" Datatype="Bool" />
+    <Member Name="当前位置" Datatype="LReal" />
+    <Member Name="当前速度" Datatype="LReal" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="MC_Power_Instance" Datatype="MC_POWER" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Home_Instance" Datatype="MC_HOME" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveAbsolute_Instance" Datatype="MC_MOVEABSOLUTE" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveRelative_Instance" Datatype="MC_MOVERELATIVE" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Reset_Instance" Datatype="MC_RESET" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Halt_Instance" Datatype="MC_HALT" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveJog_Instance" Datatype="MC_MOVEJOG" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="复位完成" Datatype="Bool" />
+    <Member Name="复位错误" Datatype="Bool" />
+    <Member Name="暂停完成" Datatype="Bool" />
+    <Member Name="暂停错误" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>定位轴基本控制</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="使能" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="轴已启用" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="使能错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="回原" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="回原模式" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="回原完成" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="回原错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="绝对定位" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="绝对位置" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="绝对速度" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="绝对定位完成" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="绝对定位错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="相对定位" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="相对位置" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="相对速度" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="相对定位完成" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="相对定位错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="复位" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="复位完成" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="45">
+      <Symbol>
+        <Component Name="复位错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="46">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="暂停" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="48">
+      <Symbol>
+        <Component Name="暂停完成" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="49">
+      <Symbol>
+        <Component Name="暂停错误" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="轴号" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="51">
+      <Symbol>
+        <Component Name="点动正转" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="52">
+      <Symbol>
+        <Component Name="点动反转" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="53">
+      <Symbol>
+        <Component Name="点动速度" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="54">
+      <Symbol>
+        <Component Name="点动中" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="55">
+      <Symbol>
+        <Component Name="点动错误" />
+      </Symbol>
+    </Access>
+    <Part Name="MC_POWER" Version="8.0" UId="56">
+      <Instance Scope="LocalVariable" UId="57">
+        <Component Name="MC_Power_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_HOME" Version="8.0" UId="58">
+      <Instance Scope="LocalVariable" UId="59">
+        <Component Name="MC_Home_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_MOVEABSOLUTE" Version="8.0" UId="60">
+      <Instance Scope="LocalVariable" UId="61">
+        <Component Name="MC_MoveAbsolute_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_MOVERELATIVE" Version="8.0" UId="62">
+      <Instance Scope="LocalVariable" UId="63">
+        <Component Name="MC_MoveRelative_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_RESET" Version="8.0" UId="64">
+      <Instance Scope="LocalVariable" UId="65">
+        <Component Name="MC_Reset_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_HALT" Version="8.0" UId="66">
+      <Instance Scope="LocalVariable" UId="67">
+        <Component Name="MC_Halt_Instance" />
+      </Instance>
+    </Part>
+    <Part Name="MC_MOVEJOG" Version="8.0" UId="68">
+      <Instance Scope="LocalVariable" UId="69">
+        <Component Name="MC_MoveJog_Instance" />
+      </Instance>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="110">
+      <Powerrail />
+      <NameCon UId="56" Name="en" />
+      <NameCon UId="60" Name="en" />
+      <NameCon UId="64" Name="en" />
+      <NameCon UId="68" Name="en" />
+    </Wire>
+    <Wire UId="111">
+      <IdentCon UId="21" />
+      <NameCon UId="56" Name="Axis" />
+    </Wire>
+    <Wire UId="112">
+      <IdentCon UId="22" />
+      <NameCon UId="56" Name="Enable" />
+    </Wire>
+    <Wire UId="113">
+      <OpenCon UId="70" />
+      <NameCon UId="56" Name="StartMode" />
+    </Wire>
+    <Wire UId="114">
+      <OpenCon UId="71" />
+      <NameCon UId="56" Name="StopMode" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="56" Name="eno" />
+      <NameCon UId="58" Name="en" />
+    </Wire>
+    <Wire UId="116">
+      <NameCon UId="56" Name="Status" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="56" Name="Busy" />
+      <OpenCon UId="72" />
+    </Wire>
+    <Wire UId="118">
+      <NameCon UId="56" Name="Error" />
+      <IdentCon UId="24" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="56" Name="ErrorId" />
+      <OpenCon UId="73" />
+    </Wire>
+    <Wire UId="120">
+      <IdentCon UId="25" />
+      <NameCon UId="58" Name="Axis" />
+    </Wire>
+    <Wire UId="121">
+      <IdentCon UId="26" />
+      <NameCon UId="58" Name="Execute" />
+    </Wire>
+    <Wire UId="122">
+      <OpenCon UId="74" />
+      <NameCon UId="58" Name="Position" />
+    </Wire>
+    <Wire UId="123">
+      <IdentCon UId="27" />
+      <NameCon UId="58" Name="Mode" />
+    </Wire>
+    <Wire UId="124">
+      <OpenCon UId="75" />
+      <NameCon UId="58" Name="Sensor" />
+    </Wire>
+    <Wire UId="125">
+      <NameCon UId="58" Name="ReferenceMarkPosition" />
+      <OpenCon UId="76" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="58" Name="Done" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="127">
+      <NameCon UId="58" Name="Busy" />
+      <OpenCon UId="77" />
+    </Wire>
+    <Wire UId="128">
+      <NameCon UId="58" Name="CommandAborted" />
+      <OpenCon UId="78" />
+    </Wire>
+    <Wire UId="129">
+      <NameCon UId="58" Name="Error" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="130">
+      <NameCon UId="58" Name="ErrorId" />
+      <OpenCon UId="79" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="30" />
+      <NameCon UId="60" Name="Axis" />
+    </Wire>
+    <Wire UId="132">
+      <IdentCon UId="31" />
+      <NameCon UId="60" Name="Execute" />
+    </Wire>
+    <Wire UId="133">
+      <IdentCon UId="32" />
+      <NameCon UId="60" Name="Position" />
+    </Wire>
+    <Wire UId="134">
+      <IdentCon UId="33" />
+      <NameCon UId="60" Name="Velocity" />
+    </Wire>
+    <Wire UId="135">
+      <OpenCon UId="80" />
+      <NameCon UId="60" Name="Acceleration" />
+    </Wire>
+    <Wire UId="136">
+      <OpenCon UId="81" />
+      <NameCon UId="60" Name="Deceleration" />
+    </Wire>
+    <Wire UId="137">
+      <OpenCon UId="82" />
+      <NameCon UId="60" Name="Jerk" />
+    </Wire>
+    <Wire UId="138">
+      <OpenCon UId="83" />
+      <NameCon UId="60" Name="Direction" />
+    </Wire>
+    <Wire UId="139">
+      <NameCon UId="60" Name="eno" />
+      <NameCon UId="62" Name="en" />
+    </Wire>
+    <Wire UId="140">
+      <NameCon UId="60" Name="Done" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="141">
+      <NameCon UId="60" Name="Busy" />
+      <OpenCon UId="84" />
+    </Wire>
+    <Wire UId="142">
+      <NameCon UId="60" Name="CommandAborted" />
+      <OpenCon UId="85" />
+    </Wire>
+    <Wire UId="143">
+      <NameCon UId="60" Name="Error" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="144">
+      <NameCon UId="60" Name="ErrorId" />
+      <OpenCon UId="86" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="36" />
+      <NameCon UId="62" Name="Axis" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="37" />
+      <NameCon UId="62" Name="Execute" />
+    </Wire>
+    <Wire UId="147">
+      <IdentCon UId="38" />
+      <NameCon UId="62" Name="Distance" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="39" />
+      <NameCon UId="62" Name="Velocity" />
+    </Wire>
+    <Wire UId="149">
+      <OpenCon UId="87" />
+      <NameCon UId="62" Name="Acceleration" />
+    </Wire>
+    <Wire UId="150">
+      <OpenCon UId="88" />
+      <NameCon UId="62" Name="Deceleration" />
+    </Wire>
+    <Wire UId="151">
+      <OpenCon UId="89" />
+      <NameCon UId="62" Name="Jerk" />
+    </Wire>
+    <Wire UId="152">
+      <NameCon UId="62" Name="Done" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="153">
+      <NameCon UId="62" Name="Busy" />
+      <OpenCon UId="90" />
+    </Wire>
+    <Wire UId="154">
+      <NameCon UId="62" Name="CommandAborted" />
+      <OpenCon UId="91" />
+    </Wire>
+    <Wire UId="155">
+      <NameCon UId="62" Name="Error" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="156">
+      <NameCon UId="62" Name="ErrorId" />
+      <OpenCon UId="92" />
+    </Wire>
+    <Wire UId="157">
+      <IdentCon UId="42" />
+      <NameCon UId="64" Name="Axis" />
+    </Wire>
+    <Wire UId="158">
+      <IdentCon UId="43" />
+      <NameCon UId="64" Name="Execute" />
+    </Wire>
+    <Wire UId="159">
+      <OpenCon UId="93" />
+      <NameCon UId="64" Name="Restart" />
+    </Wire>
+    <Wire UId="160">
+      <NameCon UId="64" Name="eno" />
+      <NameCon UId="66" Name="en" />
+    </Wire>
+    <Wire UId="161">
+      <NameCon UId="64" Name="Done" />
+      <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="162">
+      <NameCon UId="64" Name="Busy" />
+      <OpenCon UId="94" />
+    </Wire>
+    <Wire UId="163">
+      <NameCon UId="64" Name="CommandAborted" />
+      <OpenCon UId="95" />
+    </Wire>
+    <Wire UId="164">
+      <NameCon UId="64" Name="Error" />
+      <IdentCon UId="45" />
+    </Wire>
+    <Wire UId="165">
+      <NameCon UId="64" Name="ErrorId" />
+      <OpenCon UId="96" />
+    </Wire>
+    <Wire UId="166">
+      <IdentCon UId="46" />
+      <NameCon UId="66" Name="Axis" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="47" />
+      <NameCon UId="66" Name="Execute" />
+    </Wire>
+    <Wire UId="168">
+      <OpenCon UId="97" />
+      <NameCon UId="66" Name="Deceleration" />
+    </Wire>
+    <Wire UId="169">
+      <OpenCon UId="98" />
+      <NameCon UId="66" Name="Jerk" />
+    </Wire>
+    <Wire UId="170">
+      <OpenCon UId="99" />
+      <NameCon UId="66" Name="AbortAcceleration" />
+    </Wire>
+    <Wire UId="171">
+      <NameCon UId="66" Name="Done" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="172">
+      <NameCon UId="66" Name="Busy" />
+      <OpenCon UId="100" />
+    </Wire>
+    <Wire UId="173">
+      <NameCon UId="66" Name="CommandAborted" />
+      <OpenCon UId="101" />
+    </Wire>
+    <Wire UId="174">
+      <NameCon UId="66" Name="Error" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="175">
+      <NameCon UId="66" Name="ErrorId" />
+      <OpenCon UId="102" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="50" />
+      <NameCon UId="68" Name="Axis" />
+    </Wire>
+    <Wire UId="177">
+      <IdentCon UId="51" />
+      <NameCon UId="68" Name="JogForward" />
+    </Wire>
+    <Wire UId="178">
+      <IdentCon UId="52" />
+      <NameCon UId="68" Name="JogBackward" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="53" />
+      <NameCon UId="68" Name="Velocity" />
+    </Wire>
+    <Wire UId="180">
+      <OpenCon UId="103" />
+      <NameCon UId="68" Name="Acceleration" />
+    </Wire>
+    <Wire UId="181">
+      <OpenCon UId="104" />
+      <NameCon UId="68" Name="Deceleration" />
+    </Wire>
+    <Wire UId="182">
+      <OpenCon UId="105" />
+      <NameCon UId="68" Name="Jerk" />
+    </Wire>
+    <Wire UId="183">
+      <OpenCon UId="106" />
+      <NameCon UId="68" Name="PositionControlled" />
+    </Wire>
+    <Wire UId="184">
+      <NameCon UId="68" Name="InVelocity" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="185">
+      <NameCon UId="68" Name="Busy" />
+      <OpenCon UId="107" />
+    </Wire>
+    <Wire UId="186">
+      <NameCon UId="68" Name="CommandAborted" />
+      <OpenCon UId="108" />
+    </Wire>
+    <Wire UId="187">
+      <NameCon UId="68" Name="Error" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="188">
+      <NameCon UId="68" Name="ErrorId" />
+      <OpenCon UId="109" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="轴号" />
+        <Component Name="ActualPosition" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="当前位置" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="轴号" />
+        <Component Name="ActualVelocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="当前速度" />
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="25" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="26" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="27">
+      <Powerrail />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="25" Name="eno" />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="30">
+      <NameCon UId="25" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="26" Name="out1" />
+      <IdentCon UId="24" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="13" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4" /></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="25" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="29" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="2A" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="2B" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="2C" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

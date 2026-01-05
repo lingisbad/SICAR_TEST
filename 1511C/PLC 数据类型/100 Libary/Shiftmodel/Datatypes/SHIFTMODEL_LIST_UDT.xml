@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="ShiftmodelList_Zero" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Alle Zeitwerte (TOD) gleich 00:00:00</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">All Time values (TOD) are 00:00:00</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_1" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 1 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 1 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_2" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 2 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 2 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_3" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 3 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 3 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_4" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 4 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 4 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_5" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 5 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 5 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_6" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 6 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 6 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_7" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 7 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 7 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_8" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 8 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 8 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_9" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 9 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 9 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShiftmodelList_10" Datatype="&quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel Liste 10 (1 Tag)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel list 10 (1 day)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Shiftmodel_WeekDay" Datatype="Array[1..7] of &quot;SHIFTMODEL-TIMES_1DAY_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Schichtmodel 1 Woche (1: Sunday, 2: Monday, 3: Thuesday, 4: Wednesday, 5: Thursday, 6: Friday, 7: Saturday)</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Shiftmodel 1 week  (1: Sunday, 2: Monday, 3: Thuesday, 4: Wednesday, 5: Thursday, 6: Friday, 7: Saturday)</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>SHIFTMODEL_LIST_UDT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

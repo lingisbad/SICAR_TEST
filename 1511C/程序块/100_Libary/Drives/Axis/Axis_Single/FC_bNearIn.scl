@@ -1,0 +1,39 @@
+﻿FUNCTION "FC_bNearIn" : Bool
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      rAct : LReal;
+      rTgt : LReal;
+      rDelta : LReal;
+      bModule : Bool;
+      rModulo : LReal;
+   END_VAR
+
+   VAR_TEMP 
+      temppos : LReal;
+   END_VAR
+
+
+BEGIN
+	        IF #bModule THEN
+	            #temppos := #rTgt - #rAct;
+	            
+	            WHILE #temppos < -1 * #rModulo / 2 OR #temppos >= #rModulo / 2 DO
+	                IF #temppos < -1 * #rModulo / 2 THEN
+	                    #temppos := #temppos + #rModulo;
+	                END_IF;
+	                
+	                IF #temppos >= #rModulo / 2 THEN
+	                    #temppos := #temppos - #rModulo;
+	                END_IF;
+	            END_WHILE;
+	            
+	            #FC_bNearIn := ABS(#temppos) < #rDelta;
+	        ELSE
+	            
+	            #FC_bNearIn := (#rAct >= #rTgt - #rDelta) AND (#rAct <= #rTgt + #rDelta);
+	        END_IF;
+	        
+	        
+END_FUNCTION
+

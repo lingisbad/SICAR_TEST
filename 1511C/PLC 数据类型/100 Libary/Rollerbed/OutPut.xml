@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Active" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Roller is Active</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Roller is Active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetRdyRcv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Ready to Receive: Signal to previous object set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetArrived" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Body Arrived: Signal to previous object Set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer in set active</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer in set active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetFinished" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer in set finished</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer in set finished</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetRdyDlv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Ready to Deliver: Signal to next object set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetTM" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer: Signal to next object set</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer: Signal to next object set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer out set active</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer out set active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetFinished" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer out set finished</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer out set finished</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResRdyRcv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Ready to Receive: Signal to previous object Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResArrived" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Body Arrived: Signal to previous object Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer in Reset active</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer in Reset active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResFinished" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer in Reset finished</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer in Reset finished</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResRdyDlv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Ready to Deliver: Signal to next object Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResTM" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer: Signal to next object Reset</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer: Signal to next object Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer out Reset active</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer out Reset active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResFinished" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer out Reset finished</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer out Reset finished</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BodyInPosition" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Body In Position</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Body in Position on roller</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NoSkid" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">No Skid</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LSpdSet" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Lower Speed Set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HSpdSet" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hight Speed Set</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SelectLower" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Selext Lower Speed </MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>OutPut</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

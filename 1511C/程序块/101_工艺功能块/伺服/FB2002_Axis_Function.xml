@@ -1,0 +1,3385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Plant_Identifier" Datatype="WString[24]">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Opmode" Datatype="&quot;OPMODE_OUT_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TO_Pos_Axis" Datatype="TO_PositioningAxis" Version="6.0" />
+    <Member Name="Axis_Nr" Datatype="Int" />
+    <Member Name="Axis_AbsNum" Datatype="Int" />
+    <Member Name="I_SS_bHome" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">原点传感器</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_SS_bFW" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">前限位</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="I_SS_bBW" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">后限位</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="I_CMD_bEnableAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">使能</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bResetAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">复位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bjogForward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Taster Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">正点</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bjogBackward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Taster Abwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">反点</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bmoveVelocity" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">速度运行</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bstop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">停止</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bfastStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">急停</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bHoming" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">回零</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_iGoToPos" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">16个定位 Word</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bCallAbsPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">定位位置切换时，单独的定位按钮</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bRelPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">相对定位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bEnableAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">使能</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bResetAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">复位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bjogForward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Taster Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">正点</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bjogBackward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Taster Abwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">反点</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bmoveVelocity" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">速度运行</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bstop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">停止</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bfastStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">急停</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bHoming" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">回零</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos" Datatype="Array[0..16] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_iGoToPos" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">16个定位 Word</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bCallAbsPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">定位位置切换时，单独的定位按钮</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bRelPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">相对定位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_MyBool" Datatype="Array[0..5] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">临时变量</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_CMD_bGoToPos_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="I_InLock_bGoToPos_8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="O_Status_bAxisReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴通讯正常</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAxisEnabled" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴使能</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bjogForward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴正点中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bjogBackward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴反点中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bHomed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴归零完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAtHome" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴在零位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bSstill" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴静止</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAxisBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴运行中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAxisSyned" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">同步上</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAxisError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴报警</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bAtPos" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">在目标位置上</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bPosDone" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">定位完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bPosing" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">定位中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_bRelPosDone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">相对定位完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_rActPos" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">实际位置</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_rActSpeed" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">实际速度</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_iAxisFaultNum" Datatype="UDInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴报警代码</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_iDriveFaultNum" Datatype="UDInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动报警代码</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_iFBStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">运动功能块状态</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_iMCStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">运动指令状态</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_rDriveTorque" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动扭矩</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_rDriveTemp" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动温度</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_rDriveRpm" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动转速</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_AxisName" Datatype="WString[24]">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Name of axis</MultiLanguageText>
+      </Comment>
+      <StartValue>WSTRING#'No axis'</StartValue>
+    </Member>
+    <Member Name="O_Status_mybool" Datatype="Array[0..5] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="O_Status_myLreal" Datatype="Array[0..5] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="IF_HMI" Datatype="&quot;Axis_IF_HMI&quot;" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="myFB_Pos16_Ax01" Datatype="&quot;FB_Pos16_IO&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Axis_01" Datatype="&quot;FB_Axis&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="i" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="j" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="HOMIEDONE" Datatype="Bool" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB2002_Axis_Function</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Opmode" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="TO_Pos_Axis" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="dGlobal" />
+        <Component Name="gi_Axis_AbsNum" AccessModifier="Array">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Axis_Nr" />
+            </Symbol>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Opmode" />
+        <Component Name="Manual_active" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="I_SS_bHome" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="I_SS_bFW" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="I_SS_bBW" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="I_CMD_bEnableAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="Opmode" />
+        <Component Name="Reset" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="I_CMD_bjogForward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="I_CMD_bjogBackward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="I_CMD_bmoveVelocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="I_CMD_bstop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="I_CMD_bfastStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="I_CMD_bHoming" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="I_CMD_iGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="I_CMD_bCallAbsPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="I_CMD_bRelPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="I_InLock_bEnableAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="I_InLock_bResetAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="I_InLock_bjogForward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="I_InLock_bjogBackward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="I_InLock_bmoveVelocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="45">
+      <Symbol>
+        <Component Name="I_InLock_bstop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="46">
+      <Symbol>
+        <Component Name="I_InLock_bfastStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="I_InLock_bHoming" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="48">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="49">
+      <Symbol>
+        <Component Name="I_InLock_iGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="I_InLock_bCallAbsPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="51">
+      <Symbol>
+        <Component Name="I_InLock_bRelPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="52">
+      <Symbol>
+        <Component Name="I_InLock_MyBool" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="53">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bEnableAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="54">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bResetAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="55">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bjogForward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="56">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bjogBackward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="57">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bmoveVelocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="58">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bstop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="59">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bfastStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="60">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bHoming" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="61">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="62">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_iGoToPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="63">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bCallAbsPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="64">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bRelPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="65">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_MyBool" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="66">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="67">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="68">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_0" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="69">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="70">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="71">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="72">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="73">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="74">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="75">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="76">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="77">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_3" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="78">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="79">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="80">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_4" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="81">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_5" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="82">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_5" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="83">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_5" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="84">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_6" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="85">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_6" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="86">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_6" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="87">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_7" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="88">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_7" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="89">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_7" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="90">
+      <Symbol>
+        <Component Name="I_CMD_bGoToPos_8" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="91">
+      <Symbol>
+        <Component Name="I_InLock_bGoToPos_8" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="92">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="I_Control" />
+        <Component Name="I_HMI_bGoToPos_8" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="93">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rJog_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="94">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rMV_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="95">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rStop_Dec" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="96">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rEStop_Dec" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="97">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rPos_Abs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="98">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rSpeed_Abs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="99">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rAcc_Set" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="100">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rDec_Set" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="101">
+      <Symbol>
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rJerk_Set" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="102">
+      <Symbol>
+        <Component Name="O_Status_bAxisReady" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="103">
+      <Symbol>
+        <Component Name="O_Status_bAxisEnabled" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="104">
+      <Symbol>
+        <Component Name="O_Status_bjogForward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="105">
+      <Symbol>
+        <Component Name="O_Status_bjogBackward" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="106">
+      <Symbol>
+        <Component Name="HOMIEDONE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="107">
+      <Symbol>
+        <Component Name="O_Status_bAtHome" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="108">
+      <Symbol>
+        <Component Name="O_Status_bSstill" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="109">
+      <Symbol>
+        <Component Name="O_Status_bAxisBusy" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="110">
+      <Symbol>
+        <Component Name="O_Status_bAxisSyned" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="111">
+      <Symbol>
+        <Component Name="O_Status_bAxisError" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="112">
+      <Symbol>
+        <Component Name="O_Status_bAtPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="113">
+      <Symbol>
+        <Component Name="O_Status_bPosDone" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="114">
+      <Symbol>
+        <Component Name="O_Status_bPosing" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="115">
+      <Symbol>
+        <Component Name="O_Status_bRelPosDone" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="116">
+      <Symbol>
+        <Component Name="O_Status_rActPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="117">
+      <Symbol>
+        <Component Name="O_Status_rActSpeed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="118">
+      <Symbol>
+        <Component Name="O_Status_iAxisFaultNum" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="119">
+      <Symbol>
+        <Component Name="O_Status_iDriveFaultNum" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="120">
+      <Symbol>
+        <Component Name="O_Status_iFBStatus" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="121">
+      <Symbol>
+        <Component Name="O_Status_iMCStatus" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="122">
+      <Symbol>
+        <Component Name="O_Status_rDriveTorque" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="123">
+      <Symbol>
+        <Component Name="O_Status_rDriveTemp" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="124">
+      <Symbol>
+        <Component Name="O_Status_rDriveRpm" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="125">
+      <Symbol>
+        <Component Name="O_Status_AxisName" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="126">
+      <Symbol>
+        <Component Name="O_Status_mybool" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="127">
+      <Symbol>
+        <Component Name="O_Status_myLreal" />
+      </Symbol>
+    </Access>
+    <Call UId="128">
+      <CallInfo Name="FB_Pos16_IO" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="129">
+          <Component Name="myFB_Pos16_Ax01" />
+        </Instance>
+        <Parameter Name="Opmode" Section="Input" Type="&quot;OPMODE_OUT_UDT&quot;" />
+        <Parameter Name="TO_PosAxis" Section="Input" Type="TO_PositioningAxis" />
+        <Parameter Name="I_iNum_Abspos" Section="Input" Type="Int" />
+        <Parameter Name="I_bMan_Enable" Section="Input" Type="Bool" />
+        <Parameter Name="I_SS_bHome" Section="Input" Type="Bool" />
+        <Parameter Name="I_SS_bFW" Section="Input" Type="Bool" />
+        <Parameter Name="I_SS_bBW" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bEnableAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bResetAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bjogForward" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bjogBackward" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bmoveVelocity" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bstop" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bfastStop" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bHoming" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos" Section="Input" Type="Array[0..15] of Bool" />
+        <Parameter Name="I_CMD_iGoToPos" Section="Input" Type="Word" />
+        <Parameter Name="I_CMD_bCallAbsPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bRelPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bEnableAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bResetAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bjogForward" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bjogBackward" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bmoveVelocity" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bstop" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bfastStop" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bHoming" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos" Section="Input" Type="Array[0..16] of Bool" />
+        <Parameter Name="I_InLock_iGoToPos" Section="Input" Type="Word" />
+        <Parameter Name="I_InLock_bCallAbsPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bRelPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_MyBool" Section="Input" Type="Array[0..5] of Bool" />
+        <Parameter Name="I_HMI_bEnableAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bResetAxis" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bjogForward" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bjogBackward" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bmoveVelocity" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bstop" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bfastStop" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bHoming" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos" Section="Input" Type="Array[0..16] of Bool" />
+        <Parameter Name="I_HMI_iGoToPos" Section="Input" Type="Word" />
+        <Parameter Name="I_HMI_bCallAbsPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bRelPos" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_MyBool" Section="Input" Type="Array[0..5] of Bool" />
+        <Parameter Name="I_CMD_bGoToPos_0" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_0" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_0" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_1" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_1" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_1" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_2" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_2" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_2" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_3" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_3" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_3" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_4" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_4" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_4" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_5" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_5" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_5" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_6" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_6" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_6" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_7" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_7" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_7" Section="Input" Type="Bool" />
+        <Parameter Name="I_CMD_bGoToPos_8" Section="Input" Type="Bool" />
+        <Parameter Name="I_InLock_bGoToPos_8" Section="Input" Type="Bool" />
+        <Parameter Name="I_HMI_bGoToPos_8" Section="Input" Type="Bool" />
+        <Parameter Name="O_Status_bAxisReady" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAxisEnabled" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bjogForward" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bjogBackward" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bHomed" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAtHome" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bSstill" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAxisBusy" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAxisSyned" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAxisError" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_bAtPos" Section="Output" Type="Array[0..15] of Bool" />
+        <Parameter Name="O_Status_bPosDone" Section="Output" Type="Array[0..15] of Bool" />
+        <Parameter Name="O_Status_bPosing" Section="Output" Type="Array[0..15] of Bool" />
+        <Parameter Name="O_Status_bRelPosDone" Section="Output" Type="Bool" />
+        <Parameter Name="O_Status_rActPos" Section="Output" Type="LReal" />
+        <Parameter Name="O_Status_rActSpeed" Section="Output" Type="LReal" />
+        <Parameter Name="O_Status_iAxisFaultNum" Section="Output" Type="UDInt" />
+        <Parameter Name="O_Status_iDriveFaultNum" Section="Output" Type="UDInt" />
+        <Parameter Name="O_Status_iFBStatus" Section="Output" Type="Word" />
+        <Parameter Name="O_Status_iMCStatus" Section="Output" Type="Word" />
+        <Parameter Name="O_Status_rDriveTorque" Section="Output" Type="LReal" />
+        <Parameter Name="O_Status_rDriveTemp" Section="Output" Type="LReal" />
+        <Parameter Name="O_Status_rDriveRpm" Section="Output" Type="LReal" />
+        <Parameter Name="O_Status_AxisName" Section="Output" Type="WString[24]" />
+        <Parameter Name="O_Status_mybool" Section="Output" Type="Array[0..5] of Bool" />
+        <Parameter Name="O_Status_myLreal" Section="Output" Type="Array[0..5] of LReal" />
+        <Parameter Name="I_Para_rJog_Speed" Section="InOut" Type="Array[0..2] of LReal" />
+        <Parameter Name="I_Para_rMV_Speed" Section="InOut" Type="Array[0..2] of LReal" />
+        <Parameter Name="I_Para_rStop_Dec" Section="InOut" Type="Array[0..1] of LReal" />
+        <Parameter Name="I_Para_rEStop_Dec" Section="InOut" Type="Array[0..1] of LReal" />
+        <Parameter Name="I_Para_iNum_Abspos" Section="InOut" Type="Int" />
+        <Parameter Name="I_Para_rPos_Abs" Section="InOut" Type="Array[0..16] of LReal" />
+        <Parameter Name="I_Para_rSpeed_Abs" Section="InOut" Type="Array[0..16] of LReal" />
+        <Parameter Name="I_Para_rAcc_Set" Section="InOut" Type="Array[0..16] of LReal" />
+        <Parameter Name="I_Para_rDec_Set" Section="InOut" Type="Array[0..16] of LReal" />
+        <Parameter Name="I_Para_rJerk_Set" Section="InOut" Type="Array[0..16] of LReal" />
+        <Parameter Name="I_Para_rSpeedPercent" Section="InOut" Type="LReal" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="132">
+      <Powerrail />
+      <NameCon UId="128" Name="en" />
+    </Wire>
+    <Wire UId="133">
+      <IdentCon UId="21" />
+      <NameCon UId="128" Name="Opmode" />
+    </Wire>
+    <Wire UId="134">
+      <IdentCon UId="22" />
+      <NameCon UId="128" Name="TO_PosAxis" />
+    </Wire>
+    <Wire UId="135">
+      <IdentCon UId="23" />
+      <NameCon UId="128" Name="I_iNum_Abspos" />
+    </Wire>
+    <Wire UId="136">
+      <IdentCon UId="24" />
+      <NameCon UId="128" Name="I_bMan_Enable" />
+    </Wire>
+    <Wire UId="137">
+      <IdentCon UId="25" />
+      <NameCon UId="128" Name="I_SS_bHome" />
+    </Wire>
+    <Wire UId="138">
+      <IdentCon UId="26" />
+      <NameCon UId="128" Name="I_SS_bFW" />
+    </Wire>
+    <Wire UId="139">
+      <IdentCon UId="27" />
+      <NameCon UId="128" Name="I_SS_bBW" />
+    </Wire>
+    <Wire UId="140">
+      <IdentCon UId="28" />
+      <NameCon UId="128" Name="I_CMD_bEnableAxis" />
+    </Wire>
+    <Wire UId="141">
+      <IdentCon UId="29" />
+      <NameCon UId="128" Name="I_CMD_bResetAxis" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="30" />
+      <NameCon UId="128" Name="I_CMD_bjogForward" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="31" />
+      <NameCon UId="128" Name="I_CMD_bjogBackward" />
+    </Wire>
+    <Wire UId="144">
+      <IdentCon UId="32" />
+      <NameCon UId="128" Name="I_CMD_bmoveVelocity" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="33" />
+      <NameCon UId="128" Name="I_CMD_bstop" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="34" />
+      <NameCon UId="128" Name="I_CMD_bfastStop" />
+    </Wire>
+    <Wire UId="147">
+      <IdentCon UId="35" />
+      <NameCon UId="128" Name="I_CMD_bHoming" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="36" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos" />
+    </Wire>
+    <Wire UId="149">
+      <IdentCon UId="37" />
+      <NameCon UId="128" Name="I_CMD_iGoToPos" />
+    </Wire>
+    <Wire UId="150">
+      <IdentCon UId="38" />
+      <NameCon UId="128" Name="I_CMD_bCallAbsPos" />
+    </Wire>
+    <Wire UId="151">
+      <IdentCon UId="39" />
+      <NameCon UId="128" Name="I_CMD_bRelPos" />
+    </Wire>
+    <Wire UId="152">
+      <IdentCon UId="40" />
+      <NameCon UId="128" Name="I_InLock_bEnableAxis" />
+    </Wire>
+    <Wire UId="153">
+      <IdentCon UId="41" />
+      <NameCon UId="128" Name="I_InLock_bResetAxis" />
+    </Wire>
+    <Wire UId="154">
+      <IdentCon UId="42" />
+      <NameCon UId="128" Name="I_InLock_bjogForward" />
+    </Wire>
+    <Wire UId="155">
+      <IdentCon UId="43" />
+      <NameCon UId="128" Name="I_InLock_bjogBackward" />
+    </Wire>
+    <Wire UId="156">
+      <IdentCon UId="44" />
+      <NameCon UId="128" Name="I_InLock_bmoveVelocity" />
+    </Wire>
+    <Wire UId="157">
+      <IdentCon UId="45" />
+      <NameCon UId="128" Name="I_InLock_bstop" />
+    </Wire>
+    <Wire UId="158">
+      <IdentCon UId="46" />
+      <NameCon UId="128" Name="I_InLock_bfastStop" />
+    </Wire>
+    <Wire UId="159">
+      <IdentCon UId="47" />
+      <NameCon UId="128" Name="I_InLock_bHoming" />
+    </Wire>
+    <Wire UId="160">
+      <IdentCon UId="48" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos" />
+    </Wire>
+    <Wire UId="161">
+      <IdentCon UId="49" />
+      <NameCon UId="128" Name="I_InLock_iGoToPos" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="50" />
+      <NameCon UId="128" Name="I_InLock_bCallAbsPos" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="51" />
+      <NameCon UId="128" Name="I_InLock_bRelPos" />
+    </Wire>
+    <Wire UId="164">
+      <IdentCon UId="52" />
+      <NameCon UId="128" Name="I_InLock_MyBool" />
+    </Wire>
+    <Wire UId="165">
+      <IdentCon UId="53" />
+      <NameCon UId="128" Name="I_HMI_bEnableAxis" />
+    </Wire>
+    <Wire UId="166">
+      <IdentCon UId="54" />
+      <NameCon UId="128" Name="I_HMI_bResetAxis" />
+    </Wire>
+    <Wire UId="167">
+      <IdentCon UId="55" />
+      <NameCon UId="128" Name="I_HMI_bjogForward" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="56" />
+      <NameCon UId="128" Name="I_HMI_bjogBackward" />
+    </Wire>
+    <Wire UId="169">
+      <IdentCon UId="57" />
+      <NameCon UId="128" Name="I_HMI_bmoveVelocity" />
+    </Wire>
+    <Wire UId="170">
+      <IdentCon UId="58" />
+      <NameCon UId="128" Name="I_HMI_bstop" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="59" />
+      <NameCon UId="128" Name="I_HMI_bfastStop" />
+    </Wire>
+    <Wire UId="172">
+      <IdentCon UId="60" />
+      <NameCon UId="128" Name="I_HMI_bHoming" />
+    </Wire>
+    <Wire UId="173">
+      <IdentCon UId="61" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos" />
+    </Wire>
+    <Wire UId="174">
+      <IdentCon UId="62" />
+      <NameCon UId="128" Name="I_HMI_iGoToPos" />
+    </Wire>
+    <Wire UId="175">
+      <IdentCon UId="63" />
+      <NameCon UId="128" Name="I_HMI_bCallAbsPos" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="64" />
+      <NameCon UId="128" Name="I_HMI_bRelPos" />
+    </Wire>
+    <Wire UId="177">
+      <IdentCon UId="65" />
+      <NameCon UId="128" Name="I_HMI_MyBool" />
+    </Wire>
+    <Wire UId="178">
+      <IdentCon UId="66" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_0" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="67" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_0" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="68" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_0" />
+    </Wire>
+    <Wire UId="181">
+      <IdentCon UId="69" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_1" />
+    </Wire>
+    <Wire UId="182">
+      <IdentCon UId="70" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_1" />
+    </Wire>
+    <Wire UId="183">
+      <IdentCon UId="71" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_1" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="72" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_2" />
+    </Wire>
+    <Wire UId="185">
+      <IdentCon UId="73" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_2" />
+    </Wire>
+    <Wire UId="186">
+      <IdentCon UId="74" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_2" />
+    </Wire>
+    <Wire UId="187">
+      <IdentCon UId="75" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_3" />
+    </Wire>
+    <Wire UId="188">
+      <IdentCon UId="76" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_3" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="77" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_3" />
+    </Wire>
+    <Wire UId="190">
+      <IdentCon UId="78" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_4" />
+    </Wire>
+    <Wire UId="191">
+      <IdentCon UId="79" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_4" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="80" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_4" />
+    </Wire>
+    <Wire UId="193">
+      <IdentCon UId="81" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_5" />
+    </Wire>
+    <Wire UId="194">
+      <IdentCon UId="82" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_5" />
+    </Wire>
+    <Wire UId="195">
+      <IdentCon UId="83" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_5" />
+    </Wire>
+    <Wire UId="196">
+      <IdentCon UId="84" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_6" />
+    </Wire>
+    <Wire UId="197">
+      <IdentCon UId="85" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_6" />
+    </Wire>
+    <Wire UId="198">
+      <IdentCon UId="86" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_6" />
+    </Wire>
+    <Wire UId="199">
+      <IdentCon UId="87" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_7" />
+    </Wire>
+    <Wire UId="200">
+      <IdentCon UId="88" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_7" />
+    </Wire>
+    <Wire UId="201">
+      <IdentCon UId="89" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_7" />
+    </Wire>
+    <Wire UId="202">
+      <IdentCon UId="90" />
+      <NameCon UId="128" Name="I_CMD_bGoToPos_8" />
+    </Wire>
+    <Wire UId="203">
+      <IdentCon UId="91" />
+      <NameCon UId="128" Name="I_InLock_bGoToPos_8" />
+    </Wire>
+    <Wire UId="204">
+      <IdentCon UId="92" />
+      <NameCon UId="128" Name="I_HMI_bGoToPos_8" />
+    </Wire>
+    <Wire UId="205">
+      <IdentCon UId="93" />
+      <NameCon UId="128" Name="I_Para_rJog_Speed" />
+    </Wire>
+    <Wire UId="206">
+      <IdentCon UId="94" />
+      <NameCon UId="128" Name="I_Para_rMV_Speed" />
+    </Wire>
+    <Wire UId="207">
+      <IdentCon UId="95" />
+      <NameCon UId="128" Name="I_Para_rStop_Dec" />
+    </Wire>
+    <Wire UId="208">
+      <IdentCon UId="96" />
+      <NameCon UId="128" Name="I_Para_rEStop_Dec" />
+    </Wire>
+    <Wire UId="209">
+      <OpenCon UId="130" />
+      <NameCon UId="128" Name="I_Para_iNum_Abspos" />
+    </Wire>
+    <Wire UId="210">
+      <IdentCon UId="97" />
+      <NameCon UId="128" Name="I_Para_rPos_Abs" />
+    </Wire>
+    <Wire UId="211">
+      <IdentCon UId="98" />
+      <NameCon UId="128" Name="I_Para_rSpeed_Abs" />
+    </Wire>
+    <Wire UId="212">
+      <IdentCon UId="99" />
+      <NameCon UId="128" Name="I_Para_rAcc_Set" />
+    </Wire>
+    <Wire UId="213">
+      <IdentCon UId="100" />
+      <NameCon UId="128" Name="I_Para_rDec_Set" />
+    </Wire>
+    <Wire UId="214">
+      <IdentCon UId="101" />
+      <NameCon UId="128" Name="I_Para_rJerk_Set" />
+    </Wire>
+    <Wire UId="215">
+      <OpenCon UId="131" />
+      <NameCon UId="128" Name="I_Para_rSpeedPercent" />
+    </Wire>
+    <Wire UId="216">
+      <NameCon UId="128" Name="O_Status_bAxisReady" />
+      <IdentCon UId="102" />
+    </Wire>
+    <Wire UId="217">
+      <NameCon UId="128" Name="O_Status_bAxisEnabled" />
+      <IdentCon UId="103" />
+    </Wire>
+    <Wire UId="218">
+      <NameCon UId="128" Name="O_Status_bjogForward" />
+      <IdentCon UId="104" />
+    </Wire>
+    <Wire UId="219">
+      <NameCon UId="128" Name="O_Status_bjogBackward" />
+      <IdentCon UId="105" />
+    </Wire>
+    <Wire UId="220">
+      <NameCon UId="128" Name="O_Status_bHomed" />
+      <IdentCon UId="106" />
+    </Wire>
+    <Wire UId="221">
+      <NameCon UId="128" Name="O_Status_bAtHome" />
+      <IdentCon UId="107" />
+    </Wire>
+    <Wire UId="222">
+      <NameCon UId="128" Name="O_Status_bSstill" />
+      <IdentCon UId="108" />
+    </Wire>
+    <Wire UId="223">
+      <NameCon UId="128" Name="O_Status_bAxisBusy" />
+      <IdentCon UId="109" />
+    </Wire>
+    <Wire UId="224">
+      <NameCon UId="128" Name="O_Status_bAxisSyned" />
+      <IdentCon UId="110" />
+    </Wire>
+    <Wire UId="225">
+      <NameCon UId="128" Name="O_Status_bAxisError" />
+      <IdentCon UId="111" />
+    </Wire>
+    <Wire UId="226">
+      <NameCon UId="128" Name="O_Status_bAtPos" />
+      <IdentCon UId="112" />
+    </Wire>
+    <Wire UId="227">
+      <NameCon UId="128" Name="O_Status_bPosDone" />
+      <IdentCon UId="113" />
+    </Wire>
+    <Wire UId="228">
+      <NameCon UId="128" Name="O_Status_bPosing" />
+      <IdentCon UId="114" />
+    </Wire>
+    <Wire UId="229">
+      <NameCon UId="128" Name="O_Status_bRelPosDone" />
+      <IdentCon UId="115" />
+    </Wire>
+    <Wire UId="230">
+      <NameCon UId="128" Name="O_Status_rActPos" />
+      <IdentCon UId="116" />
+    </Wire>
+    <Wire UId="231">
+      <NameCon UId="128" Name="O_Status_rActSpeed" />
+      <IdentCon UId="117" />
+    </Wire>
+    <Wire UId="232">
+      <NameCon UId="128" Name="O_Status_iAxisFaultNum" />
+      <IdentCon UId="118" />
+    </Wire>
+    <Wire UId="233">
+      <NameCon UId="128" Name="O_Status_iDriveFaultNum" />
+      <IdentCon UId="119" />
+    </Wire>
+    <Wire UId="234">
+      <NameCon UId="128" Name="O_Status_iFBStatus" />
+      <IdentCon UId="120" />
+    </Wire>
+    <Wire UId="235">
+      <NameCon UId="128" Name="O_Status_iMCStatus" />
+      <IdentCon UId="121" />
+    </Wire>
+    <Wire UId="236">
+      <NameCon UId="128" Name="O_Status_rDriveTorque" />
+      <IdentCon UId="122" />
+    </Wire>
+    <Wire UId="237">
+      <NameCon UId="128" Name="O_Status_rDriveTemp" />
+      <IdentCon UId="123" />
+    </Wire>
+    <Wire UId="238">
+      <NameCon UId="128" Name="O_Status_rDriveRpm" />
+      <IdentCon UId="124" />
+    </Wire>
+    <Wire UId="239">
+      <NameCon UId="128" Name="O_Status_AxisName" />
+      <IdentCon UId="125" />
+    </Wire>
+    <Wire UId="240">
+      <NameCon UId="128" Name="O_Status_mybool" />
+      <IdentCon UId="126" />
+    </Wire>
+    <Wire UId="241">
+      <NameCon UId="128" Name="O_Status_myLreal" />
+      <IdentCon UId="127" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="IF" UId="21" />
+  <Blank UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="HOMIEDONE" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank UId="26" />
+  <Token Text="THEN" UId="27" />
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <Access Scope="LocalVariable" UId="30">
+    <Symbol UId="31">
+      <Component Name="O_Status_bHomed" UId="32" />
+    </Symbol>
+  </Access>
+  <Blank UId="33" />
+  <Token Text=":=" UId="34" />
+  <Blank UId="35" />
+  <Access Scope="LiteralConstant" UId="36">
+    <Constant UId="37">
+      <ConstantValue UId="39">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="40" />
+  <NewLine UId="41" />
+  <Token Text="END_IF" UId="42" />
+  <Token Text=";" UId="43" />
+  <NewLine UId="44" />
+  <Token Text="IF" UId="45" />
+  <Blank UId="46" />
+  <Access Scope="LocalVariable" UId="47">
+    <Symbol UId="48">
+      <Component Name="O_Status_rActSpeed" UId="49" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;" UId="50" />
+  <Access Scope="LiteralConstant" UId="51">
+    <Constant UId="52">
+      <ConstantValue UId="54">0.5</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="55" />
+  <Token Text="THEN" UId="56" />
+  <NewLine UId="57" />
+  <Blank Num="8" UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="O_Status_bHomed" UId="61" />
+    </Symbol>
+  </Access>
+  <Blank UId="62" />
+  <Token Text=":=" UId="63" />
+  <Blank UId="64" />
+  <Access Scope="LiteralConstant" UId="65">
+    <Constant UId="66">
+      <ConstantValue UId="68">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="69" />
+  <NewLine UId="70" />
+  <Token Text="END_IF" UId="71" />
+  <Token Text=";" UId="72" />
+  <NewLine UId="73" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="13" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine Num="2" UId="21" />
+  <Blank Num="4" UId="22" />
+  <Access Scope="GlobalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="dGlobal" UId="25">
+        <BooleanAttribute Name="HasQuotes" UId="26">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="27" />
+      <Component Name="gi_Axis_AbsNum" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LocalVariable" UId="30">
+          <Symbol UId="31">
+            <Component Name="Axis_Nr" UId="32" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="33" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="34" />
+  <Token Text=":=" UId="35" />
+  <Blank UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="Axis_AbsNum" UId="39" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="40" />
+  <NewLine Num="2" UId="41" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="25" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="29" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="32" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <NewLine UId="21" />
+  <Blank Num="4" UId="22" />
+  <Access Scope="GlobalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="dStruct_Axis" UId="25">
+        <BooleanAttribute Name="HasQuotes" UId="26">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="27" />
+      <Component Name="gs_Axis" UId="28">
+        <Token Text="[" UId="29" />
+        <Access Scope="LocalVariable" UId="30">
+          <Symbol UId="31">
+            <Component Name="Axis_Nr" UId="32" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="33" />
+      </Component>
+      <Token Text="." UId="34" />
+      <Component Name="I_CMD" UId="35" />
+      <Token Text="." UId="36" />
+      <Component Name="bResetAxis" UId="37" />
+    </Symbol>
+  </Access>
+  <Blank UId="38" />
+  <Token Text=":=" UId="39" />
+  <Blank UId="40" />
+  <Access Scope="LocalVariable" UId="41">
+    <Symbol UId="42">
+      <Component Name="Opmode" UId="43" />
+      <Token Text="." UId="44" />
+      <Component Name="Reset" UId="45" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="46" />
+  <NewLine UId="47" />
+  <Blank Num="4" UId="48" />
+  <Access Scope="GlobalVariable" UId="49">
+    <Symbol UId="50">
+      <Component Name="dStruct_Axis" UId="51">
+        <BooleanAttribute Name="HasQuotes" UId="52">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="53" />
+      <Component Name="gs_Axis" UId="54">
+        <Token Text="[" UId="55" />
+        <Access Scope="LocalVariable" UId="56">
+          <Symbol UId="57">
+            <Component Name="Axis_Nr" UId="58" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="59" />
+      </Component>
+      <Token Text="." UId="60" />
+      <Component Name="I_InLock" UId="61" />
+      <Token Text="." UId="62" />
+      <Component Name="bjogForward" UId="63" />
+    </Symbol>
+  </Access>
+  <Blank UId="64" />
+  <Token Text=":=" UId="65" />
+  <Blank UId="66" />
+  <Access Scope="GlobalVariable" UId="67">
+    <Symbol UId="68">
+      <Component Name="dStruct_Axis" UId="69">
+        <BooleanAttribute Name="HasQuotes" UId="70">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="71" />
+      <Component Name="gs_Axis" UId="72">
+        <Token Text="[" UId="73" />
+        <Access Scope="LocalVariable" UId="74">
+          <Symbol UId="75">
+            <Component Name="Axis_Nr" UId="76" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="77" />
+      </Component>
+      <Token Text="." UId="78" />
+      <Component Name="O_Status" UId="79" />
+      <Token Text="." UId="80" />
+      <Component Name="bAxisEnabled" UId="81" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="82" />
+  <NewLine UId="83" />
+  <Blank Num="4" UId="84" />
+  <Access Scope="GlobalVariable" UId="85">
+    <Symbol UId="86">
+      <Component Name="dStruct_Axis" UId="87">
+        <BooleanAttribute Name="HasQuotes" UId="88">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="89" />
+      <Component Name="gs_Axis" UId="90">
+        <Token Text="[" UId="91" />
+        <Access Scope="LocalVariable" UId="92">
+          <Symbol UId="93">
+            <Component Name="Axis_Nr" UId="94" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="95" />
+      </Component>
+      <Token Text="." UId="96" />
+      <Component Name="I_InLock" UId="97" />
+      <Token Text="." UId="98" />
+      <Component Name="bjogBackward" UId="99" />
+    </Symbol>
+  </Access>
+  <Blank UId="100" />
+  <Token Text=":=" UId="101" />
+  <Blank UId="102" />
+  <Access Scope="GlobalVariable" UId="103">
+    <Symbol UId="104">
+      <Component Name="dStruct_Axis" UId="105">
+        <BooleanAttribute Name="HasQuotes" UId="106">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="107" />
+      <Component Name="gs_Axis" UId="108">
+        <Token Text="[" UId="109" />
+        <Access Scope="LocalVariable" UId="110">
+          <Symbol UId="111">
+            <Component Name="Axis_Nr" UId="112" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="113" />
+      </Component>
+      <Token Text="." UId="114" />
+      <Component Name="O_Status" UId="115" />
+      <Token Text="." UId="116" />
+      <Component Name="bAxisEnabled" UId="117" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="118" />
+  <NewLine UId="119" />
+  <Blank Num="4" UId="120" />
+  <Access Scope="GlobalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="dStruct_Axis" UId="123">
+        <BooleanAttribute Name="HasQuotes" UId="124">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="125" />
+      <Component Name="gs_Axis" UId="126">
+        <Token Text="[" UId="127" />
+        <Access Scope="LocalVariable" UId="128">
+          <Symbol UId="129">
+            <Component Name="Axis_Nr" UId="130" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="131" />
+      </Component>
+      <Token Text="." UId="132" />
+      <Component Name="I_InLock" UId="133" />
+      <Token Text="." UId="134" />
+      <Component Name="bHoming" UId="135" />
+    </Symbol>
+  </Access>
+  <Blank UId="136" />
+  <Token Text=":=" UId="137" />
+  <Blank UId="138" />
+  <Access Scope="LiteralConstant" UId="139">
+    <Constant UId="140">
+      <ConstantValue UId="142">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="143" />
+  <NewLine UId="144" />
+  <Blank Num="4" UId="145" />
+  <Token Text="FOR" UId="146" />
+  <Blank UId="147" />
+  <Access Scope="LocalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="j" UId="150" />
+    </Symbol>
+  </Access>
+  <Blank UId="151" />
+  <Token Text=":=" UId="152" />
+  <Blank UId="153" />
+  <Access Scope="LiteralConstant" UId="154">
+    <Constant UId="155">
+      <ConstantValue UId="157">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="158" />
+  <Token Text="TO" UId="159" />
+  <Blank UId="160" />
+  <Access Scope="LiteralConstant" UId="161">
+    <Constant UId="162">
+      <ConstantValue UId="164">16</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="165" />
+  <Token Text="DO" UId="166" />
+  <NewLine UId="167" />
+  <Blank Num="8" UId="168" />
+  <Access Scope="GlobalVariable" UId="169">
+    <Symbol UId="170">
+      <Component Name="dStruct_Axis" UId="171">
+        <BooleanAttribute Name="HasQuotes" UId="172">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="173" />
+      <Component Name="gs_Axis" UId="174">
+        <Token Text="[" UId="175" />
+        <Access Scope="LocalVariable" UId="176">
+          <Symbol UId="177">
+            <Component Name="Axis_Nr" UId="178" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="179" />
+      </Component>
+      <Token Text="." UId="180" />
+      <Component Name="I_InLock" UId="181" />
+      <Token Text="." UId="182" />
+      <Component Name="bGoToPos" UId="183">
+        <Token Text="[" UId="184" />
+        <Access Scope="LocalVariable" UId="185">
+          <Symbol UId="186">
+            <Component Name="j" UId="187" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="188" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="189" />
+  <Token Text=":=" UId="190" />
+  <Blank UId="191" />
+  <Access Scope="LiteralConstant" UId="192">
+    <Constant UId="193">
+      <ConstantValue UId="195">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="196" />
+  <NewLine UId="197" />
+  <Blank Num="4" UId="198" />
+  <Token Text="END_FOR" UId="199" />
+  <Token Text=";" UId="200" />
+  <NewLine UId="201" />
+  <Blank Num="4" UId="202" />
+  <NewLine UId="203" />
+  <Blank Num="4" UId="204" />
+  <NewLine UId="205" />
+  <Blank Num="4" UId="206" />
+  <Token Text="IF" UId="207" />
+  <Blank UId="208" />
+  <Access Scope="GlobalVariable" UId="209">
+    <Symbol UId="210">
+      <Component Name="dGlobal" UId="211">
+        <BooleanAttribute Name="HasQuotes" UId="212">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="213" />
+      <Component Name="Old_Pos_Select" UId="214" />
+    </Symbol>
+  </Access>
+  <Blank UId="215" />
+  <Token Text="&lt;&gt;" UId="216" />
+  <Blank UId="217" />
+  <Access Scope="GlobalVariable" UId="218">
+    <Symbol UId="219">
+      <Component Name="dGlobal" UId="220">
+        <BooleanAttribute Name="HasQuotes" UId="221">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="222" />
+      <Component Name="gbo_Pos_Select" UId="223" />
+    </Symbol>
+  </Access>
+  <Blank UId="224" />
+  <Token Text="THEN" UId="225" />
+  <LineComment UId="226">
+    <Text UId="227">刚切换</Text>
+  </LineComment>
+  <NewLine UId="228" />
+  <Blank Num="8" UId="229" />
+  <Access Scope="GlobalVariable" UId="230">
+    <Symbol UId="231">
+      <Component Name="dStruct_Axis" UId="232">
+        <BooleanAttribute Name="HasQuotes" UId="233">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="234" />
+      <Component Name="gs_Axis" UId="235">
+        <Token Text="[" UId="236" />
+        <Access Scope="LiteralConstant" UId="237">
+          <Constant UId="238">
+            <ConstantValue UId="240">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="241" />
+      </Component>
+      <Token Text="." UId="242" />
+      <Component Name="I_Para" UId="243" />
+      <Token Text="." UId="244" />
+      <Component Name="rPos_Abs" UId="245">
+        <Token Text="[" UId="246" />
+        <Access Scope="LiteralConstant" UId="247">
+          <Constant UId="248">
+            <ConstantValue UId="250">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="251" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="252" />
+  <Token Text=":=" UId="253" />
+  <Blank UId="254" />
+  <Access Scope="GlobalVariable" UId="255">
+    <Symbol UId="256">
+      <Component Name="dStruct_Axis" UId="257">
+        <BooleanAttribute Name="HasQuotes" UId="258">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="259" />
+      <Component Name="gs_Axis" UId="260">
+        <Token Text="[" UId="261" />
+        <Access Scope="GlobalVariable" UId="262">
+          <Symbol UId="263">
+            <Component Name="dGlobal" UId="264">
+              <BooleanAttribute Name="HasQuotes" UId="265">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="266" />
+            <Component Name="gbo_Axis_Select" UId="267" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="268" />
+      </Component>
+      <Token Text="." UId="269" />
+      <Component Name="I_Para" UId="270" />
+      <Token Text="." UId="271" />
+      <Component Name="rPos_Abs" UId="272">
+        <Token Text="[" UId="273" />
+        <Access Scope="GlobalVariable" UId="274">
+          <Symbol UId="275">
+            <Component Name="dGlobal" UId="276">
+              <BooleanAttribute Name="HasQuotes" UId="277">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="278" />
+            <Component Name="gbo_Pos_Select" UId="279" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="280" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="281" />
+  <NewLine UId="282" />
+  <Blank Num="8" UId="283" />
+  <Access Scope="GlobalVariable" UId="284">
+    <Symbol UId="285">
+      <Component Name="dStruct_Axis" UId="286">
+        <BooleanAttribute Name="HasQuotes" UId="287">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="288" />
+      <Component Name="gs_Axis" UId="289">
+        <Token Text="[" UId="290" />
+        <Access Scope="LiteralConstant" UId="291">
+          <Constant UId="292">
+            <ConstantValue UId="294">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="295" />
+      </Component>
+      <Token Text="." UId="296" />
+      <Component Name="I_Para" UId="297" />
+      <Token Text="." UId="298" />
+      <Component Name="rSpeed_Abs" UId="299">
+        <Token Text="[" UId="300" />
+        <Access Scope="LiteralConstant" UId="301">
+          <Constant UId="302">
+            <ConstantValue UId="304">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="305" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="306" />
+  <Token Text=":=" UId="307" />
+  <Blank UId="308" />
+  <Access Scope="GlobalVariable" UId="309">
+    <Symbol UId="310">
+      <Component Name="dStruct_Axis" UId="311">
+        <BooleanAttribute Name="HasQuotes" UId="312">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="313" />
+      <Component Name="gs_Axis" UId="314">
+        <Token Text="[" UId="315" />
+        <Access Scope="GlobalVariable" UId="316">
+          <Symbol UId="317">
+            <Component Name="dGlobal" UId="318">
+              <BooleanAttribute Name="HasQuotes" UId="319">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="320" />
+            <Component Name="gbo_Axis_Select" UId="321" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="322" />
+      </Component>
+      <Token Text="." UId="323" />
+      <Component Name="I_Para" UId="324" />
+      <Token Text="." UId="325" />
+      <Component Name="rSpeed_Abs" UId="326">
+        <Token Text="[" UId="327" />
+        <Access Scope="GlobalVariable" UId="328">
+          <Symbol UId="329">
+            <Component Name="dGlobal" UId="330">
+              <BooleanAttribute Name="HasQuotes" UId="331">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="332" />
+            <Component Name="gbo_Pos_Select" UId="333" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="334" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="335" />
+  <NewLine UId="336" />
+  <Blank Num="8" UId="337" />
+  <NewLine UId="338" />
+  <Blank Num="8" UId="339" />
+  <Access Scope="GlobalVariable" UId="340">
+    <Symbol UId="341">
+      <Component Name="dGlobal" UId="342">
+        <BooleanAttribute Name="HasQuotes" UId="343">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="344" />
+      <Component Name="Old_Pos_Select" UId="345" />
+    </Symbol>
+  </Access>
+  <Blank UId="346" />
+  <Token Text=":=" UId="347" />
+  <Blank UId="348" />
+  <Access Scope="GlobalVariable" UId="349">
+    <Symbol UId="350">
+      <Component Name="dGlobal" UId="351">
+        <BooleanAttribute Name="HasQuotes" UId="352">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="353" />
+      <Component Name="gbo_Pos_Select" UId="354" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="355" />
+  <NewLine UId="356" />
+  <Blank Num="4" UId="357" />
+  <Token Text="ELSE" UId="358" />
+  <NewLine UId="359" />
+  <Blank Num="8" UId="360" />
+  <Access Scope="GlobalVariable" UId="361">
+    <Symbol UId="362">
+      <Component Name="dStruct_Axis" UId="363">
+        <BooleanAttribute Name="HasQuotes" UId="364">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="365" />
+      <Component Name="gs_Axis" UId="366">
+        <Token Text="[" UId="367" />
+        <Access Scope="GlobalVariable" UId="368">
+          <Symbol UId="369">
+            <Component Name="dGlobal" UId="370">
+              <BooleanAttribute Name="HasQuotes" UId="371">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="372" />
+            <Component Name="gbo_Axis_Select" UId="373" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="374" />
+      </Component>
+      <Token Text="." UId="375" />
+      <Component Name="I_Para" UId="376" />
+      <Token Text="." UId="377" />
+      <Component Name="rPos_Abs" UId="378">
+        <Token Text="[" UId="379" />
+        <Access Scope="GlobalVariable" UId="380">
+          <Symbol UId="381">
+            <Component Name="dGlobal" UId="382">
+              <BooleanAttribute Name="HasQuotes" UId="383">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="384" />
+            <Component Name="gbo_Pos_Select" UId="385" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="386" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="387" />
+  <Token Text=":=" UId="388" />
+  <Blank UId="389" />
+  <Access Scope="GlobalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="dStruct_Axis" UId="392">
+        <BooleanAttribute Name="HasQuotes" UId="393">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="394" />
+      <Component Name="gs_Axis" UId="395">
+        <Token Text="[" UId="396" />
+        <Access Scope="LiteralConstant" UId="397">
+          <Constant UId="398">
+            <ConstantValue UId="400">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="401" />
+      </Component>
+      <Token Text="." UId="402" />
+      <Component Name="I_Para" UId="403" />
+      <Token Text="." UId="404" />
+      <Component Name="rPos_Abs" UId="405">
+        <Token Text="[" UId="406" />
+        <Access Scope="LiteralConstant" UId="407">
+          <Constant UId="408">
+            <ConstantValue UId="410">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="411" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="412" />
+  <NewLine UId="413" />
+  <Blank Num="8" UId="414" />
+  <Access Scope="GlobalVariable" UId="415">
+    <Symbol UId="416">
+      <Component Name="dStruct_Axis" UId="417">
+        <BooleanAttribute Name="HasQuotes" UId="418">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="419" />
+      <Component Name="gs_Axis" UId="420">
+        <Token Text="[" UId="421" />
+        <Access Scope="GlobalVariable" UId="422">
+          <Symbol UId="423">
+            <Component Name="dGlobal" UId="424">
+              <BooleanAttribute Name="HasQuotes" UId="425">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="426" />
+            <Component Name="gbo_Axis_Select" UId="427" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="428" />
+      </Component>
+      <Token Text="." UId="429" />
+      <Component Name="I_Para" UId="430" />
+      <Token Text="." UId="431" />
+      <Component Name="rSpeed_Abs" UId="432">
+        <Token Text="[" UId="433" />
+        <Access Scope="GlobalVariable" UId="434">
+          <Symbol UId="435">
+            <Component Name="dGlobal" UId="436">
+              <BooleanAttribute Name="HasQuotes" UId="437">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="438" />
+            <Component Name="gbo_Pos_Select" UId="439" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="440" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="441" />
+  <Token Text=":=" UId="442" />
+  <Blank UId="443" />
+  <Access Scope="GlobalVariable" UId="444">
+    <Symbol UId="445">
+      <Component Name="dStruct_Axis" UId="446">
+        <BooleanAttribute Name="HasQuotes" UId="447">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="448" />
+      <Component Name="gs_Axis" UId="449">
+        <Token Text="[" UId="450" />
+        <Access Scope="LiteralConstant" UId="451">
+          <Constant UId="452">
+            <ConstantValue UId="454">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="455" />
+      </Component>
+      <Token Text="." UId="456" />
+      <Component Name="I_Para" UId="457" />
+      <Token Text="." UId="458" />
+      <Component Name="rSpeed_Abs" UId="459">
+        <Token Text="[" UId="460" />
+        <Access Scope="LiteralConstant" UId="461">
+          <Constant UId="462">
+            <ConstantValue UId="464">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="465" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="466" />
+  <NewLine UId="467" />
+  <Blank Num="4" UId="468" />
+  <Token Text="END_IF" UId="469" />
+  <Token Text=";" UId="470" />
+  <NewLine UId="471" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="33" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="35" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="36" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="37" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="IF_HMI" UId="23" />
+      <Token Text="." UId="24" />
+      <Component Name="Show_Sensor" UId="25" />
+      <Token Text="." UId="26" />
+      <Component Name="I_SS_bHome" UId="27" />
+    </Symbol>
+  </Access>
+  <Blank UId="28" />
+  <Token Text=":=" UId="29" />
+  <Blank UId="30" />
+  <Access Scope="LocalVariable" UId="31">
+    <Symbol UId="32">
+      <Component Name="I_SS_bHome" UId="33" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="34" />
+  <NewLine UId="35" />
+  <Access Scope="LocalVariable" UId="36">
+    <Symbol UId="37">
+      <Component Name="IF_HMI" UId="38" />
+      <Token Text="." UId="39" />
+      <Component Name="Show_Sensor" UId="40" />
+      <Token Text="." UId="41" />
+      <Component Name="I_SS_bFW" UId="42" />
+    </Symbol>
+  </Access>
+  <Blank UId="43" />
+  <Token Text=":=" UId="44" />
+  <Blank UId="45" />
+  <Access Scope="LocalVariable" UId="46">
+    <Symbol UId="47">
+      <Component Name="I_SS_bFW" UId="48" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="49" />
+  <NewLine UId="50" />
+  <Access Scope="LocalVariable" UId="51">
+    <Symbol UId="52">
+      <Component Name="IF_HMI" UId="53" />
+      <Token Text="." UId="54" />
+      <Component Name="Show_Sensor" UId="55" />
+      <Token Text="." UId="56" />
+      <Component Name="I_SS_bBW" UId="57" />
+    </Symbol>
+  </Access>
+  <Blank UId="58" />
+  <Token Text=":=" UId="59" />
+  <Blank UId="60" />
+  <Access Scope="LocalVariable" UId="61">
+    <Symbol UId="62">
+      <Component Name="I_SS_bBW" UId="63" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="64" />
+  <NewLine UId="65" />
+  <Access Scope="LocalVariable" UId="66">
+    <Symbol UId="67">
+      <Component Name="IF_HMI" UId="68" />
+      <Token Text="." UId="69" />
+      <Component Name="O_Status" UId="70" />
+      <Token Text="." UId="71" />
+      <Component Name="O_Status_bAxisReady" UId="72" />
+    </Symbol>
+  </Access>
+  <Blank UId="73" />
+  <Token Text=":=" UId="74" />
+  <Blank UId="75" />
+  <Access Scope="LocalVariable" UId="76">
+    <Symbol UId="77">
+      <Component Name="O_Status_bAxisReady" UId="78" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="79" />
+  <NewLine UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="IF_HMI" UId="83" />
+      <Token Text="." UId="84" />
+      <Component Name="O_Status" UId="85" />
+      <Token Text="." UId="86" />
+      <Component Name="O_Status_bAxisEnabled" UId="87" />
+    </Symbol>
+  </Access>
+  <Blank UId="88" />
+  <Token Text=":=" UId="89" />
+  <Blank UId="90" />
+  <Access Scope="LocalVariable" UId="91">
+    <Symbol UId="92">
+      <Component Name="O_Status_bAxisEnabled" UId="93" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="94" />
+  <NewLine UId="95" />
+  <Access Scope="LocalVariable" UId="96">
+    <Symbol UId="97">
+      <Component Name="IF_HMI" UId="98" />
+      <Token Text="." UId="99" />
+      <Component Name="O_Status" UId="100" />
+      <Token Text="." UId="101" />
+      <Component Name="O_Status_bjogForward" UId="102" />
+    </Symbol>
+  </Access>
+  <Blank UId="103" />
+  <Token Text=":=" UId="104" />
+  <Blank UId="105" />
+  <Access Scope="LocalVariable" UId="106">
+    <Symbol UId="107">
+      <Component Name="O_Status_bjogForward" UId="108" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="109" />
+  <NewLine UId="110" />
+  <Access Scope="LocalVariable" UId="111">
+    <Symbol UId="112">
+      <Component Name="IF_HMI" UId="113" />
+      <Token Text="." UId="114" />
+      <Component Name="O_Status" UId="115" />
+      <Token Text="." UId="116" />
+      <Component Name="O_Status_bjogBackward" UId="117" />
+    </Symbol>
+  </Access>
+  <Blank UId="118" />
+  <Token Text=":=" UId="119" />
+  <Blank UId="120" />
+  <Access Scope="LocalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="O_Status_bjogBackward" UId="123" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="124" />
+  <NewLine UId="125" />
+  <Access Scope="LocalVariable" UId="126">
+    <Symbol UId="127">
+      <Component Name="IF_HMI" UId="128" />
+      <Token Text="." UId="129" />
+      <Component Name="O_Status" UId="130" />
+      <Token Text="." UId="131" />
+      <Component Name="O_Status_bHomed" UId="132" />
+    </Symbol>
+  </Access>
+  <Blank UId="133" />
+  <Token Text=":=" UId="134" />
+  <Blank UId="135" />
+  <Access Scope="LocalVariable" UId="136">
+    <Symbol UId="137">
+      <Component Name="O_Status_bHomed" UId="138" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="139" />
+  <NewLine UId="140" />
+  <Access Scope="LocalVariable" UId="141">
+    <Symbol UId="142">
+      <Component Name="IF_HMI" UId="143" />
+      <Token Text="." UId="144" />
+      <Component Name="O_Status" UId="145" />
+      <Token Text="." UId="146" />
+      <Component Name="O_Status_bAtHome" UId="147" />
+    </Symbol>
+  </Access>
+  <Blank UId="148" />
+  <Token Text=":=" UId="149" />
+  <Blank UId="150" />
+  <Access Scope="LocalVariable" UId="151">
+    <Symbol UId="152">
+      <Component Name="O_Status_bAtHome" UId="153" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="154" />
+  <NewLine UId="155" />
+  <Access Scope="LocalVariable" UId="156">
+    <Symbol UId="157">
+      <Component Name="IF_HMI" UId="158" />
+      <Token Text="." UId="159" />
+      <Component Name="O_Status" UId="160" />
+      <Token Text="." UId="161" />
+      <Component Name="O_Status_bSstill" UId="162" />
+    </Symbol>
+  </Access>
+  <Blank UId="163" />
+  <Token Text=":=" UId="164" />
+  <Blank UId="165" />
+  <Access Scope="LocalVariable" UId="166">
+    <Symbol UId="167">
+      <Component Name="O_Status_bSstill" UId="168" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="169" />
+  <NewLine UId="170" />
+  <Access Scope="LocalVariable" UId="171">
+    <Symbol UId="172">
+      <Component Name="IF_HMI" UId="173" />
+      <Token Text="." UId="174" />
+      <Component Name="O_Status" UId="175" />
+      <Token Text="." UId="176" />
+      <Component Name="O_Status_bAxisBusy" UId="177" />
+    </Symbol>
+  </Access>
+  <Blank UId="178" />
+  <Token Text=":=" UId="179" />
+  <Blank UId="180" />
+  <Access Scope="LocalVariable" UId="181">
+    <Symbol UId="182">
+      <Component Name="O_Status_bAxisBusy" UId="183" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="184" />
+  <NewLine UId="185" />
+  <Access Scope="LocalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="IF_HMI" UId="188" />
+      <Token Text="." UId="189" />
+      <Component Name="O_Status" UId="190" />
+      <Token Text="." UId="191" />
+      <Component Name="O_Status_bAxisSyned" UId="192" />
+    </Symbol>
+  </Access>
+  <Blank UId="193" />
+  <Token Text=":=" UId="194" />
+  <Blank UId="195" />
+  <Access Scope="LocalVariable" UId="196">
+    <Symbol UId="197">
+      <Component Name="O_Status_bAxisSyned" UId="198" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="199" />
+  <NewLine UId="200" />
+  <Access Scope="LocalVariable" UId="201">
+    <Symbol UId="202">
+      <Component Name="IF_HMI" UId="203" />
+      <Token Text="." UId="204" />
+      <Component Name="O_Status" UId="205" />
+      <Token Text="." UId="206" />
+      <Component Name="O_Status_bAxisError" UId="207" />
+    </Symbol>
+  </Access>
+  <Blank UId="208" />
+  <Token Text=":=" UId="209" />
+  <Blank UId="210" />
+  <Access Scope="LocalVariable" UId="211">
+    <Symbol UId="212">
+      <Component Name="O_Status_bAxisError" UId="213" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="214" />
+  <NewLine UId="215" />
+  <Access Scope="LocalVariable" UId="216">
+    <Symbol UId="217">
+      <Component Name="IF_HMI" UId="218" />
+      <Token Text="." UId="219" />
+      <Component Name="O_Status" UId="220" />
+      <Token Text="." UId="221" />
+      <Component Name="O_Status_bAtPos" UId="222" />
+    </Symbol>
+  </Access>
+  <Blank UId="223" />
+  <Token Text=":=" UId="224" />
+  <Blank UId="225" />
+  <Access Scope="LocalVariable" UId="226">
+    <Symbol UId="227">
+      <Component Name="O_Status_bAtPos" UId="228" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="229" />
+  <NewLine UId="230" />
+  <Access Scope="LocalVariable" UId="231">
+    <Symbol UId="232">
+      <Component Name="IF_HMI" UId="233" />
+      <Token Text="." UId="234" />
+      <Component Name="O_Status" UId="235" />
+      <Token Text="." UId="236" />
+      <Component Name="O_Status_bPosDone" UId="237" />
+    </Symbol>
+  </Access>
+  <Blank UId="238" />
+  <Token Text=":=" UId="239" />
+  <Blank UId="240" />
+  <Access Scope="LocalVariable" UId="241">
+    <Symbol UId="242">
+      <Component Name="O_Status_bPosDone" UId="243" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="244" />
+  <NewLine UId="245" />
+  <Access Scope="LocalVariable" UId="246">
+    <Symbol UId="247">
+      <Component Name="IF_HMI" UId="248" />
+      <Token Text="." UId="249" />
+      <Component Name="O_Status" UId="250" />
+      <Token Text="." UId="251" />
+      <Component Name="O_Status_bPosing" UId="252" />
+    </Symbol>
+  </Access>
+  <Blank UId="253" />
+  <Token Text=":=" UId="254" />
+  <Blank UId="255" />
+  <Access Scope="LocalVariable" UId="256">
+    <Symbol UId="257">
+      <Component Name="O_Status_bPosing" UId="258" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="259" />
+  <NewLine UId="260" />
+  <Access Scope="LocalVariable" UId="261">
+    <Symbol UId="262">
+      <Component Name="IF_HMI" UId="263" />
+      <Token Text="." UId="264" />
+      <Component Name="O_Status" UId="265" />
+      <Token Text="." UId="266" />
+      <Component Name="O_Status_bRelPosDone" UId="267" />
+    </Symbol>
+  </Access>
+  <Blank UId="268" />
+  <Token Text=":=" UId="269" />
+  <Blank UId="270" />
+  <Access Scope="LocalVariable" UId="271">
+    <Symbol UId="272">
+      <Component Name="O_Status_bRelPosDone" UId="273" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="274" />
+  <NewLine UId="275" />
+  <Access Scope="LocalVariable" UId="276">
+    <Symbol UId="277">
+      <Component Name="IF_HMI" UId="278" />
+      <Token Text="." UId="279" />
+      <Component Name="O_Status" UId="280" />
+      <Token Text="." UId="281" />
+      <Component Name="O_Status_rActPos" UId="282" />
+    </Symbol>
+  </Access>
+  <Blank UId="283" />
+  <Token Text=":=" UId="284" />
+  <Blank UId="285" />
+  <Access Scope="LocalVariable" UId="286">
+    <Symbol UId="287">
+      <Component Name="O_Status_rActPos" UId="288" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="289" />
+  <NewLine UId="290" />
+  <Access Scope="LocalVariable" UId="291">
+    <Symbol UId="292">
+      <Component Name="IF_HMI" UId="293" />
+      <Token Text="." UId="294" />
+      <Component Name="O_Status" UId="295" />
+      <Token Text="." UId="296" />
+      <Component Name="O_Status_rActSpeed" UId="297" />
+    </Symbol>
+  </Access>
+  <Blank UId="298" />
+  <Token Text=":=" UId="299" />
+  <Blank UId="300" />
+  <Access Scope="LocalVariable" UId="301">
+    <Symbol UId="302">
+      <Component Name="O_Status_rActSpeed" UId="303" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="304" />
+  <NewLine UId="305" />
+  <Access Scope="LocalVariable" UId="306">
+    <Symbol UId="307">
+      <Component Name="IF_HMI" UId="308" />
+      <Token Text="." UId="309" />
+      <Component Name="O_Status" UId="310" />
+      <Token Text="." UId="311" />
+      <Component Name="O_Status_iAxisFaultNum" UId="312" />
+    </Symbol>
+  </Access>
+  <Blank UId="313" />
+  <Token Text=":=" UId="314" />
+  <Blank UId="315" />
+  <Access Scope="LocalVariable" UId="316">
+    <Symbol UId="317">
+      <Component Name="O_Status_iAxisFaultNum" UId="318" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="319" />
+  <NewLine UId="320" />
+  <Access Scope="LocalVariable" UId="321">
+    <Symbol UId="322">
+      <Component Name="IF_HMI" UId="323" />
+      <Token Text="." UId="324" />
+      <Component Name="O_Status" UId="325" />
+      <Token Text="." UId="326" />
+      <Component Name="O_Status_iDriveFaultNum" UId="327" />
+    </Symbol>
+  </Access>
+  <Blank UId="328" />
+  <Token Text=":=" UId="329" />
+  <Blank UId="330" />
+  <Access Scope="LocalVariable" UId="331">
+    <Symbol UId="332">
+      <Component Name="O_Status_iDriveFaultNum" UId="333" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="334" />
+  <NewLine UId="335" />
+  <Access Scope="LocalVariable" UId="336">
+    <Symbol UId="337">
+      <Component Name="IF_HMI" UId="338" />
+      <Token Text="." UId="339" />
+      <Component Name="O_Status" UId="340" />
+      <Token Text="." UId="341" />
+      <Component Name="O_Status_iFBStatus" UId="342" />
+    </Symbol>
+  </Access>
+  <Blank UId="343" />
+  <Token Text=":=" UId="344" />
+  <Blank UId="345" />
+  <Access Scope="LocalVariable" UId="346">
+    <Symbol UId="347">
+      <Component Name="O_Status_iFBStatus" UId="348" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="349" />
+  <NewLine UId="350" />
+  <Access Scope="LocalVariable" UId="351">
+    <Symbol UId="352">
+      <Component Name="IF_HMI" UId="353" />
+      <Token Text="." UId="354" />
+      <Component Name="O_Status" UId="355" />
+      <Token Text="." UId="356" />
+      <Component Name="O_Status_iMCStatus" UId="357" />
+    </Symbol>
+  </Access>
+  <Blank UId="358" />
+  <Token Text=":=" UId="359" />
+  <Blank UId="360" />
+  <Access Scope="LocalVariable" UId="361">
+    <Symbol UId="362">
+      <Component Name="O_Status_iMCStatus" UId="363" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="364" />
+  <NewLine UId="365" />
+  <Access Scope="LocalVariable" UId="366">
+    <Symbol UId="367">
+      <Component Name="IF_HMI" UId="368" />
+      <Token Text="." UId="369" />
+      <Component Name="O_Status" UId="370" />
+      <Token Text="." UId="371" />
+      <Component Name="O_Status_rDriveTorque" UId="372" />
+    </Symbol>
+  </Access>
+  <Blank UId="373" />
+  <Token Text=":=" UId="374" />
+  <Blank UId="375" />
+  <Access Scope="LocalVariable" UId="376">
+    <Symbol UId="377">
+      <Component Name="O_Status_rDriveTorque" UId="378" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="379" />
+  <NewLine UId="380" />
+  <Access Scope="LocalVariable" UId="381">
+    <Symbol UId="382">
+      <Component Name="IF_HMI" UId="383" />
+      <Token Text="." UId="384" />
+      <Component Name="O_Status" UId="385" />
+      <Token Text="." UId="386" />
+      <Component Name="O_Status_rDriveTemp" UId="387" />
+    </Symbol>
+  </Access>
+  <Blank UId="388" />
+  <Token Text=":=" UId="389" />
+  <Blank UId="390" />
+  <Access Scope="LocalVariable" UId="391">
+    <Symbol UId="392">
+      <Component Name="O_Status_rDriveTemp" UId="393" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="394" />
+  <NewLine UId="395" />
+  <Access Scope="LocalVariable" UId="396">
+    <Symbol UId="397">
+      <Component Name="IF_HMI" UId="398" />
+      <Token Text="." UId="399" />
+      <Component Name="O_Status" UId="400" />
+      <Token Text="." UId="401" />
+      <Component Name="O_Status_rDriveRpm" UId="402" />
+    </Symbol>
+  </Access>
+  <Blank UId="403" />
+  <Token Text=":=" UId="404" />
+  <Blank UId="405" />
+  <Access Scope="LocalVariable" UId="406">
+    <Symbol UId="407">
+      <Component Name="O_Status_rDriveRpm" UId="408" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="409" />
+  <NewLine UId="410" />
+  <Access Scope="LocalVariable" UId="411">
+    <Symbol UId="412">
+      <Component Name="IF_HMI" UId="413" />
+      <Token Text="." UId="414" />
+      <Component Name="O_Status" UId="415" />
+      <Token Text="." UId="416" />
+      <Component Name="O_Status_AxisName" UId="417" />
+    </Symbol>
+  </Access>
+  <Blank UId="418" />
+  <Token Text=":=" UId="419" />
+  <Blank UId="420" />
+  <Access Scope="LocalVariable" UId="421">
+    <Symbol UId="422">
+      <Component Name="O_Status_AxisName" UId="423" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="424" />
+  <NewLine UId="425" />
+  <Access Scope="LocalVariable" UId="426">
+    <Symbol UId="427">
+      <Component Name="IF_HMI" UId="428" />
+      <Token Text="." UId="429" />
+      <Component Name="O_Status" UId="430" />
+      <Token Text="." UId="431" />
+      <Component Name="O_Status_mybool" UId="432" />
+    </Symbol>
+  </Access>
+  <Blank UId="433" />
+  <Token Text=":=" UId="434" />
+  <Blank UId="435" />
+  <Access Scope="LocalVariable" UId="436">
+    <Symbol UId="437">
+      <Component Name="O_Status_mybool" UId="438" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="439" />
+  <NewLine UId="440" />
+  <Access Scope="LocalVariable" UId="441">
+    <Symbol UId="442">
+      <Component Name="IF_HMI" UId="443" />
+      <Token Text="." UId="444" />
+      <Component Name="O_Status" UId="445" />
+      <Token Text="." UId="446" />
+      <Component Name="O_Status_myLreal" UId="447" />
+    </Symbol>
+  </Access>
+  <Blank UId="448" />
+  <Token Text=":=" UId="449" />
+  <Blank UId="450" />
+  <Access Scope="LocalVariable" UId="451">
+    <Symbol UId="452">
+      <Component Name="O_Status_myLreal" UId="453" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="454" />
+  <NewLine UId="455" />
+  <Access Scope="LocalVariable" UId="456">
+    <Symbol UId="457">
+      <Component Name="IF_HMI" UId="458" />
+      <Token Text="." UId="459" />
+      <Component Name="Plant_Identifier" UId="460" />
+    </Symbol>
+  </Access>
+  <Blank UId="461" />
+  <Token Text=":=" UId="462" />
+  <Blank UId="463" />
+  <Access Scope="LocalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="Plant_Identifier" UId="466" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="467" />
+  <NewLine Num="16" UId="468" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Access Scope="GlobalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="dGlobal" UId="23">
+        <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="25" />
+      <Component Name="gi_Axis_AbsNum" UId="26">
+        <Token Text="[" UId="27" />
+        <Access Scope="LiteralConstant" UId="28">
+          <Constant UId="29">
+            <ConstantValue UId="31">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="32" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="33" />
+  <Token Text=":=" UId="34" />
+  <Blank UId="35" />
+  <Access Scope="GlobalVariable" UId="36">
+    <Symbol UId="37">
+      <Component Name="dGlobal" UId="38">
+        <BooleanAttribute Name="HasQuotes" UId="39">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="40" />
+      <Component Name="gi_Axis_AbsNum" UId="41">
+        <Token Text="[" UId="42" />
+        <Access Scope="GlobalVariable" UId="43">
+          <Symbol UId="44">
+            <Component Name="dGlobal" UId="45">
+              <BooleanAttribute Name="HasQuotes" UId="46">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="47" />
+            <Component Name="gbo_Axis_Select" UId="48" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="49" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="50" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="47" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="49" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="4D" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4E" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4F" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="50" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

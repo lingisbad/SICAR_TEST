@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="valid" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Valid set of outputs available at the FB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="busy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: FB is working and new output values can be expected</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="error" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: An error occurred while processing the FB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="status" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current status of FB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="axisEnabled" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The technology object is enabled. Motion commands can be executed.</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="resetActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Reset/Restart of the axis is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="commandBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected basic motion command is being executed</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="commandDone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected basic motion command has completed without error</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="commandAborted" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected basic motion command has been aborted</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="inVelocity" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The setpoint velocity/speed was reached and will be maintained</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="inLimitation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The drive is operating at the force/torque limit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="homingCommandBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Homing command is being executed</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="homingCommandDone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Homing command has completed without error</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="homingCommandAborted" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Homing command has been aborted</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="superimposedBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected superimposed motion command is being executed</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="superimposedDone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected superimposed motion command  has completed without error</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="superimposedAborted" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The selected superimposed motion command has been aborted</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="inClamping" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The drive is kept at the fixed stop (clamping), the axis position is within the positioning tolerance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="startSync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The axis is synchronizing to the leading axis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="inSync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: The axis is synchronized to the leading axis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="inSimulation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Synchronous operation is being simulated</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="jogSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Jogging is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="moveVelocitySelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Moving with constant velocity/speed is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="stopSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Stopping is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="fastStopSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Stopping is active (with fastStop dynamics)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="torqueLimitingSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Force/Torque limiting is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="homingSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Homing is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="posRelativeSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Relative positioning is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="posAbsoluteSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Absolute positioning is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="posSuperimposedSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Superimposed positioning is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="gearInRelativeSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Relative gearing is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="gearInAbsoluteSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Absolute gearing is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="camInSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Camming is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="phasingSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Phasing is active</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>HMIAxisCtrl_typeOutputs</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Support: tech.team.motioncontrol@siemens.com 
+Fax: +49 (0) 9131/98-1297</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>HMIAxisCtrl_typeOutputs</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="actualVelocity" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual value of velocity</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="actualPosition" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual value of position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="targetPosition" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual value of target position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isHomed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Axis is homed</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="brakeIsOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Brake is open</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="axisAlarm" Datatype="UDInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Number of the technology alarm</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="axisError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Axis has error</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="errorDetailReaction" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Effective alarm reaction</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>HMIAxisCtrl_typeActualValues</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Support: tech.team.motioncontrol@siemens.com 
+Fax: +49 (0) 9131/98-1297</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>HMIAxisCtrl_typeActualValues</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

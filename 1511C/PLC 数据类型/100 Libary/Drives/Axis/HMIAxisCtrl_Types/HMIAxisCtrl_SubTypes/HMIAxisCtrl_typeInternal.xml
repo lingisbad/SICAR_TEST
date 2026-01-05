@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="mode" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal mode identifier; 1: Jog ; 2: Move; 3: Pos; 4: Homing; 5: Brake</MultiLanguageText>
+      </Comment>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="absoluteSelected" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Absolute positioning; FALSE: Relative positioning</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isPosRelative" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to relative positioning</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isPosAbsoluteWithModulo" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to absolute  positioning (with modulo)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isPosAbsoluteWithoutModulo" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to absolute  positioning (without modulo)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isAxisWithIncrementalEncoder" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to axis with incremental encoder</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isAxisWithAbsoluteEncoder" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to axis with absolute encoder</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="isNotExternalEncoder" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TRUE: Show controls related to homing functionality of axis (not external encoder)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="velocity" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal variable for velocity input</MultiLanguageText>
+      </Comment>
+      <StartValue>-1.0</StartValue>
+    </Member>
+    <Member Name="position" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal variable for position input</MultiLanguageText>
+      </Comment>
+      <StartValue>0.0</StartValue>
+    </Member>
+    <Member Name="acceleration" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal variable for acceleration input</MultiLanguageText>
+      </Comment>
+      <StartValue>-1.0</StartValue>
+    </Member>
+    <Member Name="deceleration" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal variable for deceleration input</MultiLanguageText>
+      </Comment>
+      <StartValue>-1.0</StartValue>
+    </Member>
+    <Member Name="jerk" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal variable for jerk input</MultiLanguageText>
+      </Comment>
+      <StartValue>-1.0</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>HMIAxisCtrl_typeInternal</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Support: tech.team.motioncontrol@siemens.com 
+Fax: +49 (0) 9131/98-1297</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>HMIAxisCtrl_typeInternal</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

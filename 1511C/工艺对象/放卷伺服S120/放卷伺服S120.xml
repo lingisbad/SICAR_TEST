@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.TechnologicalObjects.TechnologicalInstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>TO_PositioningAxis</InstanceOfName>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Base">
+    <Sections Datatype="TO_SpeedAxis" Version="6.0">
+      <Section Name="Base">
+        <Sections Datatype="TO_Axis" Version="6.0">
+          <Section Name="Base">
+            <Sections Datatype="TO_Object" Version="6.0">
+              <Section Name="Input" />
+              <Section Name="Output" />
+              <Section Name="InOut" />
+              <Section Name="Static" />
+            </Sections>
+          </Section>
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Static" />
+        </Sections>
+      </Section>
+      <Section Name="Input" />
+      <Section Name="Output" />
+      <Section Name="InOut" />
+      <Section Name="Static">
+        <Member Name="Actor" Datatype="TO_Struct_Actor" Version="6.0">
+          <Sections>
+            <Section Name="None">
+              <Member Name="DataAdaption" Datatype="DInt">
+                <StartValue>1</StartValue>
+              </Member>
+              <Member Name="Interface" Datatype="TO_Struct_ActorInterface" Version="6.0">
+                <Sections>
+                  <Section Name="None">
+                    <Member Name="AddressIn" Datatype="VREF" Version="1.0">
+                      <Sections>
+                        <Section Name="None">
+                          <Member Name="RID" Datatype="DWord">
+                            <StartValue>16#208071a</StartValue>
+                          </Member>
+                          <Member Name="AREA" Datatype="Byte">
+                            <StartValue>16#81</StartValue>
+                          </Member>
+                          <Member Name="OFFSET" Datatype="UDInt">
+                            <StartValue>1032</StartValue>
+                          </Member>
+                        </Section>
+                      </Sections>
+                    </Member>
+                    <Member Name="AddressOut" Datatype="VREF" Version="1.0">
+                      <Sections>
+                        <Section Name="None">
+                          <Member Name="RID" Datatype="DWord">
+                            <StartValue>16#208071b</StartValue>
+                          </Member>
+                          <Member Name="AREA" Datatype="Byte">
+                            <StartValue>16#82</StartValue>
+                          </Member>
+                          <Member Name="OFFSET" Datatype="UDInt">
+                            <StartValue>1056</StartValue>
+                          </Member>
+                        </Section>
+                      </Sections>
+                    </Member>
+                  </Section>
+                </Sections>
+              </Member>
+            </Section>
+          </Sections>
+        </Member>
+        <Member Name="Simulation" Datatype="TO_Struct_AxisSimulation" Version="6.0">
+          <Sections>
+            <Section Name="None">
+              <Member Name="Mode" Datatype="UDInt">
+                <StartValue>1</StartValue>
+              </Member>
+            </Section>
+          </Sections>
+        </Member>
+      </Section>
+    </Sections>
+  </Section>
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Position" Datatype="LReal">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ActualPosition" Datatype="LReal">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ActualVelocity" Datatype="LReal">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ActualAcceleration" Datatype="LReal">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="OperativeSensor" Datatype="UDInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ModuloCycle" Datatype="DInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ActualModuloCycle" Datatype="DInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Clamping" Datatype="TO_Struct_Clamping" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sensor" Datatype="Array[1..4] of TO_Struct_Sensor" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="DataAdaption" Datatype="DInt">
+            <Subelement Path="1">
+              <StartValue>1</StartValue>
+            </Subelement>
+          </Member>
+          <Member Name="Interface" Datatype="TO_Struct_SensorInterface" Version="6.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="AddressIn" Datatype="VREF" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="RID" Datatype="DWord">
+                        <Subelement Path="1">
+                          <StartValue>16#208071a</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="AREA" Datatype="Byte">
+                        <Subelement Path="1">
+                          <StartValue>16#81</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="OFFSET" Datatype="UDInt">
+                        <Subelement Path="1">
+                          <StartValue>1032</StartValue>
+                        </Subelement>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="AddressOut" Datatype="VREF" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="RID" Datatype="DWord">
+                        <Subelement Path="1">
+                          <StartValue>16#208071b</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="AREA" Datatype="Byte">
+                        <Subelement Path="1">
+                          <StartValue>16#82</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="OFFSET" Datatype="UDInt">
+                        <Subelement Path="1">
+                          <StartValue>1056</StartValue>
+                        </Subelement>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ActiveHoming" Datatype="TO_Struct_SensorActiveHoming" Version="6.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="Mode" Datatype="DInt">
+                  <Subelement Path="1">
+                    <StartValue>2</StartValue>
+                  </Subelement>
+                </Member>
+                <Member Name="DigitalInputAddress" Datatype="VREF" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="RID" Datatype="DWord">
+                        <Subelement Path="1">
+                          <StartValue>16#2000001</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="AREA" Datatype="Byte">
+                        <Subelement Path="1">
+                          <StartValue>16#81</StartValue>
+                        </Subelement>
+                      </Member>
+                      <Member Name="OFFSET" Datatype="UDInt">
+                        <Subelement Path="1">
+                          <StartValue>2</StartValue>
+                        </Subelement>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Extrapolation" Datatype="TO_Struct_Extrapolation" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Mechanics" Datatype="TO_Struct_Mechanics" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Properties" Datatype="TO_Struct_Properties" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Modulo" Datatype="TO_Struct_Modulo" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="PositionLimits_SW" Datatype="TO_Struct_PositionLimitsSW" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="PositionLimits_HW" Datatype="TO_Struct_PositionLimitsHW" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Active" Datatype="Bool">
+            <StartValue>true</StartValue>
+          </Member>
+          <Member Name="MinSwitchAddress" Datatype="VREF" Version="1.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="RID" Datatype="DWord">
+                  <StartValue>16#2000001</StartValue>
+                </Member>
+                <Member Name="AREA" Datatype="Byte">
+                  <StartValue>16#81</StartValue>
+                </Member>
+                <Member Name="OFFSET" Datatype="UDInt">
+                  <StartValue>1</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="MaxSwitchAddress" Datatype="VREF" Version="1.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="RID" Datatype="DWord">
+                  <StartValue>16#2000001</StartValue>
+                </Member>
+                <Member Name="AREA" Datatype="Byte">
+                  <StartValue>16#81</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Homing" Datatype="TO_Struct_Homing" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="AutoReversal" Datatype="Bool">
+            <StartValue>true</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="PositionControl" Datatype="TO_Struct_PositionControl" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="EnableDSC" Datatype="Bool">
+            <StartValue>true</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="DynamicAxisModel" Datatype="TO_Struct_DynamicAxisModel" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="FollowingError" Datatype="TO_Struct_FollowingError" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CrossPlcSynchronousOperation" Datatype="TO_Struct_CrossPlcSynchronousOperation" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="PositioningMonitoring" Datatype="TO_Struct_PositioningMonitoring" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StandstillSignal" Datatype="TO_Struct_StandstillSignal" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusPositioning" Datatype="TO_Struct_StatusPositioning" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusServo" Datatype="TO_Struct_StatusServo" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusProvidedLeadingValue" Datatype="TO_Struct_StatusProvidedLeadingValue" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusSensor" Datatype="Array[1..4] of TO_Struct_StatusSensor" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusExtrapolation" Datatype="TO_Struct_StatusExtrapolation" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="StatusKinematicsMotion" Datatype="TO_Struct_StatusKinematicsMotion" Version="6.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>放卷伺服S120</Name>
+      <Namespace />
+      <Number>1</Number>
+      <OfSystemLibElement>TO_PositioningAxis</OfSystemLibElement>
+      <OfSystemLibVersion>6.0</OfSystemLibVersion>
+      <ParameterData>
+<Parameters xmlns="http://www.siemens.com/automation/Openness/SW/Parameters/v1">
+  <Parameter Name="_Sensor[1].ActiveHoming.DigitalInputAddress" Value="s120原点信号" />
+  <Parameter Name="_PositionLimits_HW.MinSwitchAddress" Value="s120负限位" />
+  <Parameter Name="_PositionLimits_HW.MaxSwitchAddress" Value="S120正限位" />
+  <Parameter Name="_Actor.Interface.Telegram" Value="5" />
+  <Parameter Name="_Sensor[1].Interface.Telegram" Value="5" />
+  <AdditionalData xmlns="http://www.siemens.com/automation/Openness/SW/Motion/Axis/v1">
+    <Connection Interface="Actor" InputAddress="1032" OutputAddress="1056" />
+    <Connection Interface="Sensor[1]" InputAddress="1032" OutputAddress="1056" SensorIndexInActorTelegram="1" />
+  </AdditionalData>
+</Parameters></ParameterData>
+      <ProgrammingLanguage>Motion_DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.TechnologicalObjects.TechnologicalInstanceDB>
+</Document>

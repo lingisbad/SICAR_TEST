@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Auto_Work" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cmd To Move Valve To Work</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Cmd 到 移动 汽阀 到 工作位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Auto_Home" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cmd To Move  Valve To Home</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Cmd 到 移动  汽阀 到 原位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="At_Work" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status At Work</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">状态 在 工作位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="At_Home" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status At Home</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">状态 在 原位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Enable_Work" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">interlock to move valve to Work</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">互锁 到 移动 汽阀 到 工作位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Enable_Home" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">interlock to move valve to Home</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">互锁 到 移动 汽阀 到 原位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="General_Alarm" Datatype="Bool" />
+    <Member Name="Known_Position" Datatype="Bool" />
+    <Member Name="Position" Datatype="&quot;VALVE_POSITION_UDT&quot;">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feedback from Sensors</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">反馈 从 Sensors</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_VALVE</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>Autor: SICAR</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Autor: Tesla</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>Autor: SICAR</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>DEMO</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DEMO</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>DEMO</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

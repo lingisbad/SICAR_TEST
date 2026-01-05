@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <HeaderAuthor>Tesla</HeaderAuthor>
+      <HeaderFamily>Base</HeaderFamily>
+      <HeaderVersion>1.0</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Init_HMI_OPmode" Datatype="&quot;INIT_HMI_OPMODE_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Initial Werte</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">HMI操作模式初始化</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Init 值</MultiLanguageText>
+      </Comment>
+      <Sections>
+        <Section Name="None">
+          <Member Name="OPmode_init" Datatype="USInt">
+            <Comment>
+              <MultiLanguageText Lang="en-US">操作模式初始化值</MultiLanguageText>
+            </Comment>
+          </Member>
+          <Member Name="HMI_Panel_init" Datatype="USInt">
+            <Comment>
+              <MultiLanguageText Lang="en-US">HMI 操作面板初始化值</MultiLanguageText>
+            </Comment>
+          </Member>
+          <Member Name="OPmode_activated" Datatype="Array[1..12] of Bool">
+            <Comment>
+              <MultiLanguageText Lang="en-US">操作模式激活信息</MultiLanguageText>
+            </Comment>
+          </Member>
+          <Member Name="HMI_Panel_No" Datatype="Array[0..32] of Struct">
+            <Comment>
+              <MultiLanguageText Lang="en-US">分配面板到操作模式区域</MultiLanguageText>
+            </Comment>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="OPmode" Datatype="Array[0..&quot;No_OperationMODE&quot;] of &quot;OPMODE_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Operation mode</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">操作模式</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">运行 模式</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HMI_Panel" Datatype="Array[0..&quot;No_HMI_PANEL&quot;] of &quot;HMI_PANEL_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="de-DE">HMI / Panel</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">HMI / Panel</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">HMI / Panel</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HMI_GLOBAL" Datatype="&quot;GLOBAL_STRUCT_UDT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>0</MemoryReserve>
+      <Name>SYSTEM_DB</Name>
+      <Namespace />
+      <Number>1990</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

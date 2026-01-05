@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="StationOnly" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run Within Station Only</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Run Within Station Only</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SafetyTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Test</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Safety Test</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare13" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare15" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare16" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare17" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare18" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare19" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare20" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare21" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare22" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare23" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare24" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare25" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare26" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare27" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare28" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare29" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare30" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>ConvHMICMD</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

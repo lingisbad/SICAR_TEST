@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <HeaderAuthor>Tesla</HeaderAuthor>
+      <HeaderFamily>ProdData</HeaderFamily>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="No_DataSets" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Anzahl konfigurierter Datensätze</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">Information number of DataSets</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">信息 数量 of DataSets</MultiLanguageText>
+      </Comment>
+      <Member Name="Limits" Datatype="Int" />
+      <Member Name="Timer" Datatype="Int" />
+      <Member Name="Counter" Datatype="Int" />
+      <Member Name="ShiftCounter" Datatype="Int" />
+    </Member>
+    <Member Name="Limit_DataSet" Datatype="Array[0..&quot;No_of_DataSets_LimitValues&quot;] of Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Datensätze Grenzwerte</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">DataSets Limit value</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">DataSets 限制 值</MultiLanguageText>
+      </Comment>
+      <Member Name="Enabled" Datatype="Array[0..10] of Bool" />
+      <Member Name="Remainder_Value" Datatype="Array[0..16] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Restwert</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Remainder value</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Remainder 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Set_Point_Value" Datatype="Array[0..16] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Sollwert</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">SetPoint value</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">设定点 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Prewarn_Value" Datatype="Array[0..16] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Vorwarnsollwert</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Prewarn value</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Prewarn 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Control" Datatype="Array[0..16] of &quot;LIMIT_VALUE_CTRL_UDT&quot;">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Steuerung</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Control</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">控制</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ColorCode_Alarm/Prewarn" Datatype="Array[0..16] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Farbcode für Alarm/Vorwarnung</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">ColorCode Alarm/Prewarn</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">ColorCode 警报/Prewarn</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ColorCode_SelectButton" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Farbcode für Auswahl Button</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">ColorCode selcect-button</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">ColorCode selcect-按钮</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Index_selected_Counter" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Index gewählter Zähler zum Löschen</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Index selected counter for reset from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Index 选择的 计数器 给 重置 从 HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DivButton" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">%0=Reset</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">%0=Reset</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">%0=重置</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="ColorCode_SelectButton" Datatype="Array[0..8] of UInt">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Farbcode für Datensatz Anwahl Button</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">ColorCode for data set select button</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">ColorCode 给 数据 设置 选择 按钮</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CycleTimer_DataSet" Datatype="Array[0..&quot;No_of_DataSets_CycleTimer&quot;] of Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Datensätze Taktzeiten</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">DataSets Cycle timer</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">DataSets 周期 记时器</MultiLanguageText>
+      </Comment>
+      <Member Name="Enabled" Datatype="Array[0..20] of Bool" />
+      <Member Name="Timer_Value" Datatype="Array[0..20] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Messwerte</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Measured value</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">测量的 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Timer_Average_Value" Datatype="Array[0..20] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Mittelwert Messwerte</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Average of measurement values</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">平均 of 测量 值</MultiLanguageText>
+        </Comment>
+        <Subelement Path="1,2">
+          <StartValue>0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="Number_of_Counts" Datatype="Array[0..20] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Anzahl Messungen für Mittelwerte</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Number of measurements for average values</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">数量 of measurements 给 平均 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Timer_Target_Value" Datatype="Array[0..20] of UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Sollwerte</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Set values</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">设置 值</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Measurement_active" Datatype="Array[0..20] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Messung aktiv</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Measurement active</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">测量 现行</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Index_selected_Timer" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Index angewählter Wert zum Löschen</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">Index selected value to be cleared</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Index 选择的 值 到 be cleared</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DivButton" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">%X0=Reset Average einzel, %X1=Reset Average All</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">%X0=Reset Average single, %X1=Reset Average All</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">%X0=重置 平均 单, %X1=重置 平均 全部</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Control" Datatype="Array[0..20] of &quot;CYCLE_TIMER_CTRL_UDT&quot;">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Anwender-Schnittstelle Taktzeiten</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">User interface cycle times</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">用户界面 周期 times</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="Reset_Average_All_ext" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Anwender-Schnittstelle löschen Mittelwerte</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">User interface clear averages</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">用户界面 清除 averages</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="Counter_DataSet" Datatype="Array[0..&quot;No_of_DataSets_Counter&quot;] of Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Datensätze Zähler</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">DataSets Counter</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">DataSets 计数器</MultiLanguageText>
+      </Comment>
+      <Member Name="Enabled" Datatype="Array[0..20] of Bool" />
+      <Member Name="Counter_Value" Datatype="Array[0..20] of UInt" />
+      <Member Name="Control" Datatype="Array[0..20] of &quot;COUNTER_CTRL_UDT&quot;">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="Reset_All_ext" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="Index_selected_Counter" Datatype="UInt" />
+      <Member Name="DivButton" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">%X0=Reset einzel, %X1=ResetAll</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">%X0=Reset single, %X1=ResetAll</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">%X0=重置 单, %X1=ResetAll</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="ShiftCounter_DataSet" Datatype="Array[0..&quot;No_of_DataSets_ShiftCounter&quot;] of Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Datensätze Schichtzähler</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">DataSets ShiftCounter</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">DataSets 工作轮班记数器</MultiLanguageText>
+      </Comment>
+      <Member Name="Enabled" Datatype="Array[0..10] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tesla addition: must set high to enable shift counter</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Tesla addition: 必须 设置 high 到 启用 工作轮班 计数器</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ShiftCounter_CurrentValue" Datatype="Array[0..10] of UInt" />
+      <Member Name="ShiftCounter_CurrentTarget" Datatype="Array[0..10] of UInt" />
+      <Member Name="ShiftCounter_PreviousValue" Datatype="Array[0..10] of UInt" />
+      <Member Name="ShiftCounter_PreviousTarget" Datatype="Array[0..10] of UInt" />
+      <Member Name="ShiftCounter_PenultimateValue" Datatype="Array[0..10] of UInt" />
+      <Member Name="ShiftCounter_PenultimateTarget" Datatype="Array[0..10] of UInt" />
+      <Member Name="Control" Datatype="Array[0..10] of Bool">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="Reset_All_ext" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="DivButton" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">%0=ResetAll</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">%0=ResetAll</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">%0=ResetAll</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="ProductionRecord" Datatype="Struct" Remanence="Retain">
+      <Member Name="DTL" Datatype="DTL" Version="1.0" />
+      <Member Name="DT" Datatype="Date_And_Time" />
+      <Member Name="Retval" Datatype="Int" />
+      <Member Name="StartTime" Datatype="Array[1..7] of Date_And_Time" />
+      <Member Name="StopTime" Datatype="Array[1..7] of Date_And_Time" />
+      <Member Name="Count" Datatype="Array[1..7] of UInt" />
+      <Member Name="Start" Datatype="Bool" />
+      <Member Name="Stop" Datatype="Bool" />
+      <Member Name="Reset" Datatype="Bool" />
+      <Member Name="StartIndicate" Datatype="Bool" />
+      <Member Name="StopIndicate" Datatype="Bool" />
+      <Member Name="ONS1" Datatype="Bool" />
+      <Member Name="ONS2" Datatype="Bool" />
+      <Member Name="Start_Delay" Datatype="Struct">
+        <Member Name="temp" Datatype="Bool" />
+        <Member Name="transfout_tm" Datatype="Bool" />
+        <Member Name="start" Datatype="Bool" />
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>PRODUCTION_DATA_HMI_IF_DB</Name>
+      <Namespace />
+      <Number>53</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>FUNKTIONSBESCHREIBUNG: 
+Der Baustein beinhaltet alle Informationen zum und vom HMI, sowie die Anwenderschnittstellen für die Produktionsdaten
+Weitere Hinweise: siehe SICAR anwenderdefinierte Dokumentation / SICAR Online-Hilfe.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DESCRIPTION OF FUNCTIONS: </Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>描述 OF 功能: </Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>HMI und Anwender Schnittstelle für Produktionsdaten</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>HMI and user interface for production data</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text>HMI 和 用户界面 给 生产 数据</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

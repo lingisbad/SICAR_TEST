@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="DeadEnd" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Dead End Disable Positiong Fault</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Dead End Disable Positiong Fault</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrspNoLowSpeed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="StopDetSetUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LowSpeedDetSetUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Low Speed Det Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LowSpeedDetSetConstOn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Low Speed Sensor Constant on</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="StopDetResUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop detection Reset used</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Stop detection Reset used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LowSpeedDetResUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LowSpeedDetResConstOn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Lowspeed stop detection Constant On</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrainActivatedSet" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Train transport used set direction</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Train transport used set direction</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInSetUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer In Set Used</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer In Set Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutSetUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer Out Reset Used</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer Out Reset Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrainActivatedRes" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Train transport used Reset direction</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Train transport used Reset direction</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfInResUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer In Reset Used</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer In Reset Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfOutResUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transfer Out Reset Used</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Transfer Out Reset Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableAlarmHW" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Enable Alarm hardware (e.g. Safetyswitch, Motorprotector, detections)</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="EnableAlarmTransfer" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Enable Alarm transfer (e.g. Transfer in , transfer out)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableG120Reset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Enable Driver Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableCheckSpeedOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable Speed checking on the G120 Driver</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Enable Speed checking on the G120 Driver</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableSetpoint" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable setpoint</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Enable setpoint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableRFG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Follow setpoint</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Follow setpoint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NotQuickStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">QuickStop function; When FALSE the QuickStop of the G120 is Active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NotImmediateStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Immediate function; When FALSE the immediate stop of the G120 is Active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableBeltControlSetDet" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Config Belt Control</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableBeltControlResDet" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Config Belt Control</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLSUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Profisafe SLS Configuration Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SafetySwUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Input 12</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Input 12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SafetySwNc" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Input 15</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Input 15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReleaseBrakeUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="RearDetUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="RevSwUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MotorProtectionUsed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Motorprotection Used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MotorProtectionNc" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Motorprotection NC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InitDirection" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Input 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ForceManual" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Configuration</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Spare3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spare</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Spare</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TrfMaxTime" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Max allowed transfertime (millisec)</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Max allowed transfertime (millisec)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="RPMSpeed" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Movment Rpm</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Movment Rpm</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EnableRPMSpeed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable RPM Speed</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Enable RPM Speed</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReferenceSpeed" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Reference value for speed, stored in P2000 ot the SINAMICS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReferenceCurrent" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Reference value for current, stored in P2002 ot the SINAMICS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReferenceTorque" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Reference value for torque, stored in P2003 ot the SINAMICS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="DelaySetStopDet" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Delay Time Stop Detection</MultiLanguageText>
+      </Comment>
+      <StartValue>T#1ms</StartValue>
+    </Member>
+    <Member Name="DelayResStopDet" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Delay Time Stop Detection</MultiLanguageText>
+      </Comment>
+      <StartValue>T#1ms</StartValue>
+    </Member>
+    <Member Name="HWSubInput" Datatype="HW_SUBMODULE">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Address (input/output)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HWSubOutput" Datatype="HW_SUBMODULE">
+      <Comment>
+        <MultiLanguageText Lang="en-US">I/O</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">I/O</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SafetyAddress" Datatype="HW_SUBMODULE">
+      <Comment>
+        <MultiLanguageText Lang="zh-CN">Address (input/output)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FilterBeltControlSec" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Filter In Seconds Belt Control</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Filter In Seconds Belt Control</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>RollerConvConfig</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

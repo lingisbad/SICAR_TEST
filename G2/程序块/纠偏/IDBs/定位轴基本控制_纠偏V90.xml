@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>定位轴基本控制</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="轴号" Datatype="TO_PositioningAxis" Version="8.0" />
+    <Member Name="使能" Datatype="Bool" />
+    <Member Name="回原" Datatype="Bool" />
+    <Member Name="回原模式" Datatype="Int" />
+    <Member Name="绝对定位" Datatype="Bool" />
+    <Member Name="相对定位" Datatype="Bool" />
+    <Member Name="暂停" Datatype="Bool" />
+    <Member Name="复位" Datatype="Bool" />
+    <Member Name="绝对位置" Datatype="Real" />
+    <Member Name="绝对速度" Datatype="Real" />
+    <Member Name="相对位置" Datatype="Real" />
+    <Member Name="相对速度" Datatype="Real" />
+    <Member Name="点动正转" Datatype="Bool" />
+    <Member Name="点动反转" Datatype="Bool" />
+    <Member Name="点动速度" Datatype="Real" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="轴已启用" Datatype="Bool" />
+    <Member Name="使能错误" Datatype="Bool" />
+    <Member Name="回原完成" Datatype="Bool" />
+    <Member Name="回原错误" Datatype="Bool" />
+    <Member Name="绝对定位完成" Datatype="Bool" />
+    <Member Name="绝对定位错误" Datatype="Bool" />
+    <Member Name="相对定位完成" Datatype="Bool" />
+    <Member Name="相对定位错误" Datatype="Bool" />
+    <Member Name="点动中" Datatype="Bool" />
+    <Member Name="点动错误" Datatype="Bool" />
+    <Member Name="当前位置" Datatype="LReal" />
+    <Member Name="当前速度" Datatype="LReal" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="MC_Power_Instance" Datatype="MC_POWER" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Home_Instance" Datatype="MC_HOME" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveAbsolute_Instance" Datatype="MC_MOVEABSOLUTE" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveRelative_Instance" Datatype="MC_MOVERELATIVE" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Reset_Instance" Datatype="MC_RESET" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_Halt_Instance" Datatype="MC_HALT" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MC_MoveJog_Instance" Datatype="MC_MOVEJOG" Version="8.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>定位轴基本控制_纠偏V90</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

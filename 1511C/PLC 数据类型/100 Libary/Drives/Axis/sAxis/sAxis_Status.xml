@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="bAxisReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴通讯正常</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAxisEnabled" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴使能</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bjogForward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴正点中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bjogBackward" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴反点中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bHomed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴归零完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAtHome" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴在零位</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bSstill" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴静止</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAxisBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴运行中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAxisSyned" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">同步上</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAxisError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴报警</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bAtPos" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">在目标位置上</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bPosDone" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">定位完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bPosing" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">定位中</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="bRelPosDone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">相对定位完成</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rActPos" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">实际位置</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rActSpeed" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">实际速度</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iAxisFaultNum" Datatype="UDInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">轴报警代码</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iDriveFaultNum" Datatype="UDInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动报警代码</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iFBStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">运动功能块状态</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iMCStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">运动指令状态</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rDriveTorque" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动扭矩</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rDriveTemp" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动温度</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rDriveRpm" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">驱动转速</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="wAxisName" Datatype="WString[24]">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Name of axis</MultiLanguageText>
+      </Comment>
+      <StartValue>WSTRING#'No axis'</StartValue>
+    </Member>
+    <Member Name="mybool" Datatype="Array[0..5] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="myLreal" Datatype="Array[0..5] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>sAxis_Status</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Axis_Control_Data" Datatype="Array[0..20] of Struct">
+      <Member Name="I_SS_bHome" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">原点传感器</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">原点传感器</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_SS_bFW" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">前限位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">前限位</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0">
+          <StartValue>TRUE</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_SS_bBW" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">后限位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">后限位</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0">
+          <StartValue>TRUE</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_CMD_bEnableAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">使能</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">使能</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bResetAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">复位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">复位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bjogForward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Aufwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">正点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">正点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bjogBackward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Abwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">反点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">反点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bmoveVelocity" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bstop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">停止</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">停止</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bfastStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">急停</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">急停</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bHoming" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">回零</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">回零</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bGoToPos" Datatype="Array[0..15] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_iGoToPos" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">16个定位 Word</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位 Word</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bCallAbsPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">定位位置切换时，单独的定位按钮</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">定位位置切换时，单独的定位按钮</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_bRelPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">相对定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">相对定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CMD_MyBool" Datatype="Array[0..5] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">临时变量</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">临时变量</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_Para_rJog_Speed" Datatype="Array[0..2] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">点动速度/ACC/DEC/JERK</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">点动速度/ACC/DEC/JERK</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>10.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rMV_Speed" Datatype="Array[0..2] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rStop_Dec" Datatype="Array[0..1] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rEStop_Dec" Datatype="Array[0..1] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_iNum_Abspos" Datatype="Int">
+        <Subelement Path="0">
+          <StartValue>4</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rPos_Abs" Datatype="Array[0..16] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">绝对定位目标位置</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">绝对定位目标位置</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,1">
+          <StartValue>10.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,3">
+          <StartValue>30.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,4">
+          <StartValue>40.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,5">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,6">
+          <StartValue>60.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,7">
+          <StartValue>70.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,8">
+          <StartValue>80.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,9">
+          <StartValue>90.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,10">
+          <StartValue>100.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,11">
+          <StartValue>110.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,12">
+          <StartValue>120.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,13">
+          <StartValue>130.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,14">
+          <StartValue>140.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,15">
+          <StartValue>150.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,16">
+          <StartValue>160.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rSpeed_Abs" Datatype="Array[0..16] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Endlage Unten</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">绝对定位速度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">绝对定位速度</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,3">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,4">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,5">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,6">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,7">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,8">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,9">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,10">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,11">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,12">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,13">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,14">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,15">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,16">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rAcc_Set" Datatype="Array[0..16] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">绝对定位加速度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">绝对定位加速度</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,3">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,4">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,5">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,6">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,7">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,8">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,9">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,10">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,11">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,12">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,13">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,14">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,15">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,16">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rDec_Set" Datatype="Array[0..16] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">绝对定位减速度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">绝对定位减速度</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,3">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,4">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,5">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,6">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,7">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,8">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,9">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,10">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,11">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,12">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,13">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,14">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,15">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,16">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rJerk_Set" Datatype="Array[0..16] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">绝对定位加加速度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">绝对定位加加速度</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0,0">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,1">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,2">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,3">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,4">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,5">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,6">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,7">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,8">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,9">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,10">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,11">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,12">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,13">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,14">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,15">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+        <Subelement Path="0,16">
+          <StartValue>50.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_rSpeedPercent" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Endlage Unten</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">速度设定百分比</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度设定百分比</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0">
+          <StartValue>20.0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="I_Para_iHomeMode" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">回零方式</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">回零方式</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_Para_rHomePos" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">回零位置</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">回零位置</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAxisReady" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴通讯正常</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴通讯正常</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAxisEnabled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴使能</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴使能</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bjogForward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴正点中</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴正点中</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bjogBackward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴反点中</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴反点中</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bHomed" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴归零完成</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴归零完成</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAtHome" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴在零位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴在零位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bSstill" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴静止</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴静止</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAxisBusy" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴运行中</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴运行中</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAxisSyned" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">同步上</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">同步上</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAxisError" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴报警</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴报警</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bAtPos" Datatype="Array[0..15] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">在目标位置上</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">在目标位置上</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bPosDone" Datatype="Array[0..15] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">定位完成</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">定位完成</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bPosing" Datatype="Array[0..15] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Ausgang Aufwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">定位中</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">定位中</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_bRelPosDone" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">相对定位完成</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">相对定位完成</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_rActPos" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">实际位置</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">实际位置</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_rActSpeed" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">实际速度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">实际速度</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_iAxisFaultNum" Datatype="UDInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">轴报警代码</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">轴报警代码</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_iDriveFaultNum" Datatype="UDInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">驱动报警代码</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">驱动报警代码</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_iFBStatus" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">运动功能块状态</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">运动功能块状态</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_iMCStatus" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">运动指令状态</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">运动指令状态</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_rDriveTorque" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">驱动扭矩</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">驱动扭矩</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_rDriveTemp" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">驱动温度</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">驱动温度</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_rDriveRpm" Datatype="LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">驱动转速</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">驱动转速</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_AxisName" Datatype="WString[24]">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Name of axis</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">Name of axis</MultiLanguageText>
+        </Comment>
+        <Subelement Path="0">
+          <StartValue>WSTRING#'No axis'</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="O_Status_mybool" Datatype="Array[0..5] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">备用</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="O_Status_myLreal" Datatype="Array[0..5] of LReal">
+        <Comment>
+          <MultiLanguageText Lang="en-US">备用</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">备用</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bEnableAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">使能</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">使能</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bResetAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">复位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">复位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bjogForward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Aufwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">正点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">正点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bjogBackward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Abwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">反点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">反点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bmoveVelocity" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bstop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">停止</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">停止</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bfastStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">急停</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">急停</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bHoming" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">回零</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">回零</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos" Datatype="Array[0..16] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_iGoToPos" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">16个定位 Word</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位 Word</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bCallAbsPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">定位位置切换时，单独的定位按钮</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">定位位置切换时，单独的定位按钮</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bRelPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">相对定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">相对定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_MyBool" Datatype="Array[0..5] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">临时变量</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">临时变量</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bEnableAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">使能</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">使能</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bResetAxis" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">复位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">复位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bjogForward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Aufwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">正点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">正点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bjogBackward" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Taster Abwärts</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">反点</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">反点</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bmoveVelocity" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">速度运行</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">速度运行</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bstop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">停止</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">停止</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bfastStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">急停</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">急停</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bHoming" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">回零</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">回零</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos" Datatype="Array[0..16] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_iGoToPos" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">16个定位 Word</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位 Word</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bCallAbsPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">定位位置切换时，单独的定位按钮</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">定位位置切换时，单独的定位按钮</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bRelPos" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">相对定位</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">相对定位</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_MyBool" Datatype="Array[0..5] of Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">临时变量</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">临时变量</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_0" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_0" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_0" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_7" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_7" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_7" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_CDM_bGoToPos_8" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位自动</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位自动</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_InLock_bGoToPos_8" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位条件</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位条件</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="I_HMI_bGoToPos_8" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="de-DE">Start Aufwärts in Automatik</MultiLanguageText>
+          <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
+          <MultiLanguageText Lang="zh-CN">16个定位HMI</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="gs_AxisPos16" Datatype="Array[0..9] of &quot;sPos16&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>dStruct_Pos16</Name>
+      <Namespace />
+      <Number>30141</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

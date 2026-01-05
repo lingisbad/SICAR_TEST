@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="rJog_Speed" Datatype="Array[0..2] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">点动速度/ACC/DEC/JERK</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>10.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rMV_Speed" Datatype="Array[0..2] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">速度运行速度/ACC/DEC/JERK</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rStop_Dec" Datatype="Array[0..1] of LReal">
+      <Subelement Path="0">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rEStop_Dec" Datatype="Array[0..1] of LReal">
+      <Subelement Path="0">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="iNum_Abspos" Datatype="Int">
+      <StartValue>4</StartValue>
+    </Member>
+    <Member Name="rPos_Abs" Datatype="Array[0..16] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">绝对定位目标位置</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Over travel switch set</MultiLanguageText>
+      </Comment>
+      <Subelement Path="1">
+        <StartValue>10.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="3">
+        <StartValue>30.0</StartValue>
+      </Subelement>
+      <Subelement Path="4">
+        <StartValue>40.0</StartValue>
+      </Subelement>
+      <Subelement Path="5">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="6">
+        <StartValue>60.0</StartValue>
+      </Subelement>
+      <Subelement Path="7">
+        <StartValue>70.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>80.0</StartValue>
+      </Subelement>
+      <Subelement Path="9">
+        <StartValue>90.0</StartValue>
+      </Subelement>
+      <Subelement Path="10">
+        <StartValue>100.0</StartValue>
+      </Subelement>
+      <Subelement Path="11">
+        <StartValue>110.0</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>120.0</StartValue>
+      </Subelement>
+      <Subelement Path="13">
+        <StartValue>130.0</StartValue>
+      </Subelement>
+      <Subelement Path="14">
+        <StartValue>140.0</StartValue>
+      </Subelement>
+      <Subelement Path="15">
+        <StartValue>150.0</StartValue>
+      </Subelement>
+      <Subelement Path="16">
+        <StartValue>160.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rSpeed_Abs" Datatype="Array[0..16] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Endlage Unten</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">绝对定位速度</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="3">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="4">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="5">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="6">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="7">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="9">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="10">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="11">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="13">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="14">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="15">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+      <Subelement Path="16">
+        <StartValue>20.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rAcc_Set" Datatype="Array[0..16] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">绝对定位加速度</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Overtravel switch Reset</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="3">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="4">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="5">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="6">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="7">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="9">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="10">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="11">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="13">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="14">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="15">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="16">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rDec_Set" Datatype="Array[0..16] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">绝对定位减速度</MultiLanguageText>
+        <MultiLanguageText Lang="zh-CN">Belt check sensor</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="3">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="4">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="5">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="6">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="7">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="9">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="10">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="11">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="13">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="14">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="15">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="16">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rJerk_Set" Datatype="Array[0..16] of LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">绝对定位加加速度</MultiLanguageText>
+      </Comment>
+      <Subelement Path="0">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="1">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="2">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="3">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="4">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="5">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="6">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="7">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="8">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="9">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="10">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="11">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="12">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="13">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="14">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="15">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+      <Subelement Path="16">
+        <StartValue>50.0</StartValue>
+      </Subelement>
+    </Member>
+    <Member Name="rSpeedPercent" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="de-DE">Endlage Unten</MultiLanguageText>
+        <MultiLanguageText Lang="en-US">速度设定百分比</MultiLanguageText>
+      </Comment>
+      <StartValue>20.0</StartValue>
+    </Member>
+    <Member Name="iHomeMode" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">回零方式</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rHomePos" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">回零位置</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>sAxis_Para</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="5" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="7" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>
