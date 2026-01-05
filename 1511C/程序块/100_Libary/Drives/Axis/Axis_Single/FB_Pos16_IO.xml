@@ -394,6 +394,9 @@
         <MultiLanguageText Lang="en-US">16个定位HMI</MultiLanguageText>
       </Comment>
     </Member>
+    <Member Name="I_iHomeMode" Datatype="Int">
+      <StartValue>3</StartValue>
+    </Member>
   </Section>
   <Section Name="Output">
     <Member Name="O_Status_bAxisReady" Datatype="Bool">
@@ -2664,2553 +2667,2553 @@
   <Blank UId="738" />
   <Token Text=":=" UId="739" />
   <Blank UId="740" />
-  <Access Scope="LiteralConstant" UId="741">
-    <Constant UId="742">
-      <ConstantValue UId="744">3</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="745" />
-  <LineComment UId="746">
-    <Text UId="747">I_iHomeMode</Text>
-  </LineComment>
-  <NewLine UId="748" />
-  <Access Scope="LocalVariable" UId="749">
-    <Symbol UId="750">
-      <Component Name="temp_configuration" UId="751" />
-      <Token Text="." UId="752" />
-      <Component Name="homing" UId="753" />
-      <Token Text="." UId="754" />
-      <Component Name="position" UId="755" />
+  <Access Scope="LocalVariable" UId="741">
+    <Symbol UId="742">
+      <Component Name="I_iHomeMode" UId="743" />
     </Symbol>
   </Access>
-  <Blank UId="756" />
-  <Token Text=":=" UId="757" />
-  <Blank UId="758" />
-  <Access Scope="LiteralConstant" UId="759">
-    <Constant UId="760">
-      <ConstantValue UId="762">0</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="763" />
-  <LineComment UId="764">
-    <Text UId="765">I_iHomePos</Text>
+  <Token Text=";" UId="744" />
+  <LineComment UId="745">
+    <Text UId="746">I_iHomeMode</Text>
   </LineComment>
-  <NewLine Num="2" UId="766" />
-  <LineComment UId="767">
-    <Text UId="768">abspos</Text>
-  </LineComment>
-  <NewLine UId="769" />
-  <Token Text="FOR" UId="770" />
-  <Blank UId="771" />
-  <Access Scope="LocalVariable" UId="772">
-    <Symbol UId="773">
-      <Component Name="i" UId="774" />
+  <NewLine UId="747" />
+  <Access Scope="LocalVariable" UId="748">
+    <Symbol UId="749">
+      <Component Name="temp_configuration" UId="750" />
+      <Token Text="." UId="751" />
+      <Component Name="homing" UId="752" />
+      <Token Text="." UId="753" />
+      <Component Name="position" UId="754" />
     </Symbol>
   </Access>
-  <Blank UId="775" />
-  <Token Text=":=" UId="776" />
-  <Blank UId="777" />
-  <Access Scope="LiteralConstant" UId="778">
-    <Constant UId="779">
-      <ConstantValue UId="781">1</ConstantValue>
+  <Blank UId="755" />
+  <Token Text=":=" UId="756" />
+  <Blank UId="757" />
+  <Access Scope="LiteralConstant" UId="758">
+    <Constant UId="759">
+      <ConstantValue UId="761">0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="782" />
-  <Token Text="TO" UId="783" />
-  <Blank UId="784" />
-  <Access Scope="LiteralConstant" UId="785">
-    <Constant UId="786">
-      <ConstantValue UId="788">16</ConstantValue>
+  <Token Text=";" UId="762" />
+  <LineComment UId="763">
+    <Text UId="764">I_iHomePos</Text>
+  </LineComment>
+  <NewLine Num="2" UId="765" />
+  <LineComment UId="766">
+    <Text UId="767">abspos</Text>
+  </LineComment>
+  <NewLine UId="768" />
+  <Token Text="FOR" UId="769" />
+  <Blank UId="770" />
+  <Access Scope="LocalVariable" UId="771">
+    <Symbol UId="772">
+      <Component Name="i" UId="773" />
+    </Symbol>
+  </Access>
+  <Blank UId="774" />
+  <Token Text=":=" UId="775" />
+  <Blank UId="776" />
+  <Access Scope="LiteralConstant" UId="777">
+    <Constant UId="778">
+      <ConstantValue UId="780">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="789" />
-  <Token Text="DO" UId="790" />
-  <NewLine UId="791" />
-  <Blank Num="4" UId="792" />
-  <Access Scope="LocalVariable" UId="793">
-    <Symbol UId="794">
-      <Component Name="I_Para_rAcc_Set" UId="795">
-        <Token Text="[" UId="796" />
-        <Access Scope="LocalVariable" UId="797">
-          <Symbol UId="798">
-            <Component Name="i" UId="799" />
+  <Blank UId="781" />
+  <Token Text="TO" UId="782" />
+  <Blank UId="783" />
+  <Access Scope="LiteralConstant" UId="784">
+    <Constant UId="785">
+      <ConstantValue UId="787">16</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="788" />
+  <Token Text="DO" UId="789" />
+  <NewLine UId="790" />
+  <Blank Num="4" UId="791" />
+  <Access Scope="LocalVariable" UId="792">
+    <Symbol UId="793">
+      <Component Name="I_Para_rAcc_Set" UId="794">
+        <Token Text="[" UId="795" />
+        <Access Scope="LocalVariable" UId="796">
+          <Symbol UId="797">
+            <Component Name="i" UId="798" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="800" />
+        <Token Text="]" UId="799" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="801" />
-  <Token Text=":=" UId="802" />
-  <Blank UId="803" />
-  <Access Scope="LiteralConstant" UId="804">
-    <Constant UId="805">
-      <ConstantValue UId="807">10.0</ConstantValue>
+  <Blank UId="800" />
+  <Token Text=":=" UId="801" />
+  <Blank UId="802" />
+  <Access Scope="LiteralConstant" UId="803">
+    <Constant UId="804">
+      <ConstantValue UId="806">10.0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="808" />
-  <Token Text="*" UId="809" />
-  <Blank UId="810" />
-  <Access Scope="LocalVariable" UId="811">
-    <Symbol UId="812">
-      <Component Name="I_Para_rSpeed_Abs" UId="813">
-        <Token Text="[" UId="814" />
-        <Access Scope="LiteralConstant" UId="815">
-          <Constant UId="816">
-            <ConstantValue UId="818">0</ConstantValue>
+  <Blank UId="807" />
+  <Token Text="*" UId="808" />
+  <Blank UId="809" />
+  <Access Scope="LocalVariable" UId="810">
+    <Symbol UId="811">
+      <Component Name="I_Para_rSpeed_Abs" UId="812">
+        <Token Text="[" UId="813" />
+        <Access Scope="LiteralConstant" UId="814">
+          <Constant UId="815">
+            <ConstantValue UId="817">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="819" />
+        <Token Text="]" UId="818" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="820" />
-  <NewLine UId="821" />
-  <Blank Num="4" UId="822" />
-  <Access Scope="LocalVariable" UId="823">
-    <Symbol UId="824">
-      <Component Name="I_Para_rDec_Set" UId="825">
-        <Token Text="[" UId="826" />
-        <Access Scope="LocalVariable" UId="827">
-          <Symbol UId="828">
-            <Component Name="i" UId="829" />
+  <Token Text=";" UId="819" />
+  <NewLine UId="820" />
+  <Blank Num="4" UId="821" />
+  <Access Scope="LocalVariable" UId="822">
+    <Symbol UId="823">
+      <Component Name="I_Para_rDec_Set" UId="824">
+        <Token Text="[" UId="825" />
+        <Access Scope="LocalVariable" UId="826">
+          <Symbol UId="827">
+            <Component Name="i" UId="828" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="830" />
+        <Token Text="]" UId="829" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="831" />
-  <Token Text=":=" UId="832" />
-  <Blank UId="833" />
-  <Access Scope="LiteralConstant" UId="834">
-    <Constant UId="835">
-      <ConstantValue UId="837">10.0</ConstantValue>
+  <Blank UId="830" />
+  <Token Text=":=" UId="831" />
+  <Blank UId="832" />
+  <Access Scope="LiteralConstant" UId="833">
+    <Constant UId="834">
+      <ConstantValue UId="836">10.0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="838" />
-  <Token Text="*" UId="839" />
-  <Blank UId="840" />
-  <Access Scope="LocalVariable" UId="841">
-    <Symbol UId="842">
-      <Component Name="I_Para_rSpeed_Abs" UId="843">
-        <Token Text="[" UId="844" />
-        <Access Scope="LiteralConstant" UId="845">
-          <Constant UId="846">
-            <ConstantValue UId="848">0</ConstantValue>
+  <Blank UId="837" />
+  <Token Text="*" UId="838" />
+  <Blank UId="839" />
+  <Access Scope="LocalVariable" UId="840">
+    <Symbol UId="841">
+      <Component Name="I_Para_rSpeed_Abs" UId="842">
+        <Token Text="[" UId="843" />
+        <Access Scope="LiteralConstant" UId="844">
+          <Constant UId="845">
+            <ConstantValue UId="847">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="849" />
+        <Token Text="]" UId="848" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="850" />
-  <NewLine UId="851" />
-  <Blank Num="4" UId="852" />
-  <Access Scope="LocalVariable" UId="853">
-    <Symbol UId="854">
-      <Component Name="I_Para_rJerk_Set" UId="855">
-        <Token Text="[" UId="856" />
-        <Access Scope="LocalVariable" UId="857">
-          <Symbol UId="858">
-            <Component Name="i" UId="859" />
+  <Token Text=";" UId="849" />
+  <NewLine UId="850" />
+  <Blank Num="4" UId="851" />
+  <Access Scope="LocalVariable" UId="852">
+    <Symbol UId="853">
+      <Component Name="I_Para_rJerk_Set" UId="854">
+        <Token Text="[" UId="855" />
+        <Access Scope="LocalVariable" UId="856">
+          <Symbol UId="857">
+            <Component Name="i" UId="858" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="860" />
+        <Token Text="]" UId="859" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="861" />
-  <Token Text=":=" UId="862" />
-  <Blank UId="863" />
-  <Access Scope="LiteralConstant" UId="864">
-    <Constant UId="865">
-      <ConstantValue UId="867">100.0</ConstantValue>
+  <Blank UId="860" />
+  <Token Text=":=" UId="861" />
+  <Blank UId="862" />
+  <Access Scope="LiteralConstant" UId="863">
+    <Constant UId="864">
+      <ConstantValue UId="866">100.0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="868" />
-  <Token Text="*" UId="869" />
-  <Blank UId="870" />
-  <Access Scope="LocalVariable" UId="871">
-    <Symbol UId="872">
-      <Component Name="I_Para_rSpeed_Abs" UId="873">
-        <Token Text="[" UId="874" />
-        <Access Scope="LiteralConstant" UId="875">
-          <Constant UId="876">
-            <ConstantValue UId="878">0</ConstantValue>
+  <Blank UId="867" />
+  <Token Text="*" UId="868" />
+  <Blank UId="869" />
+  <Access Scope="LocalVariable" UId="870">
+    <Symbol UId="871">
+      <Component Name="I_Para_rSpeed_Abs" UId="872">
+        <Token Text="[" UId="873" />
+        <Access Scope="LiteralConstant" UId="874">
+          <Constant UId="875">
+            <ConstantValue UId="877">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="879" />
+        <Token Text="]" UId="878" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="880" />
-  <NewLine UId="881" />
-  <Token Text="END_FOR" UId="882" />
-  <Token Text=";" UId="883" />
-  <NewLine Num="3" UId="884" />
-  <LineComment UId="885">
-    <Text UId="886">#temp_posAbsolute := (I_CMD_iGoToPos &lt;&gt; 16#0);</Text>
+  <Token Text=";" UId="879" />
+  <NewLine UId="880" />
+  <Token Text="END_FOR" UId="881" />
+  <Token Text=";" UId="882" />
+  <NewLine Num="3" UId="883" />
+  <LineComment UId="884">
+    <Text UId="885">#temp_posAbsolute := (I_CMD_iGoToPos &lt;&gt; 16#0);</Text>
   </LineComment>
-  <NewLine UId="887" />
-  <Access Scope="LocalVariable" UId="888">
-    <Symbol UId="889">
-      <Component Name="temp_cmd_bGoToPos" UId="890">
-        <Token Text="[" UId="891" />
-        <Access Scope="LiteralConstant" UId="892">
-          <Constant UId="893">
-            <ConstantValue UId="895">1</ConstantValue>
+  <NewLine UId="886" />
+  <Access Scope="LocalVariable" UId="887">
+    <Symbol UId="888">
+      <Component Name="temp_cmd_bGoToPos" UId="889">
+        <Token Text="[" UId="890" />
+        <Access Scope="LiteralConstant" UId="891">
+          <Constant UId="892">
+            <ConstantValue UId="894">1</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="896" />
+        <Token Text="]" UId="895" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="897" />
-  <Token Text=":=" UId="898" />
-  <Blank UId="899" />
+  <Blank UId="896" />
+  <Token Text=":=" UId="897" />
+  <Blank UId="898" />
+  <Token Text="(" UId="899" />
   <Token Text="(" UId="900" />
   <Token Text="(" UId="901" />
-  <Token Text="(" UId="902" />
-  <Access Scope="LocalVariable" UId="903">
-    <Symbol UId="904">
-      <Component Name="Opmode" UId="905" />
-      <Token Text="." UId="906" />
-      <Component Name="Automatic_active" UId="907" />
+  <Access Scope="LocalVariable" UId="902">
+    <Symbol UId="903">
+      <Component Name="Opmode" UId="904" />
+      <Token Text="." UId="905" />
+      <Component Name="Automatic_active" UId="906" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="908" />
-  <Access Scope="LiteralConstant" UId="909">
-    <Constant UId="910">
-      <ConstantValue UId="912">1</ConstantValue>
+  <Token Text="=" UId="907" />
+  <Access Scope="LiteralConstant" UId="908">
+    <Constant UId="909">
+      <ConstantValue UId="911">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="913" />
-  <Token Text="OR" UId="914" />
-  <Blank UId="915" />
-  <Access Scope="LocalVariable" UId="916">
-    <Symbol UId="917">
-      <Component Name="Opmode" UId="918" />
-      <Token Text="." UId="919" />
-      <Component Name="SingleStep_active" UId="920" />
+  <Blank UId="912" />
+  <Token Text="OR" UId="913" />
+  <Blank UId="914" />
+  <Access Scope="LocalVariable" UId="915">
+    <Symbol UId="916">
+      <Component Name="Opmode" UId="917" />
+      <Token Text="." UId="918" />
+      <Component Name="SingleStep_active" UId="919" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="921" />
-  <Access Scope="LiteralConstant" UId="922">
-    <Constant UId="923">
-      <ConstantValue UId="925">1</ConstantValue>
+  <Token Text="=" UId="920" />
+  <Access Scope="LiteralConstant" UId="921">
+    <Constant UId="922">
+      <ConstantValue UId="924">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="926" />
-  <Blank UId="927" />
-  <Token Text="AND" UId="928" />
-  <Blank UId="929" />
-  <Access Scope="LocalVariable" UId="930">
-    <Symbol UId="931">
-      <Component Name="I_CMD_iGoToPos" UId="932" />
+  <Token Text=")" UId="925" />
+  <Blank UId="926" />
+  <Token Text="AND" UId="927" />
+  <Blank UId="928" />
+  <Access Scope="LocalVariable" UId="929">
+    <Symbol UId="930">
+      <Component Name="I_CMD_iGoToPos" UId="931" />
     </Symbol>
   </Access>
-  <Blank UId="933" />
-  <Token Text="=" UId="934" />
-  <Blank UId="935" />
-  <Access Scope="LiteralConstant" UId="936">
-    <Constant UId="937">
-      <ConstantValue UId="939">1</ConstantValue>
+  <Blank UId="932" />
+  <Token Text="=" UId="933" />
+  <Blank UId="934" />
+  <Access Scope="LiteralConstant" UId="935">
+    <Constant UId="936">
+      <ConstantValue UId="938">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="940" />
-  <Blank UId="941" />
-  <Token Text="OR" UId="942" />
-  <Blank UId="943" />
-  <Token Text="(" UId="944" />
-  <Access Scope="LocalVariable" UId="945">
-    <Symbol UId="946">
-      <Component Name="Opmode" UId="947" />
-      <Token Text="." UId="948" />
-      <Component Name="Manual_active" UId="949" />
+  <Token Text=")" UId="939" />
+  <Blank UId="940" />
+  <Token Text="OR" UId="941" />
+  <Blank UId="942" />
+  <Token Text="(" UId="943" />
+  <Access Scope="LocalVariable" UId="944">
+    <Symbol UId="945">
+      <Component Name="Opmode" UId="946" />
+      <Token Text="." UId="947" />
+      <Component Name="Manual_active" UId="948" />
     </Symbol>
   </Access>
-  <Blank UId="950" />
-  <Token Text="AND" UId="951" />
-  <Blank Num="2" UId="952" />
-  <Access Scope="LocalVariable" UId="953">
-    <Symbol UId="954">
-      <Component Name="I_HMI_iGoToPos" UId="955" />
+  <Blank UId="949" />
+  <Token Text="AND" UId="950" />
+  <Blank Num="2" UId="951" />
+  <Access Scope="LocalVariable" UId="952">
+    <Symbol UId="953">
+      <Component Name="I_HMI_iGoToPos" UId="954" />
     </Symbol>
   </Access>
-  <Blank UId="956" />
-  <Token Text="=" UId="957" />
-  <Blank UId="958" />
-  <Access Scope="LiteralConstant" UId="959">
-    <Constant UId="960">
-      <ConstantValue UId="962">1</ConstantValue>
+  <Blank UId="955" />
+  <Token Text="=" UId="956" />
+  <Blank UId="957" />
+  <Access Scope="LiteralConstant" UId="958">
+    <Constant UId="959">
+      <ConstantValue UId="961">1</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="962" />
   <Token Text=")" UId="963" />
-  <Token Text=")" UId="964" />
-  <Blank UId="965" />
-  <Token Text="AND" UId="966" />
-  <Blank UId="967" />
-  <Access Scope="LocalVariable" UId="968">
-    <Symbol UId="969">
-      <Component Name="I_InLock_bGoToPos" UId="970">
-        <Token Text="[" UId="971" />
-        <Access Scope="LiteralConstant" UId="972">
-          <Constant UId="973">
-            <ConstantValue UId="975">1</ConstantValue>
+  <Blank UId="964" />
+  <Token Text="AND" UId="965" />
+  <Blank UId="966" />
+  <Access Scope="LocalVariable" UId="967">
+    <Symbol UId="968">
+      <Component Name="I_InLock_bGoToPos" UId="969">
+        <Token Text="[" UId="970" />
+        <Access Scope="LiteralConstant" UId="971">
+          <Constant UId="972">
+            <ConstantValue UId="974">1</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="976" />
+        <Token Text="]" UId="975" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="977" />
-  <NewLine UId="978" />
-  <Access Scope="LocalVariable" UId="979">
-    <Symbol UId="980">
-      <Component Name="temp_cmd_bGoToPos" UId="981">
-        <Token Text="[" UId="982" />
-        <Access Scope="LiteralConstant" UId="983">
-          <Constant UId="984">
-            <ConstantValue UId="986">2</ConstantValue>
+  <Token Text=";" UId="976" />
+  <NewLine UId="977" />
+  <Access Scope="LocalVariable" UId="978">
+    <Symbol UId="979">
+      <Component Name="temp_cmd_bGoToPos" UId="980">
+        <Token Text="[" UId="981" />
+        <Access Scope="LiteralConstant" UId="982">
+          <Constant UId="983">
+            <ConstantValue UId="985">2</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="987" />
+        <Token Text="]" UId="986" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="988" />
-  <Token Text=":=" UId="989" />
-  <Blank UId="990" />
+  <Blank UId="987" />
+  <Token Text=":=" UId="988" />
+  <Blank UId="989" />
+  <Token Text="(" UId="990" />
   <Token Text="(" UId="991" />
   <Token Text="(" UId="992" />
-  <Token Text="(" UId="993" />
-  <Access Scope="LocalVariable" UId="994">
-    <Symbol UId="995">
-      <Component Name="Opmode" UId="996" />
-      <Token Text="." UId="997" />
-      <Component Name="Automatic_active" UId="998" />
+  <Access Scope="LocalVariable" UId="993">
+    <Symbol UId="994">
+      <Component Name="Opmode" UId="995" />
+      <Token Text="." UId="996" />
+      <Component Name="Automatic_active" UId="997" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="999" />
-  <Access Scope="LiteralConstant" UId="1000">
-    <Constant UId="1001">
-      <ConstantValue UId="1003">1</ConstantValue>
+  <Token Text="=" UId="998" />
+  <Access Scope="LiteralConstant" UId="999">
+    <Constant UId="1000">
+      <ConstantValue UId="1002">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1004" />
-  <Token Text="OR" UId="1005" />
-  <Blank UId="1006" />
-  <Access Scope="LocalVariable" UId="1007">
-    <Symbol UId="1008">
-      <Component Name="Opmode" UId="1009" />
-      <Token Text="." UId="1010" />
-      <Component Name="SingleStep_active" UId="1011" />
+  <Blank UId="1003" />
+  <Token Text="OR" UId="1004" />
+  <Blank UId="1005" />
+  <Access Scope="LocalVariable" UId="1006">
+    <Symbol UId="1007">
+      <Component Name="Opmode" UId="1008" />
+      <Token Text="." UId="1009" />
+      <Component Name="SingleStep_active" UId="1010" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1012" />
-  <Access Scope="LiteralConstant" UId="1013">
-    <Constant UId="1014">
-      <ConstantValue UId="1016">1</ConstantValue>
+  <Token Text="=" UId="1011" />
+  <Access Scope="LiteralConstant" UId="1012">
+    <Constant UId="1013">
+      <ConstantValue UId="1015">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1017" />
-  <Blank UId="1018" />
-  <Token Text="AND" UId="1019" />
-  <Blank UId="1020" />
-  <Access Scope="LocalVariable" UId="1021">
-    <Symbol UId="1022">
-      <Component Name="I_CMD_iGoToPos" UId="1023" />
+  <Token Text=")" UId="1016" />
+  <Blank UId="1017" />
+  <Token Text="AND" UId="1018" />
+  <Blank UId="1019" />
+  <Access Scope="LocalVariable" UId="1020">
+    <Symbol UId="1021">
+      <Component Name="I_CMD_iGoToPos" UId="1022" />
     </Symbol>
   </Access>
-  <Blank UId="1024" />
-  <Token Text="=" UId="1025" />
-  <Blank UId="1026" />
-  <Access Scope="LiteralConstant" UId="1027">
-    <Constant UId="1028">
-      <ConstantValue UId="1030">2</ConstantValue>
+  <Blank UId="1023" />
+  <Token Text="=" UId="1024" />
+  <Blank UId="1025" />
+  <Access Scope="LiteralConstant" UId="1026">
+    <Constant UId="1027">
+      <ConstantValue UId="1029">2</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1031" />
-  <Blank UId="1032" />
-  <Token Text="OR" UId="1033" />
-  <Blank UId="1034" />
-  <Token Text="(" UId="1035" />
-  <Access Scope="LocalVariable" UId="1036">
-    <Symbol UId="1037">
-      <Component Name="Opmode" UId="1038" />
-      <Token Text="." UId="1039" />
-      <Component Name="Manual_active" UId="1040" />
+  <Token Text=")" UId="1030" />
+  <Blank UId="1031" />
+  <Token Text="OR" UId="1032" />
+  <Blank UId="1033" />
+  <Token Text="(" UId="1034" />
+  <Access Scope="LocalVariable" UId="1035">
+    <Symbol UId="1036">
+      <Component Name="Opmode" UId="1037" />
+      <Token Text="." UId="1038" />
+      <Component Name="Manual_active" UId="1039" />
     </Symbol>
   </Access>
-  <Blank UId="1041" />
-  <Token Text="AND" UId="1042" />
-  <Blank Num="2" UId="1043" />
-  <Access Scope="LocalVariable" UId="1044">
-    <Symbol UId="1045">
-      <Component Name="I_HMI_iGoToPos" UId="1046" />
+  <Blank UId="1040" />
+  <Token Text="AND" UId="1041" />
+  <Blank Num="2" UId="1042" />
+  <Access Scope="LocalVariable" UId="1043">
+    <Symbol UId="1044">
+      <Component Name="I_HMI_iGoToPos" UId="1045" />
     </Symbol>
   </Access>
-  <Blank UId="1047" />
-  <Token Text="=" UId="1048" />
-  <Blank UId="1049" />
-  <Access Scope="LiteralConstant" UId="1050">
-    <Constant UId="1051">
-      <ConstantValue UId="1053">2</ConstantValue>
+  <Blank UId="1046" />
+  <Token Text="=" UId="1047" />
+  <Blank UId="1048" />
+  <Access Scope="LiteralConstant" UId="1049">
+    <Constant UId="1050">
+      <ConstantValue UId="1052">2</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1053" />
   <Token Text=")" UId="1054" />
-  <Token Text=")" UId="1055" />
-  <Blank UId="1056" />
-  <Token Text="AND" UId="1057" />
-  <Blank UId="1058" />
-  <Access Scope="LocalVariable" UId="1059">
-    <Symbol UId="1060">
-      <Component Name="I_InLock_bGoToPos" UId="1061">
-        <Token Text="[" UId="1062" />
-        <Access Scope="LiteralConstant" UId="1063">
-          <Constant UId="1064">
-            <ConstantValue UId="1066">2</ConstantValue>
+  <Blank UId="1055" />
+  <Token Text="AND" UId="1056" />
+  <Blank UId="1057" />
+  <Access Scope="LocalVariable" UId="1058">
+    <Symbol UId="1059">
+      <Component Name="I_InLock_bGoToPos" UId="1060">
+        <Token Text="[" UId="1061" />
+        <Access Scope="LiteralConstant" UId="1062">
+          <Constant UId="1063">
+            <ConstantValue UId="1065">2</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1067" />
+        <Token Text="]" UId="1066" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1068" />
-  <NewLine UId="1069" />
-  <Access Scope="LocalVariable" UId="1070">
-    <Symbol UId="1071">
-      <Component Name="temp_cmd_bGoToPos" UId="1072">
-        <Token Text="[" UId="1073" />
-        <Access Scope="LiteralConstant" UId="1074">
-          <Constant UId="1075">
-            <ConstantValue UId="1077">3</ConstantValue>
+  <Token Text=";" UId="1067" />
+  <NewLine UId="1068" />
+  <Access Scope="LocalVariable" UId="1069">
+    <Symbol UId="1070">
+      <Component Name="temp_cmd_bGoToPos" UId="1071">
+        <Token Text="[" UId="1072" />
+        <Access Scope="LiteralConstant" UId="1073">
+          <Constant UId="1074">
+            <ConstantValue UId="1076">3</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1078" />
+        <Token Text="]" UId="1077" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1079" />
-  <Token Text=":=" UId="1080" />
-  <Blank UId="1081" />
+  <Blank UId="1078" />
+  <Token Text=":=" UId="1079" />
+  <Blank UId="1080" />
+  <Token Text="(" UId="1081" />
   <Token Text="(" UId="1082" />
   <Token Text="(" UId="1083" />
-  <Token Text="(" UId="1084" />
-  <Access Scope="LocalVariable" UId="1085">
-    <Symbol UId="1086">
-      <Component Name="Opmode" UId="1087" />
-      <Token Text="." UId="1088" />
-      <Component Name="Automatic_active" UId="1089" />
+  <Access Scope="LocalVariable" UId="1084">
+    <Symbol UId="1085">
+      <Component Name="Opmode" UId="1086" />
+      <Token Text="." UId="1087" />
+      <Component Name="Automatic_active" UId="1088" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1090" />
-  <Access Scope="LiteralConstant" UId="1091">
-    <Constant UId="1092">
-      <ConstantValue UId="1094">1</ConstantValue>
+  <Token Text="=" UId="1089" />
+  <Access Scope="LiteralConstant" UId="1090">
+    <Constant UId="1091">
+      <ConstantValue UId="1093">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1095" />
-  <Token Text="OR" UId="1096" />
-  <Blank UId="1097" />
-  <Access Scope="LocalVariable" UId="1098">
-    <Symbol UId="1099">
-      <Component Name="Opmode" UId="1100" />
-      <Token Text="." UId="1101" />
-      <Component Name="SingleStep_active" UId="1102" />
+  <Blank UId="1094" />
+  <Token Text="OR" UId="1095" />
+  <Blank UId="1096" />
+  <Access Scope="LocalVariable" UId="1097">
+    <Symbol UId="1098">
+      <Component Name="Opmode" UId="1099" />
+      <Token Text="." UId="1100" />
+      <Component Name="SingleStep_active" UId="1101" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1103" />
-  <Access Scope="LiteralConstant" UId="1104">
-    <Constant UId="1105">
-      <ConstantValue UId="1107">1</ConstantValue>
+  <Token Text="=" UId="1102" />
+  <Access Scope="LiteralConstant" UId="1103">
+    <Constant UId="1104">
+      <ConstantValue UId="1106">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1108" />
-  <Blank UId="1109" />
-  <Token Text="AND" UId="1110" />
-  <Blank UId="1111" />
-  <Access Scope="LocalVariable" UId="1112">
-    <Symbol UId="1113">
-      <Component Name="I_CMD_iGoToPos" UId="1114" />
+  <Token Text=")" UId="1107" />
+  <Blank UId="1108" />
+  <Token Text="AND" UId="1109" />
+  <Blank UId="1110" />
+  <Access Scope="LocalVariable" UId="1111">
+    <Symbol UId="1112">
+      <Component Name="I_CMD_iGoToPos" UId="1113" />
     </Symbol>
   </Access>
-  <Blank UId="1115" />
-  <Token Text="=" UId="1116" />
-  <Blank UId="1117" />
-  <Access Scope="LiteralConstant" UId="1118">
-    <Constant UId="1119">
-      <ConstantValue UId="1121">3</ConstantValue>
+  <Blank UId="1114" />
+  <Token Text="=" UId="1115" />
+  <Blank UId="1116" />
+  <Access Scope="LiteralConstant" UId="1117">
+    <Constant UId="1118">
+      <ConstantValue UId="1120">3</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1122" />
-  <Blank UId="1123" />
-  <Token Text="OR" UId="1124" />
-  <Blank UId="1125" />
-  <Token Text="(" UId="1126" />
-  <Access Scope="LocalVariable" UId="1127">
-    <Symbol UId="1128">
-      <Component Name="Opmode" UId="1129" />
-      <Token Text="." UId="1130" />
-      <Component Name="Manual_active" UId="1131" />
+  <Token Text=")" UId="1121" />
+  <Blank UId="1122" />
+  <Token Text="OR" UId="1123" />
+  <Blank UId="1124" />
+  <Token Text="(" UId="1125" />
+  <Access Scope="LocalVariable" UId="1126">
+    <Symbol UId="1127">
+      <Component Name="Opmode" UId="1128" />
+      <Token Text="." UId="1129" />
+      <Component Name="Manual_active" UId="1130" />
     </Symbol>
   </Access>
-  <Blank UId="1132" />
-  <Token Text="AND" UId="1133" />
-  <Blank Num="2" UId="1134" />
-  <Access Scope="LocalVariable" UId="1135">
-    <Symbol UId="1136">
-      <Component Name="I_HMI_iGoToPos" UId="1137" />
+  <Blank UId="1131" />
+  <Token Text="AND" UId="1132" />
+  <Blank Num="2" UId="1133" />
+  <Access Scope="LocalVariable" UId="1134">
+    <Symbol UId="1135">
+      <Component Name="I_HMI_iGoToPos" UId="1136" />
     </Symbol>
   </Access>
-  <Blank UId="1138" />
-  <Token Text="=" UId="1139" />
-  <Blank UId="1140" />
-  <Access Scope="LiteralConstant" UId="1141">
-    <Constant UId="1142">
-      <ConstantValue UId="1144">3</ConstantValue>
+  <Blank UId="1137" />
+  <Token Text="=" UId="1138" />
+  <Blank UId="1139" />
+  <Access Scope="LiteralConstant" UId="1140">
+    <Constant UId="1141">
+      <ConstantValue UId="1143">3</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1144" />
   <Token Text=")" UId="1145" />
-  <Token Text=")" UId="1146" />
-  <Blank UId="1147" />
-  <Token Text="AND" UId="1148" />
-  <Blank UId="1149" />
-  <Access Scope="LocalVariable" UId="1150">
-    <Symbol UId="1151">
-      <Component Name="I_InLock_bGoToPos" UId="1152">
-        <Token Text="[" UId="1153" />
-        <Access Scope="LiteralConstant" UId="1154">
-          <Constant UId="1155">
-            <ConstantValue UId="1157">3</ConstantValue>
+  <Blank UId="1146" />
+  <Token Text="AND" UId="1147" />
+  <Blank UId="1148" />
+  <Access Scope="LocalVariable" UId="1149">
+    <Symbol UId="1150">
+      <Component Name="I_InLock_bGoToPos" UId="1151">
+        <Token Text="[" UId="1152" />
+        <Access Scope="LiteralConstant" UId="1153">
+          <Constant UId="1154">
+            <ConstantValue UId="1156">3</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1158" />
+        <Token Text="]" UId="1157" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1159" />
-  <NewLine UId="1160" />
-  <Access Scope="LocalVariable" UId="1161">
-    <Symbol UId="1162">
-      <Component Name="temp_cmd_bGoToPos" UId="1163">
-        <Token Text="[" UId="1164" />
-        <Access Scope="LiteralConstant" UId="1165">
-          <Constant UId="1166">
-            <ConstantValue UId="1168">4</ConstantValue>
+  <Token Text=";" UId="1158" />
+  <NewLine UId="1159" />
+  <Access Scope="LocalVariable" UId="1160">
+    <Symbol UId="1161">
+      <Component Name="temp_cmd_bGoToPos" UId="1162">
+        <Token Text="[" UId="1163" />
+        <Access Scope="LiteralConstant" UId="1164">
+          <Constant UId="1165">
+            <ConstantValue UId="1167">4</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1169" />
+        <Token Text="]" UId="1168" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1170" />
-  <Token Text=":=" UId="1171" />
-  <Blank UId="1172" />
+  <Blank UId="1169" />
+  <Token Text=":=" UId="1170" />
+  <Blank UId="1171" />
+  <Token Text="(" UId="1172" />
   <Token Text="(" UId="1173" />
   <Token Text="(" UId="1174" />
-  <Token Text="(" UId="1175" />
-  <Access Scope="LocalVariable" UId="1176">
-    <Symbol UId="1177">
-      <Component Name="Opmode" UId="1178" />
-      <Token Text="." UId="1179" />
-      <Component Name="Automatic_active" UId="1180" />
+  <Access Scope="LocalVariable" UId="1175">
+    <Symbol UId="1176">
+      <Component Name="Opmode" UId="1177" />
+      <Token Text="." UId="1178" />
+      <Component Name="Automatic_active" UId="1179" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1181" />
-  <Access Scope="LiteralConstant" UId="1182">
-    <Constant UId="1183">
-      <ConstantValue UId="1185">1</ConstantValue>
+  <Token Text="=" UId="1180" />
+  <Access Scope="LiteralConstant" UId="1181">
+    <Constant UId="1182">
+      <ConstantValue UId="1184">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1186" />
-  <Token Text="OR" UId="1187" />
-  <Blank UId="1188" />
-  <Access Scope="LocalVariable" UId="1189">
-    <Symbol UId="1190">
-      <Component Name="Opmode" UId="1191" />
-      <Token Text="." UId="1192" />
-      <Component Name="SingleStep_active" UId="1193" />
+  <Blank UId="1185" />
+  <Token Text="OR" UId="1186" />
+  <Blank UId="1187" />
+  <Access Scope="LocalVariable" UId="1188">
+    <Symbol UId="1189">
+      <Component Name="Opmode" UId="1190" />
+      <Token Text="." UId="1191" />
+      <Component Name="SingleStep_active" UId="1192" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1194" />
-  <Access Scope="LiteralConstant" UId="1195">
-    <Constant UId="1196">
-      <ConstantValue UId="1198">1</ConstantValue>
+  <Token Text="=" UId="1193" />
+  <Access Scope="LiteralConstant" UId="1194">
+    <Constant UId="1195">
+      <ConstantValue UId="1197">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1199" />
-  <Blank UId="1200" />
-  <Token Text="AND" UId="1201" />
-  <Blank UId="1202" />
-  <Access Scope="LocalVariable" UId="1203">
-    <Symbol UId="1204">
-      <Component Name="I_CMD_iGoToPos" UId="1205" />
+  <Token Text=")" UId="1198" />
+  <Blank UId="1199" />
+  <Token Text="AND" UId="1200" />
+  <Blank UId="1201" />
+  <Access Scope="LocalVariable" UId="1202">
+    <Symbol UId="1203">
+      <Component Name="I_CMD_iGoToPos" UId="1204" />
     </Symbol>
   </Access>
-  <Blank UId="1206" />
-  <Token Text="=" UId="1207" />
-  <Blank UId="1208" />
-  <Access Scope="LiteralConstant" UId="1209">
-    <Constant UId="1210">
-      <ConstantValue UId="1212">4</ConstantValue>
+  <Blank UId="1205" />
+  <Token Text="=" UId="1206" />
+  <Blank UId="1207" />
+  <Access Scope="LiteralConstant" UId="1208">
+    <Constant UId="1209">
+      <ConstantValue UId="1211">4</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1213" />
-  <Blank UId="1214" />
-  <Token Text="OR" UId="1215" />
-  <Blank UId="1216" />
-  <Token Text="(" UId="1217" />
-  <Access Scope="LocalVariable" UId="1218">
-    <Symbol UId="1219">
-      <Component Name="Opmode" UId="1220" />
-      <Token Text="." UId="1221" />
-      <Component Name="Manual_active" UId="1222" />
+  <Token Text=")" UId="1212" />
+  <Blank UId="1213" />
+  <Token Text="OR" UId="1214" />
+  <Blank UId="1215" />
+  <Token Text="(" UId="1216" />
+  <Access Scope="LocalVariable" UId="1217">
+    <Symbol UId="1218">
+      <Component Name="Opmode" UId="1219" />
+      <Token Text="." UId="1220" />
+      <Component Name="Manual_active" UId="1221" />
     </Symbol>
   </Access>
-  <Blank UId="1223" />
-  <Token Text="AND" UId="1224" />
-  <Blank Num="2" UId="1225" />
-  <Access Scope="LocalVariable" UId="1226">
-    <Symbol UId="1227">
-      <Component Name="I_HMI_iGoToPos" UId="1228" />
+  <Blank UId="1222" />
+  <Token Text="AND" UId="1223" />
+  <Blank Num="2" UId="1224" />
+  <Access Scope="LocalVariable" UId="1225">
+    <Symbol UId="1226">
+      <Component Name="I_HMI_iGoToPos" UId="1227" />
     </Symbol>
   </Access>
-  <Blank UId="1229" />
-  <Token Text="=" UId="1230" />
-  <Blank UId="1231" />
-  <Access Scope="LiteralConstant" UId="1232">
-    <Constant UId="1233">
-      <ConstantValue UId="1235">4</ConstantValue>
+  <Blank UId="1228" />
+  <Token Text="=" UId="1229" />
+  <Blank UId="1230" />
+  <Access Scope="LiteralConstant" UId="1231">
+    <Constant UId="1232">
+      <ConstantValue UId="1234">4</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1235" />
   <Token Text=")" UId="1236" />
-  <Token Text=")" UId="1237" />
-  <Blank UId="1238" />
-  <Token Text="AND" UId="1239" />
-  <Blank UId="1240" />
-  <Access Scope="LocalVariable" UId="1241">
-    <Symbol UId="1242">
-      <Component Name="I_InLock_bGoToPos" UId="1243">
-        <Token Text="[" UId="1244" />
-        <Access Scope="LiteralConstant" UId="1245">
-          <Constant UId="1246">
-            <ConstantValue UId="1248">4</ConstantValue>
+  <Blank UId="1237" />
+  <Token Text="AND" UId="1238" />
+  <Blank UId="1239" />
+  <Access Scope="LocalVariable" UId="1240">
+    <Symbol UId="1241">
+      <Component Name="I_InLock_bGoToPos" UId="1242">
+        <Token Text="[" UId="1243" />
+        <Access Scope="LiteralConstant" UId="1244">
+          <Constant UId="1245">
+            <ConstantValue UId="1247">4</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1249" />
+        <Token Text="]" UId="1248" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1250" />
-  <NewLine UId="1251" />
-  <Access Scope="LocalVariable" UId="1252">
-    <Symbol UId="1253">
-      <Component Name="temp_cmd_bGoToPos" UId="1254">
-        <Token Text="[" UId="1255" />
-        <Access Scope="LiteralConstant" UId="1256">
-          <Constant UId="1257">
-            <ConstantValue UId="1259">5</ConstantValue>
+  <Token Text=";" UId="1249" />
+  <NewLine UId="1250" />
+  <Access Scope="LocalVariable" UId="1251">
+    <Symbol UId="1252">
+      <Component Name="temp_cmd_bGoToPos" UId="1253">
+        <Token Text="[" UId="1254" />
+        <Access Scope="LiteralConstant" UId="1255">
+          <Constant UId="1256">
+            <ConstantValue UId="1258">5</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1260" />
+        <Token Text="]" UId="1259" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1261" />
-  <Token Text=":=" UId="1262" />
-  <Blank UId="1263" />
+  <Blank UId="1260" />
+  <Token Text=":=" UId="1261" />
+  <Blank UId="1262" />
+  <Token Text="(" UId="1263" />
   <Token Text="(" UId="1264" />
   <Token Text="(" UId="1265" />
-  <Token Text="(" UId="1266" />
-  <Access Scope="LocalVariable" UId="1267">
-    <Symbol UId="1268">
-      <Component Name="Opmode" UId="1269" />
-      <Token Text="." UId="1270" />
-      <Component Name="Automatic_active" UId="1271" />
+  <Access Scope="LocalVariable" UId="1266">
+    <Symbol UId="1267">
+      <Component Name="Opmode" UId="1268" />
+      <Token Text="." UId="1269" />
+      <Component Name="Automatic_active" UId="1270" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1272" />
-  <Access Scope="LiteralConstant" UId="1273">
-    <Constant UId="1274">
-      <ConstantValue UId="1276">1</ConstantValue>
+  <Token Text="=" UId="1271" />
+  <Access Scope="LiteralConstant" UId="1272">
+    <Constant UId="1273">
+      <ConstantValue UId="1275">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1277" />
-  <Token Text="OR" UId="1278" />
-  <Blank UId="1279" />
-  <Access Scope="LocalVariable" UId="1280">
-    <Symbol UId="1281">
-      <Component Name="Opmode" UId="1282" />
-      <Token Text="." UId="1283" />
-      <Component Name="SingleStep_active" UId="1284" />
+  <Blank UId="1276" />
+  <Token Text="OR" UId="1277" />
+  <Blank UId="1278" />
+  <Access Scope="LocalVariable" UId="1279">
+    <Symbol UId="1280">
+      <Component Name="Opmode" UId="1281" />
+      <Token Text="." UId="1282" />
+      <Component Name="SingleStep_active" UId="1283" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1285" />
-  <Access Scope="LiteralConstant" UId="1286">
-    <Constant UId="1287">
-      <ConstantValue UId="1289">1</ConstantValue>
+  <Token Text="=" UId="1284" />
+  <Access Scope="LiteralConstant" UId="1285">
+    <Constant UId="1286">
+      <ConstantValue UId="1288">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1290" />
-  <Blank UId="1291" />
-  <Token Text="AND" UId="1292" />
-  <Blank UId="1293" />
-  <Access Scope="LocalVariable" UId="1294">
-    <Symbol UId="1295">
-      <Component Name="I_CMD_iGoToPos" UId="1296" />
+  <Token Text=")" UId="1289" />
+  <Blank UId="1290" />
+  <Token Text="AND" UId="1291" />
+  <Blank UId="1292" />
+  <Access Scope="LocalVariable" UId="1293">
+    <Symbol UId="1294">
+      <Component Name="I_CMD_iGoToPos" UId="1295" />
     </Symbol>
   </Access>
-  <Blank UId="1297" />
-  <Token Text="=" UId="1298" />
-  <Blank UId="1299" />
-  <Access Scope="LiteralConstant" UId="1300">
-    <Constant UId="1301">
-      <ConstantValue UId="1303">5</ConstantValue>
+  <Blank UId="1296" />
+  <Token Text="=" UId="1297" />
+  <Blank UId="1298" />
+  <Access Scope="LiteralConstant" UId="1299">
+    <Constant UId="1300">
+      <ConstantValue UId="1302">5</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1304" />
-  <Blank UId="1305" />
-  <Token Text="OR" UId="1306" />
-  <Blank UId="1307" />
-  <Token Text="(" UId="1308" />
-  <Access Scope="LocalVariable" UId="1309">
-    <Symbol UId="1310">
-      <Component Name="Opmode" UId="1311" />
-      <Token Text="." UId="1312" />
-      <Component Name="Manual_active" UId="1313" />
+  <Token Text=")" UId="1303" />
+  <Blank UId="1304" />
+  <Token Text="OR" UId="1305" />
+  <Blank UId="1306" />
+  <Token Text="(" UId="1307" />
+  <Access Scope="LocalVariable" UId="1308">
+    <Symbol UId="1309">
+      <Component Name="Opmode" UId="1310" />
+      <Token Text="." UId="1311" />
+      <Component Name="Manual_active" UId="1312" />
     </Symbol>
   </Access>
-  <Blank UId="1314" />
-  <Token Text="AND" UId="1315" />
-  <Blank Num="2" UId="1316" />
-  <Access Scope="LocalVariable" UId="1317">
-    <Symbol UId="1318">
-      <Component Name="I_HMI_iGoToPos" UId="1319" />
+  <Blank UId="1313" />
+  <Token Text="AND" UId="1314" />
+  <Blank Num="2" UId="1315" />
+  <Access Scope="LocalVariable" UId="1316">
+    <Symbol UId="1317">
+      <Component Name="I_HMI_iGoToPos" UId="1318" />
     </Symbol>
   </Access>
-  <Blank UId="1320" />
-  <Token Text="=" UId="1321" />
-  <Blank UId="1322" />
-  <Access Scope="LiteralConstant" UId="1323">
-    <Constant UId="1324">
-      <ConstantValue UId="1326">5</ConstantValue>
+  <Blank UId="1319" />
+  <Token Text="=" UId="1320" />
+  <Blank UId="1321" />
+  <Access Scope="LiteralConstant" UId="1322">
+    <Constant UId="1323">
+      <ConstantValue UId="1325">5</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1326" />
   <Token Text=")" UId="1327" />
-  <Token Text=")" UId="1328" />
-  <Blank UId="1329" />
-  <Token Text="AND" UId="1330" />
-  <Blank UId="1331" />
-  <Access Scope="LocalVariable" UId="1332">
-    <Symbol UId="1333">
-      <Component Name="I_InLock_bGoToPos" UId="1334">
-        <Token Text="[" UId="1335" />
-        <Access Scope="LiteralConstant" UId="1336">
-          <Constant UId="1337">
-            <ConstantValue UId="1339">5</ConstantValue>
+  <Blank UId="1328" />
+  <Token Text="AND" UId="1329" />
+  <Blank UId="1330" />
+  <Access Scope="LocalVariable" UId="1331">
+    <Symbol UId="1332">
+      <Component Name="I_InLock_bGoToPos" UId="1333">
+        <Token Text="[" UId="1334" />
+        <Access Scope="LiteralConstant" UId="1335">
+          <Constant UId="1336">
+            <ConstantValue UId="1338">5</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1340" />
+        <Token Text="]" UId="1339" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1341" />
-  <NewLine UId="1342" />
-  <Access Scope="LocalVariable" UId="1343">
-    <Symbol UId="1344">
-      <Component Name="temp_cmd_bGoToPos" UId="1345">
-        <Token Text="[" UId="1346" />
-        <Access Scope="LiteralConstant" UId="1347">
-          <Constant UId="1348">
-            <ConstantValue UId="1350">6</ConstantValue>
+  <Token Text=";" UId="1340" />
+  <NewLine UId="1341" />
+  <Access Scope="LocalVariable" UId="1342">
+    <Symbol UId="1343">
+      <Component Name="temp_cmd_bGoToPos" UId="1344">
+        <Token Text="[" UId="1345" />
+        <Access Scope="LiteralConstant" UId="1346">
+          <Constant UId="1347">
+            <ConstantValue UId="1349">6</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1351" />
+        <Token Text="]" UId="1350" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1352" />
-  <Token Text=":=" UId="1353" />
-  <Blank UId="1354" />
+  <Blank UId="1351" />
+  <Token Text=":=" UId="1352" />
+  <Blank UId="1353" />
+  <Token Text="(" UId="1354" />
   <Token Text="(" UId="1355" />
   <Token Text="(" UId="1356" />
-  <Token Text="(" UId="1357" />
-  <Access Scope="LocalVariable" UId="1358">
-    <Symbol UId="1359">
-      <Component Name="Opmode" UId="1360" />
-      <Token Text="." UId="1361" />
-      <Component Name="Automatic_active" UId="1362" />
+  <Access Scope="LocalVariable" UId="1357">
+    <Symbol UId="1358">
+      <Component Name="Opmode" UId="1359" />
+      <Token Text="." UId="1360" />
+      <Component Name="Automatic_active" UId="1361" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1363" />
-  <Access Scope="LiteralConstant" UId="1364">
-    <Constant UId="1365">
-      <ConstantValue UId="1367">1</ConstantValue>
+  <Token Text="=" UId="1362" />
+  <Access Scope="LiteralConstant" UId="1363">
+    <Constant UId="1364">
+      <ConstantValue UId="1366">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1368" />
-  <Token Text="OR" UId="1369" />
-  <Blank UId="1370" />
-  <Access Scope="LocalVariable" UId="1371">
-    <Symbol UId="1372">
-      <Component Name="Opmode" UId="1373" />
-      <Token Text="." UId="1374" />
-      <Component Name="SingleStep_active" UId="1375" />
+  <Blank UId="1367" />
+  <Token Text="OR" UId="1368" />
+  <Blank UId="1369" />
+  <Access Scope="LocalVariable" UId="1370">
+    <Symbol UId="1371">
+      <Component Name="Opmode" UId="1372" />
+      <Token Text="." UId="1373" />
+      <Component Name="SingleStep_active" UId="1374" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1376" />
-  <Access Scope="LiteralConstant" UId="1377">
-    <Constant UId="1378">
-      <ConstantValue UId="1380">1</ConstantValue>
+  <Token Text="=" UId="1375" />
+  <Access Scope="LiteralConstant" UId="1376">
+    <Constant UId="1377">
+      <ConstantValue UId="1379">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1381" />
-  <Blank UId="1382" />
-  <Token Text="AND" UId="1383" />
-  <Blank UId="1384" />
-  <Access Scope="LocalVariable" UId="1385">
-    <Symbol UId="1386">
-      <Component Name="I_CMD_iGoToPos" UId="1387" />
+  <Token Text=")" UId="1380" />
+  <Blank UId="1381" />
+  <Token Text="AND" UId="1382" />
+  <Blank UId="1383" />
+  <Access Scope="LocalVariable" UId="1384">
+    <Symbol UId="1385">
+      <Component Name="I_CMD_iGoToPos" UId="1386" />
     </Symbol>
   </Access>
-  <Blank UId="1388" />
-  <Token Text="=" UId="1389" />
-  <Blank UId="1390" />
-  <Access Scope="LiteralConstant" UId="1391">
-    <Constant UId="1392">
-      <ConstantValue UId="1394">6</ConstantValue>
+  <Blank UId="1387" />
+  <Token Text="=" UId="1388" />
+  <Blank UId="1389" />
+  <Access Scope="LiteralConstant" UId="1390">
+    <Constant UId="1391">
+      <ConstantValue UId="1393">6</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1395" />
-  <Blank UId="1396" />
-  <Token Text="OR" UId="1397" />
-  <Blank UId="1398" />
-  <Token Text="(" UId="1399" />
-  <Access Scope="LocalVariable" UId="1400">
-    <Symbol UId="1401">
-      <Component Name="Opmode" UId="1402" />
-      <Token Text="." UId="1403" />
-      <Component Name="Manual_active" UId="1404" />
+  <Token Text=")" UId="1394" />
+  <Blank UId="1395" />
+  <Token Text="OR" UId="1396" />
+  <Blank UId="1397" />
+  <Token Text="(" UId="1398" />
+  <Access Scope="LocalVariable" UId="1399">
+    <Symbol UId="1400">
+      <Component Name="Opmode" UId="1401" />
+      <Token Text="." UId="1402" />
+      <Component Name="Manual_active" UId="1403" />
     </Symbol>
   </Access>
-  <Blank UId="1405" />
-  <Token Text="AND" UId="1406" />
-  <Blank Num="2" UId="1407" />
-  <Access Scope="LocalVariable" UId="1408">
-    <Symbol UId="1409">
-      <Component Name="I_HMI_iGoToPos" UId="1410" />
+  <Blank UId="1404" />
+  <Token Text="AND" UId="1405" />
+  <Blank Num="2" UId="1406" />
+  <Access Scope="LocalVariable" UId="1407">
+    <Symbol UId="1408">
+      <Component Name="I_HMI_iGoToPos" UId="1409" />
     </Symbol>
   </Access>
-  <Blank UId="1411" />
-  <Token Text="=" UId="1412" />
-  <Blank UId="1413" />
-  <Access Scope="LiteralConstant" UId="1414">
-    <Constant UId="1415">
-      <ConstantValue UId="1417">6</ConstantValue>
+  <Blank UId="1410" />
+  <Token Text="=" UId="1411" />
+  <Blank UId="1412" />
+  <Access Scope="LiteralConstant" UId="1413">
+    <Constant UId="1414">
+      <ConstantValue UId="1416">6</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1417" />
   <Token Text=")" UId="1418" />
-  <Token Text=")" UId="1419" />
-  <Blank UId="1420" />
-  <Token Text="AND" UId="1421" />
-  <Blank UId="1422" />
-  <Access Scope="LocalVariable" UId="1423">
-    <Symbol UId="1424">
-      <Component Name="I_InLock_bGoToPos" UId="1425">
-        <Token Text="[" UId="1426" />
-        <Access Scope="LiteralConstant" UId="1427">
-          <Constant UId="1428">
-            <ConstantValue UId="1430">6</ConstantValue>
+  <Blank UId="1419" />
+  <Token Text="AND" UId="1420" />
+  <Blank UId="1421" />
+  <Access Scope="LocalVariable" UId="1422">
+    <Symbol UId="1423">
+      <Component Name="I_InLock_bGoToPos" UId="1424">
+        <Token Text="[" UId="1425" />
+        <Access Scope="LiteralConstant" UId="1426">
+          <Constant UId="1427">
+            <ConstantValue UId="1429">6</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1431" />
+        <Token Text="]" UId="1430" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1432" />
-  <NewLine UId="1433" />
-  <Access Scope="LocalVariable" UId="1434">
-    <Symbol UId="1435">
-      <Component Name="temp_cmd_bGoToPos" UId="1436">
-        <Token Text="[" UId="1437" />
-        <Access Scope="LiteralConstant" UId="1438">
-          <Constant UId="1439">
-            <ConstantValue UId="1441">7</ConstantValue>
+  <Token Text=";" UId="1431" />
+  <NewLine UId="1432" />
+  <Access Scope="LocalVariable" UId="1433">
+    <Symbol UId="1434">
+      <Component Name="temp_cmd_bGoToPos" UId="1435">
+        <Token Text="[" UId="1436" />
+        <Access Scope="LiteralConstant" UId="1437">
+          <Constant UId="1438">
+            <ConstantValue UId="1440">7</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1442" />
+        <Token Text="]" UId="1441" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1443" />
-  <Token Text=":=" UId="1444" />
-  <Blank UId="1445" />
+  <Blank UId="1442" />
+  <Token Text=":=" UId="1443" />
+  <Blank UId="1444" />
+  <Token Text="(" UId="1445" />
   <Token Text="(" UId="1446" />
   <Token Text="(" UId="1447" />
-  <Token Text="(" UId="1448" />
-  <Access Scope="LocalVariable" UId="1449">
-    <Symbol UId="1450">
-      <Component Name="Opmode" UId="1451" />
-      <Token Text="." UId="1452" />
-      <Component Name="Automatic_active" UId="1453" />
+  <Access Scope="LocalVariable" UId="1448">
+    <Symbol UId="1449">
+      <Component Name="Opmode" UId="1450" />
+      <Token Text="." UId="1451" />
+      <Component Name="Automatic_active" UId="1452" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1454" />
-  <Access Scope="LiteralConstant" UId="1455">
-    <Constant UId="1456">
-      <ConstantValue UId="1458">1</ConstantValue>
+  <Token Text="=" UId="1453" />
+  <Access Scope="LiteralConstant" UId="1454">
+    <Constant UId="1455">
+      <ConstantValue UId="1457">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1459" />
-  <Token Text="OR" UId="1460" />
-  <Blank UId="1461" />
-  <Access Scope="LocalVariable" UId="1462">
-    <Symbol UId="1463">
-      <Component Name="Opmode" UId="1464" />
-      <Token Text="." UId="1465" />
-      <Component Name="SingleStep_active" UId="1466" />
+  <Blank UId="1458" />
+  <Token Text="OR" UId="1459" />
+  <Blank UId="1460" />
+  <Access Scope="LocalVariable" UId="1461">
+    <Symbol UId="1462">
+      <Component Name="Opmode" UId="1463" />
+      <Token Text="." UId="1464" />
+      <Component Name="SingleStep_active" UId="1465" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1467" />
-  <Access Scope="LiteralConstant" UId="1468">
-    <Constant UId="1469">
-      <ConstantValue UId="1471">1</ConstantValue>
+  <Token Text="=" UId="1466" />
+  <Access Scope="LiteralConstant" UId="1467">
+    <Constant UId="1468">
+      <ConstantValue UId="1470">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1472" />
-  <Blank UId="1473" />
-  <Token Text="AND" UId="1474" />
-  <Blank UId="1475" />
-  <Access Scope="LocalVariable" UId="1476">
-    <Symbol UId="1477">
-      <Component Name="I_CMD_iGoToPos" UId="1478" />
+  <Token Text=")" UId="1471" />
+  <Blank UId="1472" />
+  <Token Text="AND" UId="1473" />
+  <Blank UId="1474" />
+  <Access Scope="LocalVariable" UId="1475">
+    <Symbol UId="1476">
+      <Component Name="I_CMD_iGoToPos" UId="1477" />
     </Symbol>
   </Access>
-  <Blank UId="1479" />
-  <Token Text="=" UId="1480" />
-  <Blank UId="1481" />
-  <Access Scope="LiteralConstant" UId="1482">
-    <Constant UId="1483">
-      <ConstantValue UId="1485">7</ConstantValue>
+  <Blank UId="1478" />
+  <Token Text="=" UId="1479" />
+  <Blank UId="1480" />
+  <Access Scope="LiteralConstant" UId="1481">
+    <Constant UId="1482">
+      <ConstantValue UId="1484">7</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1486" />
-  <Blank UId="1487" />
-  <Token Text="OR" UId="1488" />
-  <Blank UId="1489" />
-  <Token Text="(" UId="1490" />
-  <Access Scope="LocalVariable" UId="1491">
-    <Symbol UId="1492">
-      <Component Name="Opmode" UId="1493" />
-      <Token Text="." UId="1494" />
-      <Component Name="Manual_active" UId="1495" />
+  <Token Text=")" UId="1485" />
+  <Blank UId="1486" />
+  <Token Text="OR" UId="1487" />
+  <Blank UId="1488" />
+  <Token Text="(" UId="1489" />
+  <Access Scope="LocalVariable" UId="1490">
+    <Symbol UId="1491">
+      <Component Name="Opmode" UId="1492" />
+      <Token Text="." UId="1493" />
+      <Component Name="Manual_active" UId="1494" />
     </Symbol>
   </Access>
-  <Blank UId="1496" />
-  <Token Text="AND" UId="1497" />
-  <Blank Num="2" UId="1498" />
-  <Access Scope="LocalVariable" UId="1499">
-    <Symbol UId="1500">
-      <Component Name="I_HMI_iGoToPos" UId="1501" />
+  <Blank UId="1495" />
+  <Token Text="AND" UId="1496" />
+  <Blank Num="2" UId="1497" />
+  <Access Scope="LocalVariable" UId="1498">
+    <Symbol UId="1499">
+      <Component Name="I_HMI_iGoToPos" UId="1500" />
     </Symbol>
   </Access>
-  <Blank UId="1502" />
-  <Token Text="=" UId="1503" />
-  <Blank UId="1504" />
-  <Access Scope="LiteralConstant" UId="1505">
-    <Constant UId="1506">
-      <ConstantValue UId="1508">7</ConstantValue>
+  <Blank UId="1501" />
+  <Token Text="=" UId="1502" />
+  <Blank UId="1503" />
+  <Access Scope="LiteralConstant" UId="1504">
+    <Constant UId="1505">
+      <ConstantValue UId="1507">7</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1508" />
   <Token Text=")" UId="1509" />
-  <Token Text=")" UId="1510" />
-  <Blank UId="1511" />
-  <Token Text="AND" UId="1512" />
-  <Blank UId="1513" />
-  <Access Scope="LocalVariable" UId="1514">
-    <Symbol UId="1515">
-      <Component Name="I_InLock_bGoToPos" UId="1516">
-        <Token Text="[" UId="1517" />
-        <Access Scope="LiteralConstant" UId="1518">
-          <Constant UId="1519">
-            <ConstantValue UId="1521">7</ConstantValue>
+  <Blank UId="1510" />
+  <Token Text="AND" UId="1511" />
+  <Blank UId="1512" />
+  <Access Scope="LocalVariable" UId="1513">
+    <Symbol UId="1514">
+      <Component Name="I_InLock_bGoToPos" UId="1515">
+        <Token Text="[" UId="1516" />
+        <Access Scope="LiteralConstant" UId="1517">
+          <Constant UId="1518">
+            <ConstantValue UId="1520">7</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1522" />
+        <Token Text="]" UId="1521" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1523" />
-  <NewLine UId="1524" />
-  <Access Scope="LocalVariable" UId="1525">
-    <Symbol UId="1526">
-      <Component Name="temp_cmd_bGoToPos" UId="1527">
-        <Token Text="[" UId="1528" />
-        <Access Scope="LiteralConstant" UId="1529">
-          <Constant UId="1530">
-            <ConstantValue UId="1532">8</ConstantValue>
+  <Token Text=";" UId="1522" />
+  <NewLine UId="1523" />
+  <Access Scope="LocalVariable" UId="1524">
+    <Symbol UId="1525">
+      <Component Name="temp_cmd_bGoToPos" UId="1526">
+        <Token Text="[" UId="1527" />
+        <Access Scope="LiteralConstant" UId="1528">
+          <Constant UId="1529">
+            <ConstantValue UId="1531">8</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1533" />
+        <Token Text="]" UId="1532" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1534" />
-  <Token Text=":=" UId="1535" />
-  <Blank UId="1536" />
+  <Blank UId="1533" />
+  <Token Text=":=" UId="1534" />
+  <Blank UId="1535" />
+  <Token Text="(" UId="1536" />
   <Token Text="(" UId="1537" />
   <Token Text="(" UId="1538" />
-  <Token Text="(" UId="1539" />
-  <Access Scope="LocalVariable" UId="1540">
-    <Symbol UId="1541">
-      <Component Name="Opmode" UId="1542" />
-      <Token Text="." UId="1543" />
-      <Component Name="Automatic_active" UId="1544" />
+  <Access Scope="LocalVariable" UId="1539">
+    <Symbol UId="1540">
+      <Component Name="Opmode" UId="1541" />
+      <Token Text="." UId="1542" />
+      <Component Name="Automatic_active" UId="1543" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1545" />
-  <Access Scope="LiteralConstant" UId="1546">
-    <Constant UId="1547">
-      <ConstantValue UId="1549">1</ConstantValue>
+  <Token Text="=" UId="1544" />
+  <Access Scope="LiteralConstant" UId="1545">
+    <Constant UId="1546">
+      <ConstantValue UId="1548">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1550" />
-  <Token Text="OR" UId="1551" />
-  <Blank UId="1552" />
-  <Access Scope="LocalVariable" UId="1553">
-    <Symbol UId="1554">
-      <Component Name="Opmode" UId="1555" />
-      <Token Text="." UId="1556" />
-      <Component Name="SingleStep_active" UId="1557" />
+  <Blank UId="1549" />
+  <Token Text="OR" UId="1550" />
+  <Blank UId="1551" />
+  <Access Scope="LocalVariable" UId="1552">
+    <Symbol UId="1553">
+      <Component Name="Opmode" UId="1554" />
+      <Token Text="." UId="1555" />
+      <Component Name="SingleStep_active" UId="1556" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1558" />
-  <Access Scope="LiteralConstant" UId="1559">
-    <Constant UId="1560">
-      <ConstantValue UId="1562">1</ConstantValue>
+  <Token Text="=" UId="1557" />
+  <Access Scope="LiteralConstant" UId="1558">
+    <Constant UId="1559">
+      <ConstantValue UId="1561">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1563" />
-  <Blank UId="1564" />
-  <Token Text="AND" UId="1565" />
-  <Blank UId="1566" />
-  <Access Scope="LocalVariable" UId="1567">
-    <Symbol UId="1568">
-      <Component Name="I_CMD_iGoToPos" UId="1569" />
+  <Token Text=")" UId="1562" />
+  <Blank UId="1563" />
+  <Token Text="AND" UId="1564" />
+  <Blank UId="1565" />
+  <Access Scope="LocalVariable" UId="1566">
+    <Symbol UId="1567">
+      <Component Name="I_CMD_iGoToPos" UId="1568" />
     </Symbol>
   </Access>
-  <Blank UId="1570" />
-  <Token Text="=" UId="1571" />
-  <Blank UId="1572" />
-  <Access Scope="LiteralConstant" UId="1573">
-    <Constant UId="1574">
-      <ConstantValue UId="1576">8</ConstantValue>
+  <Blank UId="1569" />
+  <Token Text="=" UId="1570" />
+  <Blank UId="1571" />
+  <Access Scope="LiteralConstant" UId="1572">
+    <Constant UId="1573">
+      <ConstantValue UId="1575">8</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1577" />
-  <Blank UId="1578" />
-  <Token Text="OR" UId="1579" />
-  <Blank UId="1580" />
-  <Token Text="(" UId="1581" />
-  <Access Scope="LocalVariable" UId="1582">
-    <Symbol UId="1583">
-      <Component Name="Opmode" UId="1584" />
-      <Token Text="." UId="1585" />
-      <Component Name="Manual_active" UId="1586" />
+  <Token Text=")" UId="1576" />
+  <Blank UId="1577" />
+  <Token Text="OR" UId="1578" />
+  <Blank UId="1579" />
+  <Token Text="(" UId="1580" />
+  <Access Scope="LocalVariable" UId="1581">
+    <Symbol UId="1582">
+      <Component Name="Opmode" UId="1583" />
+      <Token Text="." UId="1584" />
+      <Component Name="Manual_active" UId="1585" />
     </Symbol>
   </Access>
-  <Blank UId="1587" />
-  <Token Text="AND" UId="1588" />
-  <Blank Num="2" UId="1589" />
-  <Access Scope="LocalVariable" UId="1590">
-    <Symbol UId="1591">
-      <Component Name="I_HMI_iGoToPos" UId="1592" />
+  <Blank UId="1586" />
+  <Token Text="AND" UId="1587" />
+  <Blank Num="2" UId="1588" />
+  <Access Scope="LocalVariable" UId="1589">
+    <Symbol UId="1590">
+      <Component Name="I_HMI_iGoToPos" UId="1591" />
     </Symbol>
   </Access>
-  <Blank UId="1593" />
-  <Token Text="=" UId="1594" />
-  <Blank UId="1595" />
-  <Access Scope="LiteralConstant" UId="1596">
-    <Constant UId="1597">
-      <ConstantValue UId="1599">8</ConstantValue>
+  <Blank UId="1592" />
+  <Token Text="=" UId="1593" />
+  <Blank UId="1594" />
+  <Access Scope="LiteralConstant" UId="1595">
+    <Constant UId="1596">
+      <ConstantValue UId="1598">8</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1599" />
   <Token Text=")" UId="1600" />
-  <Token Text=")" UId="1601" />
-  <Blank UId="1602" />
-  <Token Text="AND" UId="1603" />
-  <Blank UId="1604" />
-  <Access Scope="LocalVariable" UId="1605">
-    <Symbol UId="1606">
-      <Component Name="I_InLock_bGoToPos" UId="1607">
-        <Token Text="[" UId="1608" />
-        <Access Scope="LiteralConstant" UId="1609">
-          <Constant UId="1610">
-            <ConstantValue UId="1612">8</ConstantValue>
+  <Blank UId="1601" />
+  <Token Text="AND" UId="1602" />
+  <Blank UId="1603" />
+  <Access Scope="LocalVariable" UId="1604">
+    <Symbol UId="1605">
+      <Component Name="I_InLock_bGoToPos" UId="1606">
+        <Token Text="[" UId="1607" />
+        <Access Scope="LiteralConstant" UId="1608">
+          <Constant UId="1609">
+            <ConstantValue UId="1611">8</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1613" />
+        <Token Text="]" UId="1612" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1614" />
-  <NewLine UId="1615" />
-  <Access Scope="LocalVariable" UId="1616">
-    <Symbol UId="1617">
-      <Component Name="temp_cmd_bGoToPos" UId="1618">
-        <Token Text="[" UId="1619" />
-        <Access Scope="LiteralConstant" UId="1620">
-          <Constant UId="1621">
-            <ConstantValue UId="1623">9</ConstantValue>
+  <Token Text=";" UId="1613" />
+  <NewLine UId="1614" />
+  <Access Scope="LocalVariable" UId="1615">
+    <Symbol UId="1616">
+      <Component Name="temp_cmd_bGoToPos" UId="1617">
+        <Token Text="[" UId="1618" />
+        <Access Scope="LiteralConstant" UId="1619">
+          <Constant UId="1620">
+            <ConstantValue UId="1622">9</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1624" />
+        <Token Text="]" UId="1623" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1625" />
-  <Token Text=":=" UId="1626" />
-  <Blank UId="1627" />
+  <Blank UId="1624" />
+  <Token Text=":=" UId="1625" />
+  <Blank UId="1626" />
+  <Token Text="(" UId="1627" />
   <Token Text="(" UId="1628" />
   <Token Text="(" UId="1629" />
-  <Token Text="(" UId="1630" />
-  <Access Scope="LocalVariable" UId="1631">
-    <Symbol UId="1632">
-      <Component Name="Opmode" UId="1633" />
-      <Token Text="." UId="1634" />
-      <Component Name="Automatic_active" UId="1635" />
+  <Access Scope="LocalVariable" UId="1630">
+    <Symbol UId="1631">
+      <Component Name="Opmode" UId="1632" />
+      <Token Text="." UId="1633" />
+      <Component Name="Automatic_active" UId="1634" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1636" />
-  <Access Scope="LiteralConstant" UId="1637">
-    <Constant UId="1638">
-      <ConstantValue UId="1640">1</ConstantValue>
+  <Token Text="=" UId="1635" />
+  <Access Scope="LiteralConstant" UId="1636">
+    <Constant UId="1637">
+      <ConstantValue UId="1639">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1641" />
-  <Token Text="OR" UId="1642" />
-  <Blank UId="1643" />
-  <Access Scope="LocalVariable" UId="1644">
-    <Symbol UId="1645">
-      <Component Name="Opmode" UId="1646" />
-      <Token Text="." UId="1647" />
-      <Component Name="SingleStep_active" UId="1648" />
+  <Blank UId="1640" />
+  <Token Text="OR" UId="1641" />
+  <Blank UId="1642" />
+  <Access Scope="LocalVariable" UId="1643">
+    <Symbol UId="1644">
+      <Component Name="Opmode" UId="1645" />
+      <Token Text="." UId="1646" />
+      <Component Name="SingleStep_active" UId="1647" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1649" />
-  <Access Scope="LiteralConstant" UId="1650">
-    <Constant UId="1651">
-      <ConstantValue UId="1653">1</ConstantValue>
+  <Token Text="=" UId="1648" />
+  <Access Scope="LiteralConstant" UId="1649">
+    <Constant UId="1650">
+      <ConstantValue UId="1652">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1654" />
-  <Blank UId="1655" />
-  <Token Text="AND" UId="1656" />
-  <Blank UId="1657" />
-  <Access Scope="LocalVariable" UId="1658">
-    <Symbol UId="1659">
-      <Component Name="I_CMD_iGoToPos" UId="1660" />
+  <Token Text=")" UId="1653" />
+  <Blank UId="1654" />
+  <Token Text="AND" UId="1655" />
+  <Blank UId="1656" />
+  <Access Scope="LocalVariable" UId="1657">
+    <Symbol UId="1658">
+      <Component Name="I_CMD_iGoToPos" UId="1659" />
     </Symbol>
   </Access>
-  <Blank UId="1661" />
-  <Token Text="=" UId="1662" />
-  <Blank UId="1663" />
-  <Access Scope="LiteralConstant" UId="1664">
-    <Constant UId="1665">
-      <ConstantValue UId="1667">9</ConstantValue>
+  <Blank UId="1660" />
+  <Token Text="=" UId="1661" />
+  <Blank UId="1662" />
+  <Access Scope="LiteralConstant" UId="1663">
+    <Constant UId="1664">
+      <ConstantValue UId="1666">9</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1668" />
-  <Blank UId="1669" />
-  <Token Text="OR" UId="1670" />
-  <Blank UId="1671" />
-  <Token Text="(" UId="1672" />
-  <Access Scope="LocalVariable" UId="1673">
-    <Symbol UId="1674">
-      <Component Name="Opmode" UId="1675" />
-      <Token Text="." UId="1676" />
-      <Component Name="Manual_active" UId="1677" />
+  <Token Text=")" UId="1667" />
+  <Blank UId="1668" />
+  <Token Text="OR" UId="1669" />
+  <Blank UId="1670" />
+  <Token Text="(" UId="1671" />
+  <Access Scope="LocalVariable" UId="1672">
+    <Symbol UId="1673">
+      <Component Name="Opmode" UId="1674" />
+      <Token Text="." UId="1675" />
+      <Component Name="Manual_active" UId="1676" />
     </Symbol>
   </Access>
-  <Blank UId="1678" />
-  <Token Text="AND" UId="1679" />
-  <Blank Num="2" UId="1680" />
-  <Access Scope="LocalVariable" UId="1681">
-    <Symbol UId="1682">
-      <Component Name="I_HMI_iGoToPos" UId="1683" />
+  <Blank UId="1677" />
+  <Token Text="AND" UId="1678" />
+  <Blank Num="2" UId="1679" />
+  <Access Scope="LocalVariable" UId="1680">
+    <Symbol UId="1681">
+      <Component Name="I_HMI_iGoToPos" UId="1682" />
     </Symbol>
   </Access>
-  <Blank UId="1684" />
-  <Token Text="=" UId="1685" />
-  <Blank UId="1686" />
-  <Access Scope="LiteralConstant" UId="1687">
-    <Constant UId="1688">
-      <ConstantValue UId="1690">9</ConstantValue>
+  <Blank UId="1683" />
+  <Token Text="=" UId="1684" />
+  <Blank UId="1685" />
+  <Access Scope="LiteralConstant" UId="1686">
+    <Constant UId="1687">
+      <ConstantValue UId="1689">9</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1690" />
   <Token Text=")" UId="1691" />
-  <Token Text=")" UId="1692" />
-  <Blank UId="1693" />
-  <Token Text="AND" UId="1694" />
-  <Blank UId="1695" />
-  <Access Scope="LocalVariable" UId="1696">
-    <Symbol UId="1697">
-      <Component Name="I_InLock_bGoToPos" UId="1698">
-        <Token Text="[" UId="1699" />
-        <Access Scope="LiteralConstant" UId="1700">
-          <Constant UId="1701">
-            <ConstantValue UId="1703">9</ConstantValue>
+  <Blank UId="1692" />
+  <Token Text="AND" UId="1693" />
+  <Blank UId="1694" />
+  <Access Scope="LocalVariable" UId="1695">
+    <Symbol UId="1696">
+      <Component Name="I_InLock_bGoToPos" UId="1697">
+        <Token Text="[" UId="1698" />
+        <Access Scope="LiteralConstant" UId="1699">
+          <Constant UId="1700">
+            <ConstantValue UId="1702">9</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1704" />
+        <Token Text="]" UId="1703" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1705" />
-  <NewLine UId="1706" />
-  <Access Scope="LocalVariable" UId="1707">
-    <Symbol UId="1708">
-      <Component Name="temp_cmd_bGoToPos" UId="1709">
-        <Token Text="[" UId="1710" />
-        <Access Scope="LiteralConstant" UId="1711">
-          <Constant UId="1712">
-            <ConstantValue UId="1714">10</ConstantValue>
+  <Token Text=";" UId="1704" />
+  <NewLine UId="1705" />
+  <Access Scope="LocalVariable" UId="1706">
+    <Symbol UId="1707">
+      <Component Name="temp_cmd_bGoToPos" UId="1708">
+        <Token Text="[" UId="1709" />
+        <Access Scope="LiteralConstant" UId="1710">
+          <Constant UId="1711">
+            <ConstantValue UId="1713">10</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1715" />
+        <Token Text="]" UId="1714" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1716" />
-  <Token Text=":=" UId="1717" />
-  <Blank UId="1718" />
+  <Blank UId="1715" />
+  <Token Text=":=" UId="1716" />
+  <Blank UId="1717" />
+  <Token Text="(" UId="1718" />
   <Token Text="(" UId="1719" />
   <Token Text="(" UId="1720" />
-  <Token Text="(" UId="1721" />
-  <Access Scope="LocalVariable" UId="1722">
-    <Symbol UId="1723">
-      <Component Name="Opmode" UId="1724" />
-      <Token Text="." UId="1725" />
-      <Component Name="Automatic_active" UId="1726" />
+  <Access Scope="LocalVariable" UId="1721">
+    <Symbol UId="1722">
+      <Component Name="Opmode" UId="1723" />
+      <Token Text="." UId="1724" />
+      <Component Name="Automatic_active" UId="1725" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1727" />
-  <Access Scope="LiteralConstant" UId="1728">
-    <Constant UId="1729">
-      <ConstantValue UId="1731">1</ConstantValue>
+  <Token Text="=" UId="1726" />
+  <Access Scope="LiteralConstant" UId="1727">
+    <Constant UId="1728">
+      <ConstantValue UId="1730">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1732" />
-  <Token Text="OR" UId="1733" />
-  <Blank UId="1734" />
-  <Access Scope="LocalVariable" UId="1735">
-    <Symbol UId="1736">
-      <Component Name="Opmode" UId="1737" />
-      <Token Text="." UId="1738" />
-      <Component Name="SingleStep_active" UId="1739" />
+  <Blank UId="1731" />
+  <Token Text="OR" UId="1732" />
+  <Blank UId="1733" />
+  <Access Scope="LocalVariable" UId="1734">
+    <Symbol UId="1735">
+      <Component Name="Opmode" UId="1736" />
+      <Token Text="." UId="1737" />
+      <Component Name="SingleStep_active" UId="1738" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1740" />
-  <Access Scope="LiteralConstant" UId="1741">
-    <Constant UId="1742">
-      <ConstantValue UId="1744">1</ConstantValue>
+  <Token Text="=" UId="1739" />
+  <Access Scope="LiteralConstant" UId="1740">
+    <Constant UId="1741">
+      <ConstantValue UId="1743">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1745" />
-  <Blank UId="1746" />
-  <Token Text="AND" UId="1747" />
-  <Blank UId="1748" />
-  <Access Scope="LocalVariable" UId="1749">
-    <Symbol UId="1750">
-      <Component Name="I_CMD_iGoToPos" UId="1751" />
+  <Token Text=")" UId="1744" />
+  <Blank UId="1745" />
+  <Token Text="AND" UId="1746" />
+  <Blank UId="1747" />
+  <Access Scope="LocalVariable" UId="1748">
+    <Symbol UId="1749">
+      <Component Name="I_CMD_iGoToPos" UId="1750" />
     </Symbol>
   </Access>
-  <Blank UId="1752" />
-  <Token Text="=" UId="1753" />
-  <Blank UId="1754" />
-  <Access Scope="LiteralConstant" UId="1755">
-    <Constant UId="1756">
-      <ConstantValue UId="1758">10</ConstantValue>
+  <Blank UId="1751" />
+  <Token Text="=" UId="1752" />
+  <Blank UId="1753" />
+  <Access Scope="LiteralConstant" UId="1754">
+    <Constant UId="1755">
+      <ConstantValue UId="1757">10</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1759" />
-  <Blank UId="1760" />
-  <Token Text="OR" UId="1761" />
-  <Blank UId="1762" />
-  <Token Text="(" UId="1763" />
-  <Access Scope="LocalVariable" UId="1764">
-    <Symbol UId="1765">
-      <Component Name="Opmode" UId="1766" />
-      <Token Text="." UId="1767" />
-      <Component Name="Manual_active" UId="1768" />
+  <Token Text=")" UId="1758" />
+  <Blank UId="1759" />
+  <Token Text="OR" UId="1760" />
+  <Blank UId="1761" />
+  <Token Text="(" UId="1762" />
+  <Access Scope="LocalVariable" UId="1763">
+    <Symbol UId="1764">
+      <Component Name="Opmode" UId="1765" />
+      <Token Text="." UId="1766" />
+      <Component Name="Manual_active" UId="1767" />
     </Symbol>
   </Access>
-  <Blank UId="1769" />
-  <Token Text="AND" UId="1770" />
-  <Blank Num="2" UId="1771" />
-  <Access Scope="LocalVariable" UId="1772">
-    <Symbol UId="1773">
-      <Component Name="I_HMI_iGoToPos" UId="1774" />
+  <Blank UId="1768" />
+  <Token Text="AND" UId="1769" />
+  <Blank Num="2" UId="1770" />
+  <Access Scope="LocalVariable" UId="1771">
+    <Symbol UId="1772">
+      <Component Name="I_HMI_iGoToPos" UId="1773" />
     </Symbol>
   </Access>
-  <Blank UId="1775" />
-  <Token Text="=" UId="1776" />
-  <Blank UId="1777" />
-  <Access Scope="LiteralConstant" UId="1778">
-    <Constant UId="1779">
-      <ConstantValue UId="1781">10</ConstantValue>
+  <Blank UId="1774" />
+  <Token Text="=" UId="1775" />
+  <Blank UId="1776" />
+  <Access Scope="LiteralConstant" UId="1777">
+    <Constant UId="1778">
+      <ConstantValue UId="1780">10</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1781" />
   <Token Text=")" UId="1782" />
-  <Token Text=")" UId="1783" />
-  <Blank UId="1784" />
-  <Token Text="AND" UId="1785" />
-  <Blank UId="1786" />
-  <Access Scope="LocalVariable" UId="1787">
-    <Symbol UId="1788">
-      <Component Name="I_InLock_bGoToPos" UId="1789">
-        <Token Text="[" UId="1790" />
-        <Access Scope="LiteralConstant" UId="1791">
-          <Constant UId="1792">
-            <ConstantValue UId="1794">10</ConstantValue>
+  <Blank UId="1783" />
+  <Token Text="AND" UId="1784" />
+  <Blank UId="1785" />
+  <Access Scope="LocalVariable" UId="1786">
+    <Symbol UId="1787">
+      <Component Name="I_InLock_bGoToPos" UId="1788">
+        <Token Text="[" UId="1789" />
+        <Access Scope="LiteralConstant" UId="1790">
+          <Constant UId="1791">
+            <ConstantValue UId="1793">10</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1795" />
+        <Token Text="]" UId="1794" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1796" />
-  <NewLine UId="1797" />
-  <Access Scope="LocalVariable" UId="1798">
-    <Symbol UId="1799">
-      <Component Name="temp_cmd_bGoToPos" UId="1800">
-        <Token Text="[" UId="1801" />
-        <Access Scope="LiteralConstant" UId="1802">
-          <Constant UId="1803">
-            <ConstantValue UId="1805">11</ConstantValue>
+  <Token Text=";" UId="1795" />
+  <NewLine UId="1796" />
+  <Access Scope="LocalVariable" UId="1797">
+    <Symbol UId="1798">
+      <Component Name="temp_cmd_bGoToPos" UId="1799">
+        <Token Text="[" UId="1800" />
+        <Access Scope="LiteralConstant" UId="1801">
+          <Constant UId="1802">
+            <ConstantValue UId="1804">11</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1806" />
+        <Token Text="]" UId="1805" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1807" />
-  <Token Text=":=" UId="1808" />
-  <Blank UId="1809" />
+  <Blank UId="1806" />
+  <Token Text=":=" UId="1807" />
+  <Blank UId="1808" />
+  <Token Text="(" UId="1809" />
   <Token Text="(" UId="1810" />
   <Token Text="(" UId="1811" />
-  <Token Text="(" UId="1812" />
-  <Access Scope="LocalVariable" UId="1813">
-    <Symbol UId="1814">
-      <Component Name="Opmode" UId="1815" />
-      <Token Text="." UId="1816" />
-      <Component Name="Automatic_active" UId="1817" />
+  <Access Scope="LocalVariable" UId="1812">
+    <Symbol UId="1813">
+      <Component Name="Opmode" UId="1814" />
+      <Token Text="." UId="1815" />
+      <Component Name="Automatic_active" UId="1816" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1818" />
-  <Access Scope="LiteralConstant" UId="1819">
-    <Constant UId="1820">
-      <ConstantValue UId="1822">1</ConstantValue>
+  <Token Text="=" UId="1817" />
+  <Access Scope="LiteralConstant" UId="1818">
+    <Constant UId="1819">
+      <ConstantValue UId="1821">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1823" />
-  <Token Text="OR" UId="1824" />
-  <Blank UId="1825" />
-  <Access Scope="LocalVariable" UId="1826">
-    <Symbol UId="1827">
-      <Component Name="Opmode" UId="1828" />
-      <Token Text="." UId="1829" />
-      <Component Name="SingleStep_active" UId="1830" />
+  <Blank UId="1822" />
+  <Token Text="OR" UId="1823" />
+  <Blank UId="1824" />
+  <Access Scope="LocalVariable" UId="1825">
+    <Symbol UId="1826">
+      <Component Name="Opmode" UId="1827" />
+      <Token Text="." UId="1828" />
+      <Component Name="SingleStep_active" UId="1829" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1831" />
-  <Access Scope="LiteralConstant" UId="1832">
-    <Constant UId="1833">
-      <ConstantValue UId="1835">1</ConstantValue>
+  <Token Text="=" UId="1830" />
+  <Access Scope="LiteralConstant" UId="1831">
+    <Constant UId="1832">
+      <ConstantValue UId="1834">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1836" />
-  <Blank UId="1837" />
-  <Token Text="AND" UId="1838" />
-  <Blank UId="1839" />
-  <Access Scope="LocalVariable" UId="1840">
-    <Symbol UId="1841">
-      <Component Name="I_CMD_iGoToPos" UId="1842" />
+  <Token Text=")" UId="1835" />
+  <Blank UId="1836" />
+  <Token Text="AND" UId="1837" />
+  <Blank UId="1838" />
+  <Access Scope="LocalVariable" UId="1839">
+    <Symbol UId="1840">
+      <Component Name="I_CMD_iGoToPos" UId="1841" />
     </Symbol>
   </Access>
-  <Blank UId="1843" />
-  <Token Text="=" UId="1844" />
-  <Blank UId="1845" />
-  <Access Scope="LiteralConstant" UId="1846">
-    <Constant UId="1847">
-      <ConstantValue UId="1849">11</ConstantValue>
+  <Blank UId="1842" />
+  <Token Text="=" UId="1843" />
+  <Blank UId="1844" />
+  <Access Scope="LiteralConstant" UId="1845">
+    <Constant UId="1846">
+      <ConstantValue UId="1848">11</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1850" />
-  <Blank UId="1851" />
-  <Token Text="OR" UId="1852" />
-  <Blank UId="1853" />
-  <Token Text="(" UId="1854" />
-  <Access Scope="LocalVariable" UId="1855">
-    <Symbol UId="1856">
-      <Component Name="Opmode" UId="1857" />
-      <Token Text="." UId="1858" />
-      <Component Name="Manual_active" UId="1859" />
+  <Token Text=")" UId="1849" />
+  <Blank UId="1850" />
+  <Token Text="OR" UId="1851" />
+  <Blank UId="1852" />
+  <Token Text="(" UId="1853" />
+  <Access Scope="LocalVariable" UId="1854">
+    <Symbol UId="1855">
+      <Component Name="Opmode" UId="1856" />
+      <Token Text="." UId="1857" />
+      <Component Name="Manual_active" UId="1858" />
     </Symbol>
   </Access>
-  <Blank UId="1860" />
-  <Token Text="AND" UId="1861" />
-  <Blank Num="2" UId="1862" />
-  <Access Scope="LocalVariable" UId="1863">
-    <Symbol UId="1864">
-      <Component Name="I_HMI_iGoToPos" UId="1865" />
+  <Blank UId="1859" />
+  <Token Text="AND" UId="1860" />
+  <Blank Num="2" UId="1861" />
+  <Access Scope="LocalVariable" UId="1862">
+    <Symbol UId="1863">
+      <Component Name="I_HMI_iGoToPos" UId="1864" />
     </Symbol>
   </Access>
-  <Blank UId="1866" />
-  <Token Text="=" UId="1867" />
-  <Blank UId="1868" />
-  <Access Scope="LiteralConstant" UId="1869">
-    <Constant UId="1870">
-      <ConstantValue UId="1872">11</ConstantValue>
+  <Blank UId="1865" />
+  <Token Text="=" UId="1866" />
+  <Blank UId="1867" />
+  <Access Scope="LiteralConstant" UId="1868">
+    <Constant UId="1869">
+      <ConstantValue UId="1871">11</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1872" />
   <Token Text=")" UId="1873" />
-  <Token Text=")" UId="1874" />
-  <Blank UId="1875" />
-  <Token Text="AND" UId="1876" />
-  <Blank UId="1877" />
-  <Access Scope="LocalVariable" UId="1878">
-    <Symbol UId="1879">
-      <Component Name="I_InLock_bGoToPos" UId="1880">
-        <Token Text="[" UId="1881" />
-        <Access Scope="LiteralConstant" UId="1882">
-          <Constant UId="1883">
-            <ConstantValue UId="1885">11</ConstantValue>
+  <Blank UId="1874" />
+  <Token Text="AND" UId="1875" />
+  <Blank UId="1876" />
+  <Access Scope="LocalVariable" UId="1877">
+    <Symbol UId="1878">
+      <Component Name="I_InLock_bGoToPos" UId="1879">
+        <Token Text="[" UId="1880" />
+        <Access Scope="LiteralConstant" UId="1881">
+          <Constant UId="1882">
+            <ConstantValue UId="1884">11</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1886" />
+        <Token Text="]" UId="1885" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1887" />
-  <NewLine UId="1888" />
-  <Access Scope="LocalVariable" UId="1889">
-    <Symbol UId="1890">
-      <Component Name="temp_cmd_bGoToPos" UId="1891">
-        <Token Text="[" UId="1892" />
-        <Access Scope="LiteralConstant" UId="1893">
-          <Constant UId="1894">
-            <ConstantValue UId="1896">12</ConstantValue>
+  <Token Text=";" UId="1886" />
+  <NewLine UId="1887" />
+  <Access Scope="LocalVariable" UId="1888">
+    <Symbol UId="1889">
+      <Component Name="temp_cmd_bGoToPos" UId="1890">
+        <Token Text="[" UId="1891" />
+        <Access Scope="LiteralConstant" UId="1892">
+          <Constant UId="1893">
+            <ConstantValue UId="1895">12</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1897" />
+        <Token Text="]" UId="1896" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1898" />
-  <Token Text=":=" UId="1899" />
-  <Blank UId="1900" />
+  <Blank UId="1897" />
+  <Token Text=":=" UId="1898" />
+  <Blank UId="1899" />
+  <Token Text="(" UId="1900" />
   <Token Text="(" UId="1901" />
   <Token Text="(" UId="1902" />
-  <Token Text="(" UId="1903" />
-  <Access Scope="LocalVariable" UId="1904">
-    <Symbol UId="1905">
-      <Component Name="Opmode" UId="1906" />
-      <Token Text="." UId="1907" />
-      <Component Name="Automatic_active" UId="1908" />
+  <Access Scope="LocalVariable" UId="1903">
+    <Symbol UId="1904">
+      <Component Name="Opmode" UId="1905" />
+      <Token Text="." UId="1906" />
+      <Component Name="Automatic_active" UId="1907" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1909" />
-  <Access Scope="LiteralConstant" UId="1910">
-    <Constant UId="1911">
-      <ConstantValue UId="1913">1</ConstantValue>
+  <Token Text="=" UId="1908" />
+  <Access Scope="LiteralConstant" UId="1909">
+    <Constant UId="1910">
+      <ConstantValue UId="1912">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1914" />
-  <Token Text="OR" UId="1915" />
-  <Blank UId="1916" />
-  <Access Scope="LocalVariable" UId="1917">
-    <Symbol UId="1918">
-      <Component Name="Opmode" UId="1919" />
-      <Token Text="." UId="1920" />
-      <Component Name="SingleStep_active" UId="1921" />
+  <Blank UId="1913" />
+  <Token Text="OR" UId="1914" />
+  <Blank UId="1915" />
+  <Access Scope="LocalVariable" UId="1916">
+    <Symbol UId="1917">
+      <Component Name="Opmode" UId="1918" />
+      <Token Text="." UId="1919" />
+      <Component Name="SingleStep_active" UId="1920" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="1922" />
-  <Access Scope="LiteralConstant" UId="1923">
-    <Constant UId="1924">
-      <ConstantValue UId="1926">1</ConstantValue>
+  <Token Text="=" UId="1921" />
+  <Access Scope="LiteralConstant" UId="1922">
+    <Constant UId="1923">
+      <ConstantValue UId="1925">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1927" />
-  <Blank UId="1928" />
-  <Token Text="AND" UId="1929" />
-  <Blank UId="1930" />
-  <Access Scope="LocalVariable" UId="1931">
-    <Symbol UId="1932">
-      <Component Name="I_CMD_iGoToPos" UId="1933" />
+  <Token Text=")" UId="1926" />
+  <Blank UId="1927" />
+  <Token Text="AND" UId="1928" />
+  <Blank UId="1929" />
+  <Access Scope="LocalVariable" UId="1930">
+    <Symbol UId="1931">
+      <Component Name="I_CMD_iGoToPos" UId="1932" />
     </Symbol>
   </Access>
-  <Blank UId="1934" />
-  <Token Text="=" UId="1935" />
-  <Blank UId="1936" />
-  <Access Scope="LiteralConstant" UId="1937">
-    <Constant UId="1938">
-      <ConstantValue UId="1940">12</ConstantValue>
+  <Blank UId="1933" />
+  <Token Text="=" UId="1934" />
+  <Blank UId="1935" />
+  <Access Scope="LiteralConstant" UId="1936">
+    <Constant UId="1937">
+      <ConstantValue UId="1939">12</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="1941" />
-  <Blank UId="1942" />
-  <Token Text="OR" UId="1943" />
-  <Blank UId="1944" />
-  <Token Text="(" UId="1945" />
-  <Access Scope="LocalVariable" UId="1946">
-    <Symbol UId="1947">
-      <Component Name="Opmode" UId="1948" />
-      <Token Text="." UId="1949" />
-      <Component Name="Manual_active" UId="1950" />
+  <Token Text=")" UId="1940" />
+  <Blank UId="1941" />
+  <Token Text="OR" UId="1942" />
+  <Blank UId="1943" />
+  <Token Text="(" UId="1944" />
+  <Access Scope="LocalVariable" UId="1945">
+    <Symbol UId="1946">
+      <Component Name="Opmode" UId="1947" />
+      <Token Text="." UId="1948" />
+      <Component Name="Manual_active" UId="1949" />
     </Symbol>
   </Access>
-  <Blank UId="1951" />
-  <Token Text="AND" UId="1952" />
-  <Blank Num="2" UId="1953" />
-  <Access Scope="LocalVariable" UId="1954">
-    <Symbol UId="1955">
-      <Component Name="I_HMI_iGoToPos" UId="1956" />
+  <Blank UId="1950" />
+  <Token Text="AND" UId="1951" />
+  <Blank Num="2" UId="1952" />
+  <Access Scope="LocalVariable" UId="1953">
+    <Symbol UId="1954">
+      <Component Name="I_HMI_iGoToPos" UId="1955" />
     </Symbol>
   </Access>
-  <Blank UId="1957" />
-  <Token Text="=" UId="1958" />
-  <Blank UId="1959" />
-  <Access Scope="LiteralConstant" UId="1960">
-    <Constant UId="1961">
-      <ConstantValue UId="1963">12</ConstantValue>
+  <Blank UId="1956" />
+  <Token Text="=" UId="1957" />
+  <Blank UId="1958" />
+  <Access Scope="LiteralConstant" UId="1959">
+    <Constant UId="1960">
+      <ConstantValue UId="1962">12</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="1963" />
   <Token Text=")" UId="1964" />
-  <Token Text=")" UId="1965" />
-  <Blank UId="1966" />
-  <Token Text="AND" UId="1967" />
-  <Blank UId="1968" />
-  <Access Scope="LocalVariable" UId="1969">
-    <Symbol UId="1970">
-      <Component Name="I_InLock_bGoToPos" UId="1971">
-        <Token Text="[" UId="1972" />
-        <Access Scope="LiteralConstant" UId="1973">
-          <Constant UId="1974">
-            <ConstantValue UId="1976">12</ConstantValue>
+  <Blank UId="1965" />
+  <Token Text="AND" UId="1966" />
+  <Blank UId="1967" />
+  <Access Scope="LocalVariable" UId="1968">
+    <Symbol UId="1969">
+      <Component Name="I_InLock_bGoToPos" UId="1970">
+        <Token Text="[" UId="1971" />
+        <Access Scope="LiteralConstant" UId="1972">
+          <Constant UId="1973">
+            <ConstantValue UId="1975">12</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1977" />
+        <Token Text="]" UId="1976" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="1978" />
-  <NewLine UId="1979" />
-  <Access Scope="LocalVariable" UId="1980">
-    <Symbol UId="1981">
-      <Component Name="temp_cmd_bGoToPos" UId="1982">
-        <Token Text="[" UId="1983" />
-        <Access Scope="LiteralConstant" UId="1984">
-          <Constant UId="1985">
-            <ConstantValue UId="1987">13</ConstantValue>
+  <Token Text=";" UId="1977" />
+  <NewLine UId="1978" />
+  <Access Scope="LocalVariable" UId="1979">
+    <Symbol UId="1980">
+      <Component Name="temp_cmd_bGoToPos" UId="1981">
+        <Token Text="[" UId="1982" />
+        <Access Scope="LiteralConstant" UId="1983">
+          <Constant UId="1984">
+            <ConstantValue UId="1986">13</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1988" />
+        <Token Text="]" UId="1987" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1989" />
-  <Token Text=":=" UId="1990" />
-  <Blank UId="1991" />
+  <Blank UId="1988" />
+  <Token Text=":=" UId="1989" />
+  <Blank UId="1990" />
+  <Token Text="(" UId="1991" />
   <Token Text="(" UId="1992" />
   <Token Text="(" UId="1993" />
-  <Token Text="(" UId="1994" />
-  <Access Scope="LocalVariable" UId="1995">
-    <Symbol UId="1996">
-      <Component Name="Opmode" UId="1997" />
-      <Token Text="." UId="1998" />
-      <Component Name="Automatic_active" UId="1999" />
+  <Access Scope="LocalVariable" UId="1994">
+    <Symbol UId="1995">
+      <Component Name="Opmode" UId="1996" />
+      <Token Text="." UId="1997" />
+      <Component Name="Automatic_active" UId="1998" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2000" />
-  <Access Scope="LiteralConstant" UId="2001">
-    <Constant UId="2002">
-      <ConstantValue UId="2004">1</ConstantValue>
+  <Token Text="=" UId="1999" />
+  <Access Scope="LiteralConstant" UId="2000">
+    <Constant UId="2001">
+      <ConstantValue UId="2003">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2005" />
-  <Token Text="OR" UId="2006" />
-  <Blank UId="2007" />
-  <Access Scope="LocalVariable" UId="2008">
-    <Symbol UId="2009">
-      <Component Name="Opmode" UId="2010" />
-      <Token Text="." UId="2011" />
-      <Component Name="SingleStep_active" UId="2012" />
+  <Blank UId="2004" />
+  <Token Text="OR" UId="2005" />
+  <Blank UId="2006" />
+  <Access Scope="LocalVariable" UId="2007">
+    <Symbol UId="2008">
+      <Component Name="Opmode" UId="2009" />
+      <Token Text="." UId="2010" />
+      <Component Name="SingleStep_active" UId="2011" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2013" />
-  <Access Scope="LiteralConstant" UId="2014">
-    <Constant UId="2015">
-      <ConstantValue UId="2017">1</ConstantValue>
+  <Token Text="=" UId="2012" />
+  <Access Scope="LiteralConstant" UId="2013">
+    <Constant UId="2014">
+      <ConstantValue UId="2016">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2018" />
-  <Blank UId="2019" />
-  <Token Text="AND" UId="2020" />
-  <Blank UId="2021" />
-  <Access Scope="LocalVariable" UId="2022">
-    <Symbol UId="2023">
-      <Component Name="I_CMD_iGoToPos" UId="2024" />
+  <Token Text=")" UId="2017" />
+  <Blank UId="2018" />
+  <Token Text="AND" UId="2019" />
+  <Blank UId="2020" />
+  <Access Scope="LocalVariable" UId="2021">
+    <Symbol UId="2022">
+      <Component Name="I_CMD_iGoToPos" UId="2023" />
     </Symbol>
   </Access>
-  <Blank UId="2025" />
-  <Token Text="=" UId="2026" />
-  <Blank UId="2027" />
-  <Access Scope="LiteralConstant" UId="2028">
-    <Constant UId="2029">
-      <ConstantValue UId="2031">13</ConstantValue>
+  <Blank UId="2024" />
+  <Token Text="=" UId="2025" />
+  <Blank UId="2026" />
+  <Access Scope="LiteralConstant" UId="2027">
+    <Constant UId="2028">
+      <ConstantValue UId="2030">13</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2032" />
-  <Blank UId="2033" />
-  <Token Text="OR" UId="2034" />
-  <Blank UId="2035" />
-  <Token Text="(" UId="2036" />
-  <Access Scope="LocalVariable" UId="2037">
-    <Symbol UId="2038">
-      <Component Name="Opmode" UId="2039" />
-      <Token Text="." UId="2040" />
-      <Component Name="Manual_active" UId="2041" />
+  <Token Text=")" UId="2031" />
+  <Blank UId="2032" />
+  <Token Text="OR" UId="2033" />
+  <Blank UId="2034" />
+  <Token Text="(" UId="2035" />
+  <Access Scope="LocalVariable" UId="2036">
+    <Symbol UId="2037">
+      <Component Name="Opmode" UId="2038" />
+      <Token Text="." UId="2039" />
+      <Component Name="Manual_active" UId="2040" />
     </Symbol>
   </Access>
-  <Blank UId="2042" />
-  <Token Text="AND" UId="2043" />
-  <Blank Num="2" UId="2044" />
-  <Access Scope="LocalVariable" UId="2045">
-    <Symbol UId="2046">
-      <Component Name="I_HMI_iGoToPos" UId="2047" />
+  <Blank UId="2041" />
+  <Token Text="AND" UId="2042" />
+  <Blank Num="2" UId="2043" />
+  <Access Scope="LocalVariable" UId="2044">
+    <Symbol UId="2045">
+      <Component Name="I_HMI_iGoToPos" UId="2046" />
     </Symbol>
   </Access>
-  <Blank UId="2048" />
-  <Token Text="=" UId="2049" />
-  <Blank UId="2050" />
-  <Access Scope="LiteralConstant" UId="2051">
-    <Constant UId="2052">
-      <ConstantValue UId="2054">13</ConstantValue>
+  <Blank UId="2047" />
+  <Token Text="=" UId="2048" />
+  <Blank UId="2049" />
+  <Access Scope="LiteralConstant" UId="2050">
+    <Constant UId="2051">
+      <ConstantValue UId="2053">13</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="2054" />
   <Token Text=")" UId="2055" />
-  <Token Text=")" UId="2056" />
-  <Blank UId="2057" />
-  <Token Text="AND" UId="2058" />
-  <Blank UId="2059" />
-  <Access Scope="LocalVariable" UId="2060">
-    <Symbol UId="2061">
-      <Component Name="I_InLock_bGoToPos" UId="2062">
-        <Token Text="[" UId="2063" />
-        <Access Scope="LiteralConstant" UId="2064">
-          <Constant UId="2065">
-            <ConstantValue UId="2067">13</ConstantValue>
+  <Blank UId="2056" />
+  <Token Text="AND" UId="2057" />
+  <Blank UId="2058" />
+  <Access Scope="LocalVariable" UId="2059">
+    <Symbol UId="2060">
+      <Component Name="I_InLock_bGoToPos" UId="2061">
+        <Token Text="[" UId="2062" />
+        <Access Scope="LiteralConstant" UId="2063">
+          <Constant UId="2064">
+            <ConstantValue UId="2066">13</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2068" />
+        <Token Text="]" UId="2067" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2069" />
-  <NewLine UId="2070" />
-  <Access Scope="LocalVariable" UId="2071">
-    <Symbol UId="2072">
-      <Component Name="temp_cmd_bGoToPos" UId="2073">
-        <Token Text="[" UId="2074" />
-        <Access Scope="LiteralConstant" UId="2075">
-          <Constant UId="2076">
-            <ConstantValue UId="2078">14</ConstantValue>
+  <Token Text=";" UId="2068" />
+  <NewLine UId="2069" />
+  <Access Scope="LocalVariable" UId="2070">
+    <Symbol UId="2071">
+      <Component Name="temp_cmd_bGoToPos" UId="2072">
+        <Token Text="[" UId="2073" />
+        <Access Scope="LiteralConstant" UId="2074">
+          <Constant UId="2075">
+            <ConstantValue UId="2077">14</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2079" />
+        <Token Text="]" UId="2078" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2080" />
-  <Token Text=":=" UId="2081" />
-  <Blank UId="2082" />
+  <Blank UId="2079" />
+  <Token Text=":=" UId="2080" />
+  <Blank UId="2081" />
+  <Token Text="(" UId="2082" />
   <Token Text="(" UId="2083" />
   <Token Text="(" UId="2084" />
-  <Token Text="(" UId="2085" />
-  <Access Scope="LocalVariable" UId="2086">
-    <Symbol UId="2087">
-      <Component Name="Opmode" UId="2088" />
-      <Token Text="." UId="2089" />
-      <Component Name="Automatic_active" UId="2090" />
+  <Access Scope="LocalVariable" UId="2085">
+    <Symbol UId="2086">
+      <Component Name="Opmode" UId="2087" />
+      <Token Text="." UId="2088" />
+      <Component Name="Automatic_active" UId="2089" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2091" />
-  <Access Scope="LiteralConstant" UId="2092">
-    <Constant UId="2093">
-      <ConstantValue UId="2095">1</ConstantValue>
+  <Token Text="=" UId="2090" />
+  <Access Scope="LiteralConstant" UId="2091">
+    <Constant UId="2092">
+      <ConstantValue UId="2094">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2096" />
-  <Token Text="OR" UId="2097" />
-  <Blank UId="2098" />
-  <Access Scope="LocalVariable" UId="2099">
-    <Symbol UId="2100">
-      <Component Name="Opmode" UId="2101" />
-      <Token Text="." UId="2102" />
-      <Component Name="SingleStep_active" UId="2103" />
+  <Blank UId="2095" />
+  <Token Text="OR" UId="2096" />
+  <Blank UId="2097" />
+  <Access Scope="LocalVariable" UId="2098">
+    <Symbol UId="2099">
+      <Component Name="Opmode" UId="2100" />
+      <Token Text="." UId="2101" />
+      <Component Name="SingleStep_active" UId="2102" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2104" />
-  <Access Scope="LiteralConstant" UId="2105">
-    <Constant UId="2106">
-      <ConstantValue UId="2108">1</ConstantValue>
+  <Token Text="=" UId="2103" />
+  <Access Scope="LiteralConstant" UId="2104">
+    <Constant UId="2105">
+      <ConstantValue UId="2107">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2109" />
-  <Blank UId="2110" />
-  <Token Text="AND" UId="2111" />
-  <Blank UId="2112" />
-  <Access Scope="LocalVariable" UId="2113">
-    <Symbol UId="2114">
-      <Component Name="I_CMD_iGoToPos" UId="2115" />
+  <Token Text=")" UId="2108" />
+  <Blank UId="2109" />
+  <Token Text="AND" UId="2110" />
+  <Blank UId="2111" />
+  <Access Scope="LocalVariable" UId="2112">
+    <Symbol UId="2113">
+      <Component Name="I_CMD_iGoToPos" UId="2114" />
     </Symbol>
   </Access>
-  <Blank UId="2116" />
-  <Token Text="=" UId="2117" />
-  <Blank UId="2118" />
-  <Access Scope="LiteralConstant" UId="2119">
-    <Constant UId="2120">
-      <ConstantValue UId="2122">14</ConstantValue>
+  <Blank UId="2115" />
+  <Token Text="=" UId="2116" />
+  <Blank UId="2117" />
+  <Access Scope="LiteralConstant" UId="2118">
+    <Constant UId="2119">
+      <ConstantValue UId="2121">14</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2123" />
-  <Blank UId="2124" />
-  <Token Text="OR" UId="2125" />
-  <Blank UId="2126" />
-  <Token Text="(" UId="2127" />
-  <Access Scope="LocalVariable" UId="2128">
-    <Symbol UId="2129">
-      <Component Name="Opmode" UId="2130" />
-      <Token Text="." UId="2131" />
-      <Component Name="Manual_active" UId="2132" />
+  <Token Text=")" UId="2122" />
+  <Blank UId="2123" />
+  <Token Text="OR" UId="2124" />
+  <Blank UId="2125" />
+  <Token Text="(" UId="2126" />
+  <Access Scope="LocalVariable" UId="2127">
+    <Symbol UId="2128">
+      <Component Name="Opmode" UId="2129" />
+      <Token Text="." UId="2130" />
+      <Component Name="Manual_active" UId="2131" />
     </Symbol>
   </Access>
-  <Blank UId="2133" />
-  <Token Text="AND" UId="2134" />
-  <Blank Num="2" UId="2135" />
-  <Access Scope="LocalVariable" UId="2136">
-    <Symbol UId="2137">
-      <Component Name="I_HMI_iGoToPos" UId="2138" />
+  <Blank UId="2132" />
+  <Token Text="AND" UId="2133" />
+  <Blank Num="2" UId="2134" />
+  <Access Scope="LocalVariable" UId="2135">
+    <Symbol UId="2136">
+      <Component Name="I_HMI_iGoToPos" UId="2137" />
     </Symbol>
   </Access>
-  <Blank UId="2139" />
-  <Token Text="=" UId="2140" />
-  <Blank UId="2141" />
-  <Access Scope="LiteralConstant" UId="2142">
-    <Constant UId="2143">
-      <ConstantValue UId="2145">14</ConstantValue>
+  <Blank UId="2138" />
+  <Token Text="=" UId="2139" />
+  <Blank UId="2140" />
+  <Access Scope="LiteralConstant" UId="2141">
+    <Constant UId="2142">
+      <ConstantValue UId="2144">14</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="2145" />
   <Token Text=")" UId="2146" />
-  <Token Text=")" UId="2147" />
-  <Blank UId="2148" />
-  <Token Text="AND" UId="2149" />
-  <Blank UId="2150" />
-  <Access Scope="LocalVariable" UId="2151">
-    <Symbol UId="2152">
-      <Component Name="I_InLock_bGoToPos" UId="2153">
-        <Token Text="[" UId="2154" />
-        <Access Scope="LiteralConstant" UId="2155">
-          <Constant UId="2156">
-            <ConstantValue UId="2158">14</ConstantValue>
+  <Blank UId="2147" />
+  <Token Text="AND" UId="2148" />
+  <Blank UId="2149" />
+  <Access Scope="LocalVariable" UId="2150">
+    <Symbol UId="2151">
+      <Component Name="I_InLock_bGoToPos" UId="2152">
+        <Token Text="[" UId="2153" />
+        <Access Scope="LiteralConstant" UId="2154">
+          <Constant UId="2155">
+            <ConstantValue UId="2157">14</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2159" />
+        <Token Text="]" UId="2158" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2160" />
-  <NewLine UId="2161" />
-  <Access Scope="LocalVariable" UId="2162">
-    <Symbol UId="2163">
-      <Component Name="temp_cmd_bGoToPos" UId="2164">
-        <Token Text="[" UId="2165" />
-        <Access Scope="LiteralConstant" UId="2166">
-          <Constant UId="2167">
-            <ConstantValue UId="2169">15</ConstantValue>
+  <Token Text=";" UId="2159" />
+  <NewLine UId="2160" />
+  <Access Scope="LocalVariable" UId="2161">
+    <Symbol UId="2162">
+      <Component Name="temp_cmd_bGoToPos" UId="2163">
+        <Token Text="[" UId="2164" />
+        <Access Scope="LiteralConstant" UId="2165">
+          <Constant UId="2166">
+            <ConstantValue UId="2168">15</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2170" />
+        <Token Text="]" UId="2169" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2171" />
-  <Token Text=":=" UId="2172" />
-  <Blank UId="2173" />
+  <Blank UId="2170" />
+  <Token Text=":=" UId="2171" />
+  <Blank UId="2172" />
+  <Token Text="(" UId="2173" />
   <Token Text="(" UId="2174" />
   <Token Text="(" UId="2175" />
-  <Token Text="(" UId="2176" />
-  <Access Scope="LocalVariable" UId="2177">
-    <Symbol UId="2178">
-      <Component Name="Opmode" UId="2179" />
-      <Token Text="." UId="2180" />
-      <Component Name="Automatic_active" UId="2181" />
+  <Access Scope="LocalVariable" UId="2176">
+    <Symbol UId="2177">
+      <Component Name="Opmode" UId="2178" />
+      <Token Text="." UId="2179" />
+      <Component Name="Automatic_active" UId="2180" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2182" />
-  <Access Scope="LiteralConstant" UId="2183">
-    <Constant UId="2184">
-      <ConstantValue UId="2186">1</ConstantValue>
+  <Token Text="=" UId="2181" />
+  <Access Scope="LiteralConstant" UId="2182">
+    <Constant UId="2183">
+      <ConstantValue UId="2185">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2187" />
-  <Token Text="OR" UId="2188" />
-  <Blank UId="2189" />
-  <Access Scope="LocalVariable" UId="2190">
-    <Symbol UId="2191">
-      <Component Name="Opmode" UId="2192" />
-      <Token Text="." UId="2193" />
-      <Component Name="SingleStep_active" UId="2194" />
+  <Blank UId="2186" />
+  <Token Text="OR" UId="2187" />
+  <Blank UId="2188" />
+  <Access Scope="LocalVariable" UId="2189">
+    <Symbol UId="2190">
+      <Component Name="Opmode" UId="2191" />
+      <Token Text="." UId="2192" />
+      <Component Name="SingleStep_active" UId="2193" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2195" />
-  <Access Scope="LiteralConstant" UId="2196">
-    <Constant UId="2197">
-      <ConstantValue UId="2199">1</ConstantValue>
+  <Token Text="=" UId="2194" />
+  <Access Scope="LiteralConstant" UId="2195">
+    <Constant UId="2196">
+      <ConstantValue UId="2198">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2200" />
-  <Blank UId="2201" />
-  <Token Text="AND" UId="2202" />
-  <Blank UId="2203" />
-  <Access Scope="LocalVariable" UId="2204">
-    <Symbol UId="2205">
-      <Component Name="I_CMD_iGoToPos" UId="2206" />
+  <Token Text=")" UId="2199" />
+  <Blank UId="2200" />
+  <Token Text="AND" UId="2201" />
+  <Blank UId="2202" />
+  <Access Scope="LocalVariable" UId="2203">
+    <Symbol UId="2204">
+      <Component Name="I_CMD_iGoToPos" UId="2205" />
     </Symbol>
   </Access>
-  <Blank UId="2207" />
-  <Token Text="=" UId="2208" />
-  <Blank UId="2209" />
-  <Access Scope="LiteralConstant" UId="2210">
-    <Constant UId="2211">
-      <ConstantValue UId="2213">15</ConstantValue>
+  <Blank UId="2206" />
+  <Token Text="=" UId="2207" />
+  <Blank UId="2208" />
+  <Access Scope="LiteralConstant" UId="2209">
+    <Constant UId="2210">
+      <ConstantValue UId="2212">15</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2214" />
-  <Blank UId="2215" />
-  <Token Text="OR" UId="2216" />
-  <Blank UId="2217" />
-  <Token Text="(" UId="2218" />
-  <Access Scope="LocalVariable" UId="2219">
-    <Symbol UId="2220">
-      <Component Name="Opmode" UId="2221" />
-      <Token Text="." UId="2222" />
-      <Component Name="Manual_active" UId="2223" />
+  <Token Text=")" UId="2213" />
+  <Blank UId="2214" />
+  <Token Text="OR" UId="2215" />
+  <Blank UId="2216" />
+  <Token Text="(" UId="2217" />
+  <Access Scope="LocalVariable" UId="2218">
+    <Symbol UId="2219">
+      <Component Name="Opmode" UId="2220" />
+      <Token Text="." UId="2221" />
+      <Component Name="Manual_active" UId="2222" />
     </Symbol>
   </Access>
-  <Blank UId="2224" />
-  <Token Text="AND" UId="2225" />
-  <Blank Num="2" UId="2226" />
-  <Access Scope="LocalVariable" UId="2227">
-    <Symbol UId="2228">
-      <Component Name="I_HMI_iGoToPos" UId="2229" />
+  <Blank UId="2223" />
+  <Token Text="AND" UId="2224" />
+  <Blank Num="2" UId="2225" />
+  <Access Scope="LocalVariable" UId="2226">
+    <Symbol UId="2227">
+      <Component Name="I_HMI_iGoToPos" UId="2228" />
     </Symbol>
   </Access>
-  <Blank UId="2230" />
-  <Token Text="=" UId="2231" />
-  <Blank UId="2232" />
-  <Access Scope="LiteralConstant" UId="2233">
-    <Constant UId="2234">
-      <ConstantValue UId="2236">15</ConstantValue>
+  <Blank UId="2229" />
+  <Token Text="=" UId="2230" />
+  <Blank UId="2231" />
+  <Access Scope="LiteralConstant" UId="2232">
+    <Constant UId="2233">
+      <ConstantValue UId="2235">15</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="2236" />
   <Token Text=")" UId="2237" />
-  <Token Text=")" UId="2238" />
-  <Blank UId="2239" />
-  <Token Text="AND" UId="2240" />
-  <Blank UId="2241" />
-  <Access Scope="LocalVariable" UId="2242">
-    <Symbol UId="2243">
-      <Component Name="I_InLock_bGoToPos" UId="2244">
-        <Token Text="[" UId="2245" />
-        <Access Scope="LiteralConstant" UId="2246">
-          <Constant UId="2247">
-            <ConstantValue UId="2249">15</ConstantValue>
+  <Blank UId="2238" />
+  <Token Text="AND" UId="2239" />
+  <Blank UId="2240" />
+  <Access Scope="LocalVariable" UId="2241">
+    <Symbol UId="2242">
+      <Component Name="I_InLock_bGoToPos" UId="2243">
+        <Token Text="[" UId="2244" />
+        <Access Scope="LiteralConstant" UId="2245">
+          <Constant UId="2246">
+            <ConstantValue UId="2248">15</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2250" />
+        <Token Text="]" UId="2249" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2251" />
-  <NewLine UId="2252" />
-  <Access Scope="LocalVariable" UId="2253">
-    <Symbol UId="2254">
-      <Component Name="temp_cmd_bGoToPos" UId="2255">
-        <Token Text="[" UId="2256" />
-        <Access Scope="LiteralConstant" UId="2257">
-          <Constant UId="2258">
-            <ConstantValue UId="2260">16</ConstantValue>
+  <Token Text=";" UId="2250" />
+  <NewLine UId="2251" />
+  <Access Scope="LocalVariable" UId="2252">
+    <Symbol UId="2253">
+      <Component Name="temp_cmd_bGoToPos" UId="2254">
+        <Token Text="[" UId="2255" />
+        <Access Scope="LiteralConstant" UId="2256">
+          <Constant UId="2257">
+            <ConstantValue UId="2259">16</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2261" />
+        <Token Text="]" UId="2260" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2262" />
-  <Token Text=":=" UId="2263" />
-  <Blank UId="2264" />
+  <Blank UId="2261" />
+  <Token Text=":=" UId="2262" />
+  <Blank UId="2263" />
+  <Token Text="(" UId="2264" />
   <Token Text="(" UId="2265" />
   <Token Text="(" UId="2266" />
-  <Token Text="(" UId="2267" />
-  <Access Scope="LocalVariable" UId="2268">
-    <Symbol UId="2269">
-      <Component Name="Opmode" UId="2270" />
-      <Token Text="." UId="2271" />
-      <Component Name="Automatic_active" UId="2272" />
+  <Access Scope="LocalVariable" UId="2267">
+    <Symbol UId="2268">
+      <Component Name="Opmode" UId="2269" />
+      <Token Text="." UId="2270" />
+      <Component Name="Automatic_active" UId="2271" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2273" />
-  <Access Scope="LiteralConstant" UId="2274">
-    <Constant UId="2275">
-      <ConstantValue UId="2277">1</ConstantValue>
+  <Token Text="=" UId="2272" />
+  <Access Scope="LiteralConstant" UId="2273">
+    <Constant UId="2274">
+      <ConstantValue UId="2276">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2278" />
-  <Token Text="OR" UId="2279" />
-  <Blank UId="2280" />
-  <Access Scope="LocalVariable" UId="2281">
-    <Symbol UId="2282">
-      <Component Name="Opmode" UId="2283" />
-      <Token Text="." UId="2284" />
-      <Component Name="SingleStep_active" UId="2285" />
+  <Blank UId="2277" />
+  <Token Text="OR" UId="2278" />
+  <Blank UId="2279" />
+  <Access Scope="LocalVariable" UId="2280">
+    <Symbol UId="2281">
+      <Component Name="Opmode" UId="2282" />
+      <Token Text="." UId="2283" />
+      <Component Name="SingleStep_active" UId="2284" />
     </Symbol>
   </Access>
-  <Token Text="=" UId="2286" />
-  <Access Scope="LiteralConstant" UId="2287">
-    <Constant UId="2288">
-      <ConstantValue UId="2290">1</ConstantValue>
+  <Token Text="=" UId="2285" />
+  <Access Scope="LiteralConstant" UId="2286">
+    <Constant UId="2287">
+      <ConstantValue UId="2289">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2291" />
-  <Blank UId="2292" />
-  <Token Text="AND" UId="2293" />
-  <Blank UId="2294" />
-  <Access Scope="LocalVariable" UId="2295">
-    <Symbol UId="2296">
-      <Component Name="I_CMD_iGoToPos" UId="2297" />
+  <Token Text=")" UId="2290" />
+  <Blank UId="2291" />
+  <Token Text="AND" UId="2292" />
+  <Blank UId="2293" />
+  <Access Scope="LocalVariable" UId="2294">
+    <Symbol UId="2295">
+      <Component Name="I_CMD_iGoToPos" UId="2296" />
     </Symbol>
   </Access>
-  <Blank UId="2298" />
-  <Token Text="=" UId="2299" />
-  <Blank UId="2300" />
-  <Access Scope="LiteralConstant" UId="2301">
-    <Constant UId="2302">
-      <ConstantValue UId="2304">16</ConstantValue>
+  <Blank UId="2297" />
+  <Token Text="=" UId="2298" />
+  <Blank UId="2299" />
+  <Access Scope="LiteralConstant" UId="2300">
+    <Constant UId="2301">
+      <ConstantValue UId="2303">16</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=")" UId="2305" />
-  <Blank UId="2306" />
-  <Token Text="OR" UId="2307" />
-  <Blank UId="2308" />
-  <Token Text="(" UId="2309" />
-  <Access Scope="LocalVariable" UId="2310">
-    <Symbol UId="2311">
-      <Component Name="Opmode" UId="2312" />
-      <Token Text="." UId="2313" />
-      <Component Name="Manual_active" UId="2314" />
+  <Token Text=")" UId="2304" />
+  <Blank UId="2305" />
+  <Token Text="OR" UId="2306" />
+  <Blank UId="2307" />
+  <Token Text="(" UId="2308" />
+  <Access Scope="LocalVariable" UId="2309">
+    <Symbol UId="2310">
+      <Component Name="Opmode" UId="2311" />
+      <Token Text="." UId="2312" />
+      <Component Name="Manual_active" UId="2313" />
     </Symbol>
   </Access>
-  <Blank UId="2315" />
-  <Token Text="AND" UId="2316" />
-  <Blank Num="2" UId="2317" />
-  <Access Scope="LocalVariable" UId="2318">
-    <Symbol UId="2319">
-      <Component Name="I_HMI_iGoToPos" UId="2320" />
+  <Blank UId="2314" />
+  <Token Text="AND" UId="2315" />
+  <Blank Num="2" UId="2316" />
+  <Access Scope="LocalVariable" UId="2317">
+    <Symbol UId="2318">
+      <Component Name="I_HMI_iGoToPos" UId="2319" />
     </Symbol>
   </Access>
-  <Blank UId="2321" />
-  <Token Text="=" UId="2322" />
-  <Blank UId="2323" />
-  <Access Scope="LiteralConstant" UId="2324">
-    <Constant UId="2325">
-      <ConstantValue UId="2327">16</ConstantValue>
+  <Blank UId="2320" />
+  <Token Text="=" UId="2321" />
+  <Blank UId="2322" />
+  <Access Scope="LiteralConstant" UId="2323">
+    <Constant UId="2324">
+      <ConstantValue UId="2326">16</ConstantValue>
     </Constant>
   </Access>
+  <Token Text=")" UId="2327" />
   <Token Text=")" UId="2328" />
-  <Token Text=")" UId="2329" />
-  <Blank UId="2330" />
-  <Token Text="AND" UId="2331" />
-  <Blank UId="2332" />
-  <Access Scope="LocalVariable" UId="2333">
-    <Symbol UId="2334">
-      <Component Name="I_InLock_bGoToPos" UId="2335">
-        <Token Text="[" UId="2336" />
-        <Access Scope="LiteralConstant" UId="2337">
-          <Constant UId="2338">
-            <ConstantValue UId="2340">16</ConstantValue>
+  <Blank UId="2329" />
+  <Token Text="AND" UId="2330" />
+  <Blank UId="2331" />
+  <Access Scope="LocalVariable" UId="2332">
+    <Symbol UId="2333">
+      <Component Name="I_InLock_bGoToPos" UId="2334">
+        <Token Text="[" UId="2335" />
+        <Access Scope="LiteralConstant" UId="2336">
+          <Constant UId="2337">
+            <ConstantValue UId="2339">16</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2341" />
+        <Token Text="]" UId="2340" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2342" />
-  <NewLine Num="2" UId="2343" />
-  <Access Scope="LocalVariable" UId="2344">
-    <Symbol UId="2345">
-      <Component Name="temp_cmd_bGoToPosAll" UId="2346" />
+  <Token Text=";" UId="2341" />
+  <NewLine Num="2" UId="2342" />
+  <Access Scope="LocalVariable" UId="2343">
+    <Symbol UId="2344">
+      <Component Name="temp_cmd_bGoToPosAll" UId="2345" />
     </Symbol>
   </Access>
-  <Blank UId="2347" />
-  <Token Text=":=" UId="2348" />
-  <Blank UId="2349" />
-  <Access Scope="LocalVariable" UId="2350">
-    <Symbol UId="2351">
-      <Component Name="temp_cmd_bGoToPos" UId="2352">
-        <Token Text="[" UId="2353" />
-        <Access Scope="LiteralConstant" UId="2354">
-          <Constant UId="2355">
-            <ConstantValue UId="2357">1</ConstantValue>
+  <Blank UId="2346" />
+  <Token Text=":=" UId="2347" />
+  <Blank UId="2348" />
+  <Access Scope="LocalVariable" UId="2349">
+    <Symbol UId="2350">
+      <Component Name="temp_cmd_bGoToPos" UId="2351">
+        <Token Text="[" UId="2352" />
+        <Access Scope="LiteralConstant" UId="2353">
+          <Constant UId="2354">
+            <ConstantValue UId="2356">1</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2358" />
+        <Token Text="]" UId="2357" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2359" />
-  <Token Text="OR" UId="2360" />
-  <Blank UId="2361" />
-  <Access Scope="LocalVariable" UId="2362">
-    <Symbol UId="2363">
-      <Component Name="temp_cmd_bGoToPos" UId="2364">
-        <Token Text="[" UId="2365" />
-        <Access Scope="LiteralConstant" UId="2366">
-          <Constant UId="2367">
-            <ConstantValue UId="2369">2</ConstantValue>
+  <Blank UId="2358" />
+  <Token Text="OR" UId="2359" />
+  <Blank UId="2360" />
+  <Access Scope="LocalVariable" UId="2361">
+    <Symbol UId="2362">
+      <Component Name="temp_cmd_bGoToPos" UId="2363">
+        <Token Text="[" UId="2364" />
+        <Access Scope="LiteralConstant" UId="2365">
+          <Constant UId="2366">
+            <ConstantValue UId="2368">2</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2370" />
+        <Token Text="]" UId="2369" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2371" />
-  <Token Text="OR" UId="2372" />
-  <Blank UId="2373" />
-  <Access Scope="LocalVariable" UId="2374">
-    <Symbol UId="2375">
-      <Component Name="temp_cmd_bGoToPos" UId="2376">
-        <Token Text="[" UId="2377" />
-        <Access Scope="LiteralConstant" UId="2378">
-          <Constant UId="2379">
-            <ConstantValue UId="2381">3</ConstantValue>
+  <Blank UId="2370" />
+  <Token Text="OR" UId="2371" />
+  <Blank UId="2372" />
+  <Access Scope="LocalVariable" UId="2373">
+    <Symbol UId="2374">
+      <Component Name="temp_cmd_bGoToPos" UId="2375">
+        <Token Text="[" UId="2376" />
+        <Access Scope="LiteralConstant" UId="2377">
+          <Constant UId="2378">
+            <ConstantValue UId="2380">3</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2382" />
+        <Token Text="]" UId="2381" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2383" />
-  <Token Text="OR" UId="2384" />
-  <Blank UId="2385" />
-  <Access Scope="LocalVariable" UId="2386">
-    <Symbol UId="2387">
-      <Component Name="temp_cmd_bGoToPos" UId="2388">
-        <Token Text="[" UId="2389" />
-        <Access Scope="LiteralConstant" UId="2390">
-          <Constant UId="2391">
-            <ConstantValue UId="2393">4</ConstantValue>
+  <Blank UId="2382" />
+  <Token Text="OR" UId="2383" />
+  <Blank UId="2384" />
+  <Access Scope="LocalVariable" UId="2385">
+    <Symbol UId="2386">
+      <Component Name="temp_cmd_bGoToPos" UId="2387">
+        <Token Text="[" UId="2388" />
+        <Access Scope="LiteralConstant" UId="2389">
+          <Constant UId="2390">
+            <ConstantValue UId="2392">4</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2394" />
+        <Token Text="]" UId="2393" />
       </Component>
     </Symbol>
   </Access>
-  <NewLine UId="2395" />
-  <Token Text="OR" UId="2396" />
-  <Blank UId="2397" />
-  <Access Scope="LocalVariable" UId="2398">
-    <Symbol UId="2399">
-      <Component Name="temp_cmd_bGoToPos" UId="2400">
-        <Token Text="[" UId="2401" />
-        <Access Scope="LiteralConstant" UId="2402">
-          <Constant UId="2403">
-            <ConstantValue UId="2405">5</ConstantValue>
+  <NewLine UId="2394" />
+  <Token Text="OR" UId="2395" />
+  <Blank UId="2396" />
+  <Access Scope="LocalVariable" UId="2397">
+    <Symbol UId="2398">
+      <Component Name="temp_cmd_bGoToPos" UId="2399">
+        <Token Text="[" UId="2400" />
+        <Access Scope="LiteralConstant" UId="2401">
+          <Constant UId="2402">
+            <ConstantValue UId="2404">5</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2406" />
+        <Token Text="]" UId="2405" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2407" />
-  <Token Text="OR" UId="2408" />
-  <Blank UId="2409" />
-  <Access Scope="LocalVariable" UId="2410">
-    <Symbol UId="2411">
-      <Component Name="temp_cmd_bGoToPos" UId="2412">
-        <Token Text="[" UId="2413" />
-        <Access Scope="LiteralConstant" UId="2414">
-          <Constant UId="2415">
-            <ConstantValue UId="2417">6</ConstantValue>
+  <Blank UId="2406" />
+  <Token Text="OR" UId="2407" />
+  <Blank UId="2408" />
+  <Access Scope="LocalVariable" UId="2409">
+    <Symbol UId="2410">
+      <Component Name="temp_cmd_bGoToPos" UId="2411">
+        <Token Text="[" UId="2412" />
+        <Access Scope="LiteralConstant" UId="2413">
+          <Constant UId="2414">
+            <ConstantValue UId="2416">6</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2418" />
+        <Token Text="]" UId="2417" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2419" />
-  <Token Text="OR" UId="2420" />
-  <Blank UId="2421" />
-  <Access Scope="LocalVariable" UId="2422">
-    <Symbol UId="2423">
-      <Component Name="temp_cmd_bGoToPos" UId="2424">
-        <Token Text="[" UId="2425" />
-        <Access Scope="LiteralConstant" UId="2426">
-          <Constant UId="2427">
-            <ConstantValue UId="2429">7</ConstantValue>
+  <Blank UId="2418" />
+  <Token Text="OR" UId="2419" />
+  <Blank UId="2420" />
+  <Access Scope="LocalVariable" UId="2421">
+    <Symbol UId="2422">
+      <Component Name="temp_cmd_bGoToPos" UId="2423">
+        <Token Text="[" UId="2424" />
+        <Access Scope="LiteralConstant" UId="2425">
+          <Constant UId="2426">
+            <ConstantValue UId="2428">7</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2430" />
+        <Token Text="]" UId="2429" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2431" />
-  <Token Text="OR" UId="2432" />
-  <Blank UId="2433" />
-  <Access Scope="LocalVariable" UId="2434">
-    <Symbol UId="2435">
-      <Component Name="temp_cmd_bGoToPos" UId="2436">
-        <Token Text="[" UId="2437" />
-        <Access Scope="LiteralConstant" UId="2438">
-          <Constant UId="2439">
-            <ConstantValue UId="2441">8</ConstantValue>
+  <Blank UId="2430" />
+  <Token Text="OR" UId="2431" />
+  <Blank UId="2432" />
+  <Access Scope="LocalVariable" UId="2433">
+    <Symbol UId="2434">
+      <Component Name="temp_cmd_bGoToPos" UId="2435">
+        <Token Text="[" UId="2436" />
+        <Access Scope="LiteralConstant" UId="2437">
+          <Constant UId="2438">
+            <ConstantValue UId="2440">8</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2442" />
+        <Token Text="]" UId="2441" />
       </Component>
     </Symbol>
   </Access>
-  <NewLine UId="2443" />
-  <Token Text="OR" UId="2444" />
-  <Blank UId="2445" />
-  <Access Scope="LocalVariable" UId="2446">
-    <Symbol UId="2447">
-      <Component Name="temp_cmd_bGoToPos" UId="2448">
-        <Token Text="[" UId="2449" />
-        <Access Scope="LiteralConstant" UId="2450">
-          <Constant UId="2451">
-            <ConstantValue UId="2453">9</ConstantValue>
+  <NewLine UId="2442" />
+  <Token Text="OR" UId="2443" />
+  <Blank UId="2444" />
+  <Access Scope="LocalVariable" UId="2445">
+    <Symbol UId="2446">
+      <Component Name="temp_cmd_bGoToPos" UId="2447">
+        <Token Text="[" UId="2448" />
+        <Access Scope="LiteralConstant" UId="2449">
+          <Constant UId="2450">
+            <ConstantValue UId="2452">9</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2454" />
+        <Token Text="]" UId="2453" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2455" />
-  <Token Text="OR" UId="2456" />
-  <Blank UId="2457" />
-  <Access Scope="LocalVariable" UId="2458">
-    <Symbol UId="2459">
-      <Component Name="temp_cmd_bGoToPos" UId="2460">
-        <Token Text="[" UId="2461" />
-        <Access Scope="LiteralConstant" UId="2462">
-          <Constant UId="2463">
-            <ConstantValue UId="2465">10</ConstantValue>
+  <Blank UId="2454" />
+  <Token Text="OR" UId="2455" />
+  <Blank UId="2456" />
+  <Access Scope="LocalVariable" UId="2457">
+    <Symbol UId="2458">
+      <Component Name="temp_cmd_bGoToPos" UId="2459">
+        <Token Text="[" UId="2460" />
+        <Access Scope="LiteralConstant" UId="2461">
+          <Constant UId="2462">
+            <ConstantValue UId="2464">10</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2466" />
+        <Token Text="]" UId="2465" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2467" />
-  <Token Text="OR" UId="2468" />
-  <Blank UId="2469" />
-  <Access Scope="LocalVariable" UId="2470">
-    <Symbol UId="2471">
-      <Component Name="temp_cmd_bGoToPos" UId="2472">
-        <Token Text="[" UId="2473" />
-        <Access Scope="LiteralConstant" UId="2474">
-          <Constant UId="2475">
-            <ConstantValue UId="2477">11</ConstantValue>
+  <Blank UId="2466" />
+  <Token Text="OR" UId="2467" />
+  <Blank UId="2468" />
+  <Access Scope="LocalVariable" UId="2469">
+    <Symbol UId="2470">
+      <Component Name="temp_cmd_bGoToPos" UId="2471">
+        <Token Text="[" UId="2472" />
+        <Access Scope="LiteralConstant" UId="2473">
+          <Constant UId="2474">
+            <ConstantValue UId="2476">11</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2478" />
+        <Token Text="]" UId="2477" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2479" />
-  <Token Text="OR" UId="2480" />
-  <Blank UId="2481" />
-  <Access Scope="LocalVariable" UId="2482">
-    <Symbol UId="2483">
-      <Component Name="temp_cmd_bGoToPos" UId="2484">
-        <Token Text="[" UId="2485" />
-        <Access Scope="LiteralConstant" UId="2486">
-          <Constant UId="2487">
-            <ConstantValue UId="2489">12</ConstantValue>
+  <Blank UId="2478" />
+  <Token Text="OR" UId="2479" />
+  <Blank UId="2480" />
+  <Access Scope="LocalVariable" UId="2481">
+    <Symbol UId="2482">
+      <Component Name="temp_cmd_bGoToPos" UId="2483">
+        <Token Text="[" UId="2484" />
+        <Access Scope="LiteralConstant" UId="2485">
+          <Constant UId="2486">
+            <ConstantValue UId="2488">12</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2490" />
+        <Token Text="]" UId="2489" />
       </Component>
     </Symbol>
   </Access>
-  <NewLine UId="2491" />
-  <Token Text="OR" UId="2492" />
-  <Blank UId="2493" />
-  <Access Scope="LocalVariable" UId="2494">
-    <Symbol UId="2495">
-      <Component Name="temp_cmd_bGoToPos" UId="2496">
-        <Token Text="[" UId="2497" />
-        <Access Scope="LiteralConstant" UId="2498">
-          <Constant UId="2499">
-            <ConstantValue UId="2501">13</ConstantValue>
+  <NewLine UId="2490" />
+  <Token Text="OR" UId="2491" />
+  <Blank UId="2492" />
+  <Access Scope="LocalVariable" UId="2493">
+    <Symbol UId="2494">
+      <Component Name="temp_cmd_bGoToPos" UId="2495">
+        <Token Text="[" UId="2496" />
+        <Access Scope="LiteralConstant" UId="2497">
+          <Constant UId="2498">
+            <ConstantValue UId="2500">13</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2502" />
+        <Token Text="]" UId="2501" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2503" />
-  <Token Text="OR" UId="2504" />
-  <Blank UId="2505" />
-  <Access Scope="LocalVariable" UId="2506">
-    <Symbol UId="2507">
-      <Component Name="temp_cmd_bGoToPos" UId="2508">
-        <Token Text="[" UId="2509" />
-        <Access Scope="LiteralConstant" UId="2510">
-          <Constant UId="2511">
-            <ConstantValue UId="2513">14</ConstantValue>
+  <Blank UId="2502" />
+  <Token Text="OR" UId="2503" />
+  <Blank UId="2504" />
+  <Access Scope="LocalVariable" UId="2505">
+    <Symbol UId="2506">
+      <Component Name="temp_cmd_bGoToPos" UId="2507">
+        <Token Text="[" UId="2508" />
+        <Access Scope="LiteralConstant" UId="2509">
+          <Constant UId="2510">
+            <ConstantValue UId="2512">14</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2514" />
+        <Token Text="]" UId="2513" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2515" />
-  <Token Text="OR" UId="2516" />
-  <Blank UId="2517" />
-  <Access Scope="LocalVariable" UId="2518">
-    <Symbol UId="2519">
-      <Component Name="temp_cmd_bGoToPos" UId="2520">
-        <Token Text="[" UId="2521" />
-        <Access Scope="LiteralConstant" UId="2522">
-          <Constant UId="2523">
-            <ConstantValue UId="2525">15</ConstantValue>
+  <Blank UId="2514" />
+  <Token Text="OR" UId="2515" />
+  <Blank UId="2516" />
+  <Access Scope="LocalVariable" UId="2517">
+    <Symbol UId="2518">
+      <Component Name="temp_cmd_bGoToPos" UId="2519">
+        <Token Text="[" UId="2520" />
+        <Access Scope="LiteralConstant" UId="2521">
+          <Constant UId="2522">
+            <ConstantValue UId="2524">15</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2526" />
+        <Token Text="]" UId="2525" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="2527" />
-  <Token Text="OR" UId="2528" />
-  <Blank UId="2529" />
-  <Access Scope="LocalVariable" UId="2530">
-    <Symbol UId="2531">
-      <Component Name="temp_cmd_bGoToPos" UId="2532">
-        <Token Text="[" UId="2533" />
-        <Access Scope="LiteralConstant" UId="2534">
-          <Constant UId="2535">
-            <ConstantValue UId="2537">16</ConstantValue>
+  <Blank UId="2526" />
+  <Token Text="OR" UId="2527" />
+  <Blank UId="2528" />
+  <Access Scope="LocalVariable" UId="2529">
+    <Symbol UId="2530">
+      <Component Name="temp_cmd_bGoToPos" UId="2531">
+        <Token Text="[" UId="2532" />
+        <Access Scope="LiteralConstant" UId="2533">
+          <Constant UId="2534">
+            <ConstantValue UId="2536">16</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="2538" />
+        <Token Text="]" UId="2537" />
       </Component>
     </Symbol>
   </Access>
-  <NewLine UId="2539" />
-  <Token Text=";" UId="2540" />
-  <NewLine UId="2541" />
-  <LineComment UId="2542">
-    <Text UId="2543">#temp_posAbsolute :=</Text>
+  <NewLine UId="2538" />
+  <Token Text=";" UId="2539" />
+  <NewLine UId="2540" />
+  <LineComment UId="2541">
+    <Text UId="2542">#temp_posAbsolute :=</Text>
   </LineComment>
-  <NewLine UId="2544" />
-  <LineComment UId="2545">
-    <Text UId="2546">I_bGoToPos[0] OR I_bGoToPos[1] OR I_bGoToPos[2] OR I_bGoToPos[3] OR</Text>
+  <NewLine UId="2543" />
+  <LineComment UId="2544">
+    <Text UId="2545">I_bGoToPos[0] OR I_bGoToPos[1] OR I_bGoToPos[2] OR I_bGoToPos[3] OR</Text>
   </LineComment>
-  <NewLine UId="2547" />
-  <LineComment UId="2548">
-    <Text UId="2549">I_bGoToPos[4] OR I_bGoToPos[5] OR I_bGoToPos[6] OR I_bGoToPos[7] OR</Text>
+  <NewLine UId="2546" />
+  <LineComment UId="2547">
+    <Text UId="2548">I_bGoToPos[4] OR I_bGoToPos[5] OR I_bGoToPos[6] OR I_bGoToPos[7] OR</Text>
   </LineComment>
-  <NewLine UId="2550" />
-  <LineComment UId="2551">
-    <Text UId="2552">I_bGoToPos[8] OR I_bGoToPos[9] OR I_bGoToPos[10] OR I_bGoToPos[11] OR</Text>
+  <NewLine UId="2549" />
+  <LineComment UId="2550">
+    <Text UId="2551">I_bGoToPos[8] OR I_bGoToPos[9] OR I_bGoToPos[10] OR I_bGoToPos[11] OR</Text>
   </LineComment>
-  <NewLine UId="2553" />
-  <LineComment UId="2554">
-    <Text UId="2555">I_bGoToPos[12] OR I_bGoToPos[13] OR I_bGoToPos[14] OR I_bGoToPos[15];</Text>
+  <NewLine UId="2552" />
+  <LineComment UId="2553">
+    <Text UId="2554">I_bGoToPos[12] OR I_bGoToPos[13] OR I_bGoToPos[14] OR I_bGoToPos[15];</Text>
   </LineComment>
-  <NewLine Num="2" UId="2556" />
-  <Token Text="FOR" UId="2557" />
-  <Blank UId="2558" />
-  <Access Scope="LocalVariable" UId="2559">
-    <Symbol UId="2560">
-      <Component Name="i" UId="2561" />
+  <NewLine Num="2" UId="2555" />
+  <Token Text="FOR" UId="2556" />
+  <Blank UId="2557" />
+  <Access Scope="LocalVariable" UId="2558">
+    <Symbol UId="2559">
+      <Component Name="i" UId="2560" />
     </Symbol>
   </Access>
-  <Blank UId="2562" />
-  <Token Text=":=" UId="2563" />
-  <Blank UId="2564" />
-  <Access Scope="LiteralConstant" UId="2565">
-    <Constant UId="2566">
-      <ConstantValue UId="2568">1</ConstantValue>
+  <Blank UId="2561" />
+  <Token Text=":=" UId="2562" />
+  <Blank UId="2563" />
+  <Access Scope="LiteralConstant" UId="2564">
+    <Constant UId="2565">
+      <ConstantValue UId="2567">1</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2569" />
-  <Token Text="TO" UId="2570" />
-  <Blank UId="2571" />
-  <Access Scope="LiteralConstant" UId="2572">
-    <Constant UId="2573">
-      <ConstantValue UId="2575">16</ConstantValue>
+  <Blank UId="2568" />
+  <Token Text="TO" UId="2569" />
+  <Blank UId="2570" />
+  <Access Scope="LiteralConstant" UId="2571">
+    <Constant UId="2572">
+      <ConstantValue UId="2574">16</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="2576" />
-  <Token Text="DO" UId="2577" />
-  <NewLine UId="2578" />
-  <LineComment UId="2579">
-    <Text UId="2580">    #RT_PB[#i](CLK := I_bGoToPos[#i]);</Text>
+  <Blank UId="2575" />
+  <Token Text="DO" UId="2576" />
+  <NewLine UId="2577" />
+  <LineComment UId="2578">
+    <Text UId="2579">    #RT_PB[#i](CLK := I_bGoToPos[#i]);</Text>
   </LineComment>
-  <NewLine UId="2581" />
-  <Blank Num="4" UId="2582" />
-  <Access Scope="LocalVariable" UId="2583">
-    <Symbol UId="2584">
-      <Component Name="RT_PB" UId="2585">
-        <Token Text="[" UId="2586" />
-        <Access Scope="LocalVariable" UId="2587">
-          <Symbol UId="2588">
-            <Component Name="i" UId="2589" />
+  <NewLine UId="2580" />
+  <Blank Num="4" UId="2581" />
+  <Access Scope="LocalVariable" UId="2582">
+    <Symbol UId="2583">
+      <Component Name="RT_PB" UId="2584">
+        <Token Text="[" UId="2585" />
+        <Access Scope="LocalVariable" UId="2586">
+          <Symbol UId="2587">
+            <Component Name="i" UId="2588" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2590" />
+        <Token Text="]" UId="2589" />
       </Component>
     </Symbol>
   </Access>
-  <Access Scope="Call" UId="2591">
-    <Instruction UId="2592">
-      <Token Text="(" UId="2593" />
-      <Parameter Name="CLK" UId="2594">
-        <Blank UId="2595" />
-        <Token Text=":=" UId="2596" />
-        <Blank UId="2597" />
-        <Access Scope="LocalVariable" UId="2598">
-          <Symbol UId="2599">
-            <Component Name="temp_cmd_bGoToPos" UId="2600">
-              <Token Text="[" UId="2601" />
-              <Access Scope="LocalVariable" UId="2602">
-                <Symbol UId="2603">
-                  <Component Name="i" UId="2604" />
+  <Access Scope="Call" UId="2590">
+    <Instruction UId="2591">
+      <Token Text="(" UId="2592" />
+      <Parameter Name="CLK" UId="2593">
+        <Blank UId="2594" />
+        <Token Text=":=" UId="2595" />
+        <Blank UId="2596" />
+        <Access Scope="LocalVariable" UId="2597">
+          <Symbol UId="2598">
+            <Component Name="temp_cmd_bGoToPos" UId="2599">
+              <Token Text="[" UId="2600" />
+              <Access Scope="LocalVariable" UId="2601">
+                <Symbol UId="2602">
+                  <Component Name="i" UId="2603" />
                 </Symbol>
               </Access>
-              <Token Text="]" UId="2605" />
+              <Token Text="]" UId="2604" />
             </Component>
           </Symbol>
         </Access>
       </Parameter>
-      <Token Text=")" UId="2606" />
+      <Token Text=")" UId="2605" />
     </Instruction>
   </Access>
-  <Token Text=";" UId="2607" />
-  <NewLine UId="2608" />
-  <Blank Num="4" UId="2609" />
-  <NewLine UId="2610" />
-  <Blank Num="4" UId="2611" />
-  <Token Text="IF" UId="2612" />
-  <Blank UId="2613" />
-  <Access Scope="LocalVariable" UId="2614">
-    <Symbol UId="2615">
-      <Component Name="RT_PB" UId="2616">
-        <Token Text="[" UId="2617" />
-        <Access Scope="LocalVariable" UId="2618">
-          <Symbol UId="2619">
-            <Component Name="i" UId="2620" />
+  <Token Text=";" UId="2606" />
+  <NewLine UId="2607" />
+  <Blank Num="4" UId="2608" />
+  <NewLine UId="2609" />
+  <Blank Num="4" UId="2610" />
+  <Token Text="IF" UId="2611" />
+  <Blank UId="2612" />
+  <Access Scope="LocalVariable" UId="2613">
+    <Symbol UId="2614">
+      <Component Name="RT_PB" UId="2615">
+        <Token Text="[" UId="2616" />
+        <Access Scope="LocalVariable" UId="2617">
+          <Symbol UId="2618">
+            <Component Name="i" UId="2619" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2621" />
+        <Token Text="]" UId="2620" />
       </Component>
-      <Token Text="." UId="2622" />
-      <Component Name="Q" UId="2623" />
+      <Token Text="." UId="2621" />
+      <Component Name="Q" UId="2622" />
     </Symbol>
   </Access>
-  <Blank UId="2624" />
-  <Token Text="THEN" UId="2625" />
-  <NewLine UId="2626" />
-  <Blank Num="8" UId="2627" />
-  <Access Scope="LocalVariable" UId="2628">
-    <Symbol UId="2629">
-      <Component Name="temp_configuration" UId="2630" />
-      <Token Text="." UId="2631" />
-      <Component Name="posAbsolute" UId="2632" />
-      <Token Text="." UId="2633" />
-      <Component Name="position" UId="2634" />
+  <Blank UId="2623" />
+  <Token Text="THEN" UId="2624" />
+  <NewLine UId="2625" />
+  <Blank Num="8" UId="2626" />
+  <Access Scope="LocalVariable" UId="2627">
+    <Symbol UId="2628">
+      <Component Name="temp_configuration" UId="2629" />
+      <Token Text="." UId="2630" />
+      <Component Name="posAbsolute" UId="2631" />
+      <Token Text="." UId="2632" />
+      <Component Name="position" UId="2633" />
     </Symbol>
   </Access>
-  <Blank UId="2635" />
-  <Token Text=":=" UId="2636" />
-  <Blank UId="2637" />
-  <Access Scope="LocalVariable" UId="2638">
-    <Symbol UId="2639">
-      <Component Name="I_Para_rPos_Abs" UId="2640">
-        <Token Text="[" UId="2641" />
-        <Access Scope="LocalVariable" UId="2642">
-          <Symbol UId="2643">
-            <Component Name="i" UId="2644" />
+  <Blank UId="2634" />
+  <Token Text=":=" UId="2635" />
+  <Blank UId="2636" />
+  <Access Scope="LocalVariable" UId="2637">
+    <Symbol UId="2638">
+      <Component Name="I_Para_rPos_Abs" UId="2639">
+        <Token Text="[" UId="2640" />
+        <Access Scope="LocalVariable" UId="2641">
+          <Symbol UId="2642">
+            <Component Name="i" UId="2643" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2645" />
-      </Component>
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="2646" />
-  <NewLine UId="2647" />
-  <Blank Num="8" UId="2648" />
-  <Access Scope="LocalVariable" UId="2649">
-    <Symbol UId="2650">
-      <Component Name="temp_configuration" UId="2651" />
-      <Token Text="." UId="2652" />
-      <Component Name="posAbsolute" UId="2653" />
-      <Token Text="." UId="2654" />
-      <Component Name="velocity" UId="2655" />
-    </Symbol>
-  </Access>
-  <Blank UId="2656" />
-  <Token Text=":=" UId="2657" />
-  <Blank UId="2658" />
-  <Access Scope="LocalVariable" UId="2659">
-    <Symbol UId="2660">
-      <Component Name="I_Para_rSpeed_Abs" UId="2661">
-        <Token Text="[" UId="2662" />
-        <Access Scope="LocalVariable" UId="2663">
-          <Symbol UId="2664">
-            <Component Name="i" UId="2665" />
-          </Symbol>
-        </Access>
-        <Token Text="]" UId="2666" />
+        <Token Text="]" UId="2644" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2667" />
-  <NewLine UId="2668" />
-  <Blank Num="8" UId="2669" />
-  <Access Scope="LocalVariable" UId="2670">
-    <Symbol UId="2671">
-      <Component Name="temp_configuration" UId="2672" />
-      <Token Text="." UId="2673" />
-      <Component Name="posAbsolute" UId="2674" />
-      <Token Text="." UId="2675" />
-      <Component Name="direction" UId="2676" />
+  <Token Text=";" UId="2645" />
+  <NewLine UId="2646" />
+  <Blank Num="8" UId="2647" />
+  <Access Scope="LocalVariable" UId="2648">
+    <Symbol UId="2649">
+      <Component Name="temp_configuration" UId="2650" />
+      <Token Text="." UId="2651" />
+      <Component Name="posAbsolute" UId="2652" />
+      <Token Text="." UId="2653" />
+      <Component Name="velocity" UId="2654" />
     </Symbol>
   </Access>
-  <Blank UId="2677" />
-  <Token Text=":=" UId="2678" />
-  <Blank UId="2679" />
-  <Access Scope="LiteralConstant" UId="2680">
-    <Constant UId="2681">
-      <ConstantValue UId="2683">3</ConstantValue>
+  <Blank UId="2655" />
+  <Token Text=":=" UId="2656" />
+  <Blank UId="2657" />
+  <Access Scope="LocalVariable" UId="2658">
+    <Symbol UId="2659">
+      <Component Name="I_Para_rSpeed_Abs" UId="2660">
+        <Token Text="[" UId="2661" />
+        <Access Scope="LocalVariable" UId="2662">
+          <Symbol UId="2663">
+            <Component Name="i" UId="2664" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="2665" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2666" />
+  <NewLine UId="2667" />
+  <Blank Num="8" UId="2668" />
+  <Access Scope="LocalVariable" UId="2669">
+    <Symbol UId="2670">
+      <Component Name="temp_configuration" UId="2671" />
+      <Token Text="." UId="2672" />
+      <Component Name="posAbsolute" UId="2673" />
+      <Token Text="." UId="2674" />
+      <Component Name="direction" UId="2675" />
+    </Symbol>
+  </Access>
+  <Blank UId="2676" />
+  <Token Text=":=" UId="2677" />
+  <Blank UId="2678" />
+  <Access Scope="LiteralConstant" UId="2679">
+    <Constant UId="2680">
+      <ConstantValue UId="2682">3</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="2684" />
-  <LineComment UId="2685">
-    <Text UId="2686">temp_posAbsolute_direction</Text>
+  <Token Text=";" UId="2683" />
+  <LineComment UId="2684">
+    <Text UId="2685">temp_posAbsolute_direction</Text>
   </LineComment>
-  <NewLine Num="2" UId="2687" />
-  <Blank Num="8" UId="2688" />
-  <Access Scope="LocalVariable" UId="2689">
-    <Symbol UId="2690">
-      <Component Name="temp_configuration" UId="2691" />
-      <Token Text="." UId="2692" />
-      <Component Name="posAbsolute" UId="2693" />
-      <Token Text="." UId="2694" />
-      <Component Name="acceleration" UId="2695" />
+  <NewLine Num="2" UId="2686" />
+  <Blank Num="8" UId="2687" />
+  <Access Scope="LocalVariable" UId="2688">
+    <Symbol UId="2689">
+      <Component Name="temp_configuration" UId="2690" />
+      <Token Text="." UId="2691" />
+      <Component Name="posAbsolute" UId="2692" />
+      <Token Text="." UId="2693" />
+      <Component Name="acceleration" UId="2694" />
     </Symbol>
   </Access>
-  <Blank UId="2696" />
-  <Token Text=":=" UId="2697" />
-  <Blank UId="2698" />
-  <Access Scope="LocalVariable" UId="2699">
-    <Symbol UId="2700">
-      <Component Name="I_Para_rAcc_Set" UId="2701">
-        <Token Text="[" UId="2702" />
-        <Access Scope="LocalVariable" UId="2703">
-          <Symbol UId="2704">
-            <Component Name="i" UId="2705" />
+  <Blank UId="2695" />
+  <Token Text=":=" UId="2696" />
+  <Blank UId="2697" />
+  <Access Scope="LocalVariable" UId="2698">
+    <Symbol UId="2699">
+      <Component Name="I_Para_rAcc_Set" UId="2700">
+        <Token Text="[" UId="2701" />
+        <Access Scope="LocalVariable" UId="2702">
+          <Symbol UId="2703">
+            <Component Name="i" UId="2704" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2706" />
+        <Token Text="]" UId="2705" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2707" />
-  <NewLine UId="2708" />
-  <Blank Num="8" UId="2709" />
-  <Access Scope="LocalVariable" UId="2710">
-    <Symbol UId="2711">
-      <Component Name="temp_configuration" UId="2712" />
-      <Token Text="." UId="2713" />
-      <Component Name="posAbsolute" UId="2714" />
-      <Token Text="." UId="2715" />
-      <Component Name="deceleration" UId="2716" />
+  <Token Text=";" UId="2706" />
+  <NewLine UId="2707" />
+  <Blank Num="8" UId="2708" />
+  <Access Scope="LocalVariable" UId="2709">
+    <Symbol UId="2710">
+      <Component Name="temp_configuration" UId="2711" />
+      <Token Text="." UId="2712" />
+      <Component Name="posAbsolute" UId="2713" />
+      <Token Text="." UId="2714" />
+      <Component Name="deceleration" UId="2715" />
     </Symbol>
   </Access>
-  <Blank UId="2717" />
-  <Token Text=":=" UId="2718" />
-  <Blank UId="2719" />
-  <Access Scope="LocalVariable" UId="2720">
-    <Symbol UId="2721">
-      <Component Name="I_Para_rDec_Set" UId="2722">
-        <Token Text="[" UId="2723" />
-        <Access Scope="LocalVariable" UId="2724">
-          <Symbol UId="2725">
-            <Component Name="i" UId="2726" />
+  <Blank UId="2716" />
+  <Token Text=":=" UId="2717" />
+  <Blank UId="2718" />
+  <Access Scope="LocalVariable" UId="2719">
+    <Symbol UId="2720">
+      <Component Name="I_Para_rDec_Set" UId="2721">
+        <Token Text="[" UId="2722" />
+        <Access Scope="LocalVariable" UId="2723">
+          <Symbol UId="2724">
+            <Component Name="i" UId="2725" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2727" />
+        <Token Text="]" UId="2726" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2728" />
-  <NewLine UId="2729" />
-  <Blank Num="8" UId="2730" />
-  <Access Scope="LocalVariable" UId="2731">
-    <Symbol UId="2732">
-      <Component Name="temp_configuration" UId="2733" />
-      <Token Text="." UId="2734" />
-      <Component Name="posAbsolute" UId="2735" />
-      <Token Text="." UId="2736" />
-      <Component Name="jerk" UId="2737" />
+  <Token Text=";" UId="2727" />
+  <NewLine UId="2728" />
+  <Blank Num="8" UId="2729" />
+  <Access Scope="LocalVariable" UId="2730">
+    <Symbol UId="2731">
+      <Component Name="temp_configuration" UId="2732" />
+      <Token Text="." UId="2733" />
+      <Component Name="posAbsolute" UId="2734" />
+      <Token Text="." UId="2735" />
+      <Component Name="jerk" UId="2736" />
     </Symbol>
   </Access>
-  <Blank UId="2738" />
-  <Token Text=":=" UId="2739" />
-  <Blank UId="2740" />
-  <Access Scope="LocalVariable" UId="2741">
-    <Symbol UId="2742">
-      <Component Name="I_Para_rJerk_Set" UId="2743">
-        <Token Text="[" UId="2744" />
-        <Access Scope="LocalVariable" UId="2745">
-          <Symbol UId="2746">
-            <Component Name="i" UId="2747" />
+  <Blank UId="2737" />
+  <Token Text=":=" UId="2738" />
+  <Blank UId="2739" />
+  <Access Scope="LocalVariable" UId="2740">
+    <Symbol UId="2741">
+      <Component Name="I_Para_rJerk_Set" UId="2742">
+        <Token Text="[" UId="2743" />
+        <Access Scope="LocalVariable" UId="2744">
+          <Symbol UId="2745">
+            <Component Name="i" UId="2746" />
           </Symbol>
         </Access>
-        <Token Text="]" UId="2748" />
+        <Token Text="]" UId="2747" />
       </Component>
     </Symbol>
   </Access>
-  <Token Text=";" UId="2749" />
-  <NewLine UId="2750" />
-  <Blank Num="8" UId="2751" />
-  <NewLine UId="2752" />
-  <Blank Num="4" UId="2753" />
-  <Token Text="END_IF" UId="2754" />
-  <Token Text=";" UId="2755" />
-  <NewLine UId="2756" />
-  <Token Text="END_FOR" UId="2757" />
-  <Token Text=";" UId="2758" />
-  <NewLine Num="2" UId="2759" />
-  <Blank Num="4" UId="2760" />
+  <Token Text=";" UId="2748" />
+  <NewLine UId="2749" />
+  <Blank Num="8" UId="2750" />
+  <NewLine UId="2751" />
+  <Blank Num="4" UId="2752" />
+  <Token Text="END_IF" UId="2753" />
+  <Token Text=";" UId="2754" />
+  <NewLine UId="2755" />
+  <Token Text="END_FOR" UId="2756" />
+  <Token Text=";" UId="2757" />
+  <NewLine Num="2" UId="2758" />
+  <Blank Num="4" UId="2759" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
