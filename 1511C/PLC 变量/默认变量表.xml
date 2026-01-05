@@ -1405,7 +1405,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <Name>EQUIPMENTDATA_STEPHISTORYLENGTH</Name>
-          <Value>149</Value>
+          <Value>50</Value>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="E3" CompositionName="Comment">
