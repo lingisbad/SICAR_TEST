@@ -6,7 +6,7 @@
       <AutoNumber>false</AutoNumber>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="Axis" Datatype="Array[0..20] of &quot;Axis_IF_HMI&quot;" Remanence="Retain">
+    <Member Name="Axis" Datatype="Array[0..10] of &quot;Axis_IF_HMI&quot;" Remanence="Retain">
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>

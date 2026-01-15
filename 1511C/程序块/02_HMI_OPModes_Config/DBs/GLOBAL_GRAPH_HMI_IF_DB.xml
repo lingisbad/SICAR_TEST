@@ -6,7 +6,7 @@
       <AutoNumber>false</AutoNumber>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="GRAPH" Datatype="Array[0..20] of &quot;GRAPH_CONTROL_UDT&quot;">
+    <Member Name="GRAPH" Datatype="Array[0..10] of &quot;GRAPH_CONTROL_UDT&quot;">
       <Sections>
         <Section Name="None" />
       </Sections>
@@ -58,41 +58,6 @@
       <Subelement Path="10">
         <Comment>
           <MultiLanguageText Lang="en-US">ST025_RB01_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="11">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST025_RB02_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="12">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST025_TL01_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="13">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST025_TL02_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="14">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST030_MAIN_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="15">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST030_ROBOT_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="16">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST030_SLIDE_GRAPH_FB</MultiLanguageText>
-        </Comment>
-      </Subelement>
-      <Subelement Path="17">
-        <Comment>
-          <MultiLanguageText Lang="en-US">ST035_MAIN_GRAPH_FB</MultiLanguageText>
         </Comment>
       </Subelement>
     </Member>

@@ -40,13 +40,13 @@
                       <Sections>
                         <Section Name="None">
                           <Member Name="RID" Datatype="DWord">
-                            <StartValue>16#208071a</StartValue>
+                            <StartValue>16#2080726</StartValue>
                           </Member>
                           <Member Name="AREA" Datatype="Byte">
                             <StartValue>16#81</StartValue>
                           </Member>
                           <Member Name="OFFSET" Datatype="UDInt">
-                            <StartValue>1032</StartValue>
+                            <StartValue>2080</StartValue>
                           </Member>
                         </Section>
                       </Sections>
@@ -55,13 +55,46 @@
                       <Sections>
                         <Section Name="None">
                           <Member Name="RID" Datatype="DWord">
-                            <StartValue>16#208071b</StartValue>
+                            <StartValue>16#2080727</StartValue>
                           </Member>
                           <Member Name="AREA" Datatype="Byte">
                             <StartValue>16#82</StartValue>
                           </Member>
                           <Member Name="OFFSET" Datatype="UDInt">
-                            <StartValue>1056</StartValue>
+                            <StartValue>2080</StartValue>
+                          </Member>
+                        </Section>
+                      </Sections>
+                    </Member>
+                    <Member Name="EnableTorqueData" Datatype="Bool">
+                      <StartValue>true</StartValue>
+                    </Member>
+                    <Member Name="TorqueDataAddressIn" Datatype="VREF" Version="1.0">
+                      <Sections>
+                        <Section Name="None">
+                          <Member Name="RID" Datatype="DWord">
+                            <StartValue>16#2080742</StartValue>
+                          </Member>
+                          <Member Name="AREA" Datatype="Byte">
+                            <StartValue>16#81</StartValue>
+                          </Member>
+                          <Member Name="OFFSET" Datatype="UDInt">
+                            <StartValue>2240</StartValue>
+                          </Member>
+                        </Section>
+                      </Sections>
+                    </Member>
+                    <Member Name="TorqueDataAddressOut" Datatype="VREF" Version="1.0">
+                      <Sections>
+                        <Section Name="None">
+                          <Member Name="RID" Datatype="DWord">
+                            <StartValue>16#2080743</StartValue>
+                          </Member>
+                          <Member Name="AREA" Datatype="Byte">
+                            <StartValue>16#82</StartValue>
+                          </Member>
+                          <Member Name="OFFSET" Datatype="UDInt">
+                            <StartValue>2240</StartValue>
                           </Member>
                         </Section>
                       </Sections>
@@ -69,14 +102,74 @@
                   </Section>
                 </Sections>
               </Member>
+              <Member Name="DriveParameter" Datatype="TO_Struct_ActorDriveParameter" Version="6.0">
+                <Sections>
+                  <Section Name="None">
+                    <Member Name="ReferenceSpeed" Datatype="LReal">
+                      <StartValue>6000.0</StartValue>
+                    </Member>
+                    <Member Name="MaxSpeed" Datatype="LReal">
+                      <StartValue>10000.0</StartValue>
+                    </Member>
+                    <Member Name="ReferenceTorque" Datatype="LReal">
+                      <StartValue>3.68</StartValue>
+                    </Member>
+                  </Section>
+                </Sections>
+              </Member>
             </Section>
           </Sections>
         </Member>
-        <Member Name="Simulation" Datatype="TO_Struct_AxisSimulation" Version="6.0">
+        <Member Name="TorqueLimiting" Datatype="TO_Struct_TorqueLimiting" Version="6.0">
           <Sections>
             <Section Name="None">
-              <Member Name="Mode" Datatype="UDInt">
-                <StartValue>1</StartValue>
+              <Member Name="LimitDefaults" Datatype="TO_Struct_TorqueLimitingLimitDefaults" Version="6.0">
+                <Sections>
+                  <Section Name="None">
+                    <Member Name="Torque" Datatype="LReal">
+                      <StartValue>3.0</StartValue>
+                    </Member>
+                  </Section>
+                </Sections>
+              </Member>
+            </Section>
+          </Sections>
+        </Member>
+        <Member Name="DynamicLimits" Datatype="TO_Struct_DynamicLimits" Version="6.0">
+          <Sections>
+            <Section Name="None">
+              <Member Name="MaxVelocity" Datatype="LReal">
+                <StartValue>18000.0</StartValue>
+              </Member>
+              <Member Name="MaxAcceleration" Datatype="LReal">
+                <StartValue>360000.0</StartValue>
+              </Member>
+              <Member Name="MaxDeceleration" Datatype="LReal">
+                <StartValue>360000.0</StartValue>
+              </Member>
+              <Member Name="MaxJerk" Datatype="LReal">
+                <StartValue>7200000.0</StartValue>
+              </Member>
+            </Section>
+          </Sections>
+        </Member>
+        <Member Name="DynamicDefaults" Datatype="TO_Struct_DynamicDefaults" Version="6.0">
+          <Sections>
+            <Section Name="None">
+              <Member Name="Velocity" Datatype="LReal">
+                <StartValue>720.0</StartValue>
+              </Member>
+              <Member Name="Acceleration" Datatype="LReal">
+                <StartValue>14400.0</StartValue>
+              </Member>
+              <Member Name="Deceleration" Datatype="LReal">
+                <StartValue>14400.0</StartValue>
+              </Member>
+              <Member Name="Jerk" Datatype="LReal">
+                <StartValue>288000.0</StartValue>
+              </Member>
+              <Member Name="EmergencyDeceleration" Datatype="LReal">
+                <StartValue>360000.0</StartValue>
               </Member>
             </Section>
           </Sections>
@@ -127,6 +220,16 @@
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="FollowingErrorDeviation" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+          <Member Name="PositionTolerance" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="Sensor" Datatype="Array[1..4] of TO_Struct_Sensor" Version="6.0">
       <AttributeList>
@@ -134,6 +237,11 @@
       </AttributeList>
       <Sections>
         <Section Name="None">
+          <Member Name="Type" Datatype="DInt">
+            <Subelement Path="1">
+              <StartValue>2</StartValue>
+            </Subelement>
+          </Member>
           <Member Name="DataAdaption" Datatype="DInt">
             <Subelement Path="1">
               <StartValue>1</StartValue>
@@ -147,7 +255,7 @@
                     <Section Name="None">
                       <Member Name="RID" Datatype="DWord">
                         <Subelement Path="1">
-                          <StartValue>16#208071a</StartValue>
+                          <StartValue>16#2080726</StartValue>
                         </Subelement>
                       </Member>
                       <Member Name="AREA" Datatype="Byte">
@@ -157,7 +265,7 @@
                       </Member>
                       <Member Name="OFFSET" Datatype="UDInt">
                         <Subelement Path="1">
-                          <StartValue>1032</StartValue>
+                          <StartValue>2080</StartValue>
                         </Subelement>
                       </Member>
                     </Section>
@@ -168,7 +276,7 @@
                     <Section Name="None">
                       <Member Name="RID" Datatype="DWord">
                         <Subelement Path="1">
-                          <StartValue>16#208071b</StartValue>
+                          <StartValue>16#2080727</StartValue>
                         </Subelement>
                       </Member>
                       <Member Name="AREA" Datatype="Byte">
@@ -178,7 +286,7 @@
                       </Member>
                       <Member Name="OFFSET" Datatype="UDInt">
                         <Subelement Path="1">
-                          <StartValue>1056</StartValue>
+                          <StartValue>2080</StartValue>
                         </Subelement>
                       </Member>
                     </Section>
@@ -187,14 +295,25 @@
               </Section>
             </Sections>
           </Member>
+          <Member Name="Parameter" Datatype="TO_Struct_SensorParameter" Version="6.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="StepsPerRevolution" Datatype="UDInt">
+                  <Subelement Path="1">
+                    <StartValue>512</StartValue>
+                  </Subelement>
+                </Member>
+                <Member Name="DeterminableRevolutions" Datatype="UDInt">
+                  <Subelement Path="1">
+                    <StartValue>4096</StartValue>
+                  </Subelement>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
           <Member Name="ActiveHoming" Datatype="TO_Struct_SensorActiveHoming" Version="6.0">
             <Sections>
               <Section Name="None">
-                <Member Name="Mode" Datatype="DInt">
-                  <Subelement Path="1">
-                    <StartValue>2</StartValue>
-                  </Subelement>
-                </Member>
                 <Member Name="DigitalInputAddress" Datatype="VREF" Version="1.0">
                   <Sections>
                     <Section Name="None">
@@ -237,11 +356,25 @@
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="MotionType" Datatype="DInt">
+            <StartValue>1</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="Modulo" Datatype="TO_Struct_Modulo" Version="6.0">
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Length" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="PositionLimits_SW" Datatype="TO_Struct_PositionLimitsSW" Version="6.0">
       <AttributeList>
@@ -252,40 +385,6 @@
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
-      <Sections>
-        <Section Name="None">
-          <Member Name="Active" Datatype="Bool">
-            <StartValue>true</StartValue>
-          </Member>
-          <Member Name="MinSwitchAddress" Datatype="VREF" Version="1.0">
-            <Sections>
-              <Section Name="None">
-                <Member Name="RID" Datatype="DWord">
-                  <StartValue>16#2000001</StartValue>
-                </Member>
-                <Member Name="AREA" Datatype="Byte">
-                  <StartValue>16#81</StartValue>
-                </Member>
-                <Member Name="OFFSET" Datatype="UDInt">
-                  <StartValue>1</StartValue>
-                </Member>
-              </Section>
-            </Sections>
-          </Member>
-          <Member Name="MaxSwitchAddress" Datatype="VREF" Version="1.0">
-            <Sections>
-              <Section Name="None">
-                <Member Name="RID" Datatype="DWord">
-                  <StartValue>16#2000001</StartValue>
-                </Member>
-                <Member Name="AREA" Datatype="Byte">
-                  <StartValue>16#81</StartValue>
-                </Member>
-              </Section>
-            </Sections>
-          </Member>
-        </Section>
-      </Sections>
     </Member>
     <Member Name="Homing" Datatype="TO_Struct_Homing" Version="6.0">
       <AttributeList>
@@ -293,8 +392,11 @@
       </AttributeList>
       <Sections>
         <Section Name="None">
-          <Member Name="AutoReversal" Datatype="Bool">
-            <StartValue>true</StartValue>
+          <Member Name="ApproachVelocity" Datatype="LReal">
+            <StartValue>1800.0</StartValue>
+          </Member>
+          <Member Name="ReferencingVelocity" Datatype="LReal">
+            <StartValue>900.0</StartValue>
           </Member>
         </Section>
       </Sections>
@@ -303,13 +405,6 @@
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
-      <Sections>
-        <Section Name="None">
-          <Member Name="EnableDSC" Datatype="Bool">
-            <StartValue>true</StartValue>
-          </Member>
-        </Section>
-      </Sections>
     </Member>
     <Member Name="DynamicAxisModel" Datatype="TO_Struct_DynamicAxisModel" Version="6.0">
       <AttributeList>
@@ -320,6 +415,19 @@
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="MinValue" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+          <Member Name="MaxValue" Datatype="LReal">
+            <StartValue>3600.0</StartValue>
+          </Member>
+          <Member Name="MinVelocity" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="CrossPlcSynchronousOperation" Datatype="TO_Struct_CrossPlcSynchronousOperation" Version="6.0">
       <AttributeList>
@@ -330,11 +438,25 @@
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="Window" Datatype="LReal">
+            <StartValue>360.0</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="StandstillSignal" Datatype="TO_Struct_StandstillSignal" Version="6.0">
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="VelocityThreshold" Datatype="LReal">
+            <StartValue>180.0</StartValue>
+          </Member>
+        </Section>
+      </Sections>
     </Member>
     <Member Name="StatusPositioning" Datatype="TO_Struct_StatusPositioning" Version="6.0">
       <AttributeList>
@@ -381,14 +503,17 @@
       <OfSystemLibVersion>6.0</OfSystemLibVersion>
       <ParameterData>
 <Parameters xmlns="http://www.siemens.com/automation/Openness/SW/Parameters/v1">
+  <Parameter Name="_Properties.MotionType" Value="1" />
+  <Parameter Name="Actor.Interface.EnableTorqueData" Value="True" />
   <Parameter Name="_Sensor[1].ActiveHoming.DigitalInputAddress" Value="s120原点信号" />
-  <Parameter Name="_PositionLimits_HW.MinSwitchAddress" Value="s120负限位" />
-  <Parameter Name="_PositionLimits_HW.MaxSwitchAddress" Value="S120正限位" />
-  <Parameter Name="_Actor.Interface.Telegram" Value="5" />
-  <Parameter Name="_Sensor[1].Interface.Telegram" Value="5" />
+  <Parameter Name="_Actor.Interface.Telegram" Value="102" />
+  <Parameter Name="_Actor.DataAdaptionOffline" Value="True" />
+  <Parameter Name="_Sensor[1].Interface.Telegram" Value="102" />
+  <Parameter Name="_Sensor[1].DataAdaptionOffline" Value="True" />
   <AdditionalData xmlns="http://www.siemens.com/automation/Openness/SW/Motion/Axis/v1">
-    <Connection Interface="Actor" InputAddress="1032" OutputAddress="1056" />
-    <Connection Interface="Sensor[1]" InputAddress="1032" OutputAddress="1056" SensorIndexInActorTelegram="1" />
+    <Connection Interface="Actor" InputAddress="2080" OutputAddress="2080" />
+    <Connection Interface="Sensor[1]" InputAddress="2080" OutputAddress="2080" SensorIndexInActorTelegram="1" />
+    <Connection Interface="Torque" InputAddress="2240" OutputAddress="2240" />
   </AdditionalData>
 </Parameters></ParameterData>
       <ProgrammingLanguage>Motion_DB</ProgrammingLanguage>

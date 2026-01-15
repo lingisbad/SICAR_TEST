@@ -6,7 +6,7 @@
       <AutoNumber>false</AutoNumber>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="Valve" Datatype="Array[0..100] of &quot;VALVE_HMI_UDT&quot;" Remanence="Retain">
+    <Member Name="Valve" Datatype="Array[0..20] of &quot;VALVE_HMI_UDT&quot;" Remanence="Retain">
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>

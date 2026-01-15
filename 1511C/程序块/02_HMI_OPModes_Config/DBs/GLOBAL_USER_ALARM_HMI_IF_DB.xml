@@ -6,7 +6,7 @@
       <AutoNumber>false</AutoNumber>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="GLOBAL_USER_ALARM" Datatype="Array[1..30] of &quot;TEC_UNIT_HMI_UDT&quot;" />
+    <Member Name="GLOBAL_USER_ALARM" Datatype="Array[1..10] of &quot;TEC_UNIT_HMI_UDT&quot;" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>

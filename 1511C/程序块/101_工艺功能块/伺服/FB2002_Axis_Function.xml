@@ -899,198 +899,205 @@
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rJog_Speed" />
+        <Component Name="Para_iHomeMode" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="94">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rMV_Speed" />
+        <Component Name="Para_rJog_Speed" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="95">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rStop_Dec" />
+        <Component Name="Para_rMV_Speed" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="96">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rEStop_Dec" />
+        <Component Name="Para_rStop_Dec" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="97">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rPos_Abs" />
+        <Component Name="Para_rEStop_Dec" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="98">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rSpeed_Abs" />
+        <Component Name="Para_rPos_Abs" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="99">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rAcc_Set" />
+        <Component Name="Para_rSpeed_Abs" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="100">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rDec_Set" />
+        <Component Name="Para_rAcc_Set" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="101">
       <Symbol>
         <Component Name="IF_HMI" />
         <Component Name="Parametet" />
-        <Component Name="Para_rJerk_Set" />
+        <Component Name="Para_rDec_Set" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="102">
       <Symbol>
-        <Component Name="O_Status_bAxisReady" />
+        <Component Name="IF_HMI" />
+        <Component Name="Parametet" />
+        <Component Name="Para_rJerk_Set" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="103">
       <Symbol>
-        <Component Name="O_Status_bAxisEnabled" />
+        <Component Name="O_Status_bAxisReady" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="104">
       <Symbol>
-        <Component Name="O_Status_bjogForward" />
+        <Component Name="O_Status_bAxisEnabled" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="105">
       <Symbol>
-        <Component Name="O_Status_bjogBackward" />
+        <Component Name="O_Status_bjogForward" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="106">
       <Symbol>
-        <Component Name="HOMIEDONE" />
+        <Component Name="O_Status_bjogBackward" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="107">
       <Symbol>
-        <Component Name="O_Status_bAtHome" />
+        <Component Name="HOMIEDONE" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="108">
       <Symbol>
-        <Component Name="O_Status_bSstill" />
+        <Component Name="O_Status_bAtHome" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="109">
       <Symbol>
-        <Component Name="O_Status_bAxisBusy" />
+        <Component Name="O_Status_bSstill" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="110">
       <Symbol>
-        <Component Name="O_Status_bAxisSyned" />
+        <Component Name="O_Status_bAxisBusy" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="111">
       <Symbol>
-        <Component Name="O_Status_bAxisError" />
+        <Component Name="O_Status_bAxisSyned" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="112">
       <Symbol>
-        <Component Name="O_Status_bAtPos" />
+        <Component Name="O_Status_bAxisError" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="113">
       <Symbol>
-        <Component Name="O_Status_bPosDone" />
+        <Component Name="O_Status_bAtPos" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="114">
       <Symbol>
-        <Component Name="O_Status_bPosing" />
+        <Component Name="O_Status_bPosDone" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="115">
       <Symbol>
-        <Component Name="O_Status_bRelPosDone" />
+        <Component Name="O_Status_bPosing" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="116">
       <Symbol>
-        <Component Name="O_Status_rActPos" />
+        <Component Name="O_Status_bRelPosDone" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="117">
       <Symbol>
-        <Component Name="O_Status_rActSpeed" />
+        <Component Name="O_Status_rActPos" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="118">
       <Symbol>
-        <Component Name="O_Status_iAxisFaultNum" />
+        <Component Name="O_Status_rActSpeed" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="119">
       <Symbol>
-        <Component Name="O_Status_iDriveFaultNum" />
+        <Component Name="O_Status_iAxisFaultNum" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="120">
       <Symbol>
-        <Component Name="O_Status_iFBStatus" />
+        <Component Name="O_Status_iDriveFaultNum" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="121">
       <Symbol>
-        <Component Name="O_Status_iMCStatus" />
+        <Component Name="O_Status_iFBStatus" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="122">
       <Symbol>
-        <Component Name="O_Status_rDriveTorque" />
+        <Component Name="O_Status_iMCStatus" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="123">
       <Symbol>
-        <Component Name="O_Status_rDriveTemp" />
+        <Component Name="O_Status_rDriveTorque" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="124">
       <Symbol>
-        <Component Name="O_Status_rDriveRpm" />
+        <Component Name="O_Status_rDriveTemp" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="125">
       <Symbol>
-        <Component Name="O_Status_AxisName" />
+        <Component Name="O_Status_rDriveRpm" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="126">
       <Symbol>
-        <Component Name="O_Status_mybool" />
+        <Component Name="O_Status_AxisName" />
       </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="127">
       <Symbol>
+        <Component Name="O_Status_mybool" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="128">
+      <Symbol>
         <Component Name="O_Status_myLreal" />
       </Symbol>
     </Access>
-    <Call UId="128">
+    <Call UId="129">
       <CallInfo Name="FB_Pos16_IO" BlockType="FB">
-        <Instance Scope="LocalVariable" UId="129">
+        <Instance Scope="LocalVariable" UId="130">
           <Component Name="myFB_Pos16_Ax01" />
         </Instance>
         <Parameter Name="Opmode" Section="Input" Type="&quot;OPMODE_OUT_UDT&quot;" />
@@ -1165,6 +1172,7 @@
         <Parameter Name="I_CMD_bGoToPos_8" Section="Input" Type="Bool" />
         <Parameter Name="I_InLock_bGoToPos_8" Section="Input" Type="Bool" />
         <Parameter Name="I_HMI_bGoToPos_8" Section="Input" Type="Bool" />
+        <Parameter Name="I_iHomeMode" Section="Input" Type="Int" />
         <Parameter Name="O_Status_bAxisReady" Section="Output" Type="Bool" />
         <Parameter Name="O_Status_bAxisEnabled" Section="Output" Type="Bool" />
         <Parameter Name="O_Status_bjogForward" Section="Output" Type="Bool" />
@@ -1206,445 +1214,449 @@
     </Call>
   </Parts>
   <Wires>
-    <Wire UId="132">
-      <Powerrail />
-      <NameCon UId="128" Name="en" />
-    </Wire>
     <Wire UId="133">
-      <IdentCon UId="21" />
-      <NameCon UId="128" Name="Opmode" />
+      <Powerrail />
+      <NameCon UId="129" Name="en" />
     </Wire>
     <Wire UId="134">
-      <IdentCon UId="22" />
-      <NameCon UId="128" Name="TO_PosAxis" />
+      <IdentCon UId="21" />
+      <NameCon UId="129" Name="Opmode" />
     </Wire>
     <Wire UId="135">
-      <IdentCon UId="23" />
-      <NameCon UId="128" Name="I_iNum_Abspos" />
+      <IdentCon UId="22" />
+      <NameCon UId="129" Name="TO_PosAxis" />
     </Wire>
     <Wire UId="136">
-      <IdentCon UId="24" />
-      <NameCon UId="128" Name="I_bMan_Enable" />
+      <IdentCon UId="23" />
+      <NameCon UId="129" Name="I_iNum_Abspos" />
     </Wire>
     <Wire UId="137">
-      <IdentCon UId="25" />
-      <NameCon UId="128" Name="I_SS_bHome" />
+      <IdentCon UId="24" />
+      <NameCon UId="129" Name="I_bMan_Enable" />
     </Wire>
     <Wire UId="138">
-      <IdentCon UId="26" />
-      <NameCon UId="128" Name="I_SS_bFW" />
+      <IdentCon UId="25" />
+      <NameCon UId="129" Name="I_SS_bHome" />
     </Wire>
     <Wire UId="139">
-      <IdentCon UId="27" />
-      <NameCon UId="128" Name="I_SS_bBW" />
+      <IdentCon UId="26" />
+      <NameCon UId="129" Name="I_SS_bFW" />
     </Wire>
     <Wire UId="140">
-      <IdentCon UId="28" />
-      <NameCon UId="128" Name="I_CMD_bEnableAxis" />
+      <IdentCon UId="27" />
+      <NameCon UId="129" Name="I_SS_bBW" />
     </Wire>
     <Wire UId="141">
-      <IdentCon UId="29" />
-      <NameCon UId="128" Name="I_CMD_bResetAxis" />
+      <IdentCon UId="28" />
+      <NameCon UId="129" Name="I_CMD_bEnableAxis" />
     </Wire>
     <Wire UId="142">
-      <IdentCon UId="30" />
-      <NameCon UId="128" Name="I_CMD_bjogForward" />
+      <IdentCon UId="29" />
+      <NameCon UId="129" Name="I_CMD_bResetAxis" />
     </Wire>
     <Wire UId="143">
-      <IdentCon UId="31" />
-      <NameCon UId="128" Name="I_CMD_bjogBackward" />
+      <IdentCon UId="30" />
+      <NameCon UId="129" Name="I_CMD_bjogForward" />
     </Wire>
     <Wire UId="144">
-      <IdentCon UId="32" />
-      <NameCon UId="128" Name="I_CMD_bmoveVelocity" />
+      <IdentCon UId="31" />
+      <NameCon UId="129" Name="I_CMD_bjogBackward" />
     </Wire>
     <Wire UId="145">
-      <IdentCon UId="33" />
-      <NameCon UId="128" Name="I_CMD_bstop" />
+      <IdentCon UId="32" />
+      <NameCon UId="129" Name="I_CMD_bmoveVelocity" />
     </Wire>
     <Wire UId="146">
-      <IdentCon UId="34" />
-      <NameCon UId="128" Name="I_CMD_bfastStop" />
+      <IdentCon UId="33" />
+      <NameCon UId="129" Name="I_CMD_bstop" />
     </Wire>
     <Wire UId="147">
-      <IdentCon UId="35" />
-      <NameCon UId="128" Name="I_CMD_bHoming" />
+      <IdentCon UId="34" />
+      <NameCon UId="129" Name="I_CMD_bfastStop" />
     </Wire>
     <Wire UId="148">
-      <IdentCon UId="36" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos" />
+      <IdentCon UId="35" />
+      <NameCon UId="129" Name="I_CMD_bHoming" />
     </Wire>
     <Wire UId="149">
-      <IdentCon UId="37" />
-      <NameCon UId="128" Name="I_CMD_iGoToPos" />
+      <IdentCon UId="36" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos" />
     </Wire>
     <Wire UId="150">
-      <IdentCon UId="38" />
-      <NameCon UId="128" Name="I_CMD_bCallAbsPos" />
+      <IdentCon UId="37" />
+      <NameCon UId="129" Name="I_CMD_iGoToPos" />
     </Wire>
     <Wire UId="151">
-      <IdentCon UId="39" />
-      <NameCon UId="128" Name="I_CMD_bRelPos" />
+      <IdentCon UId="38" />
+      <NameCon UId="129" Name="I_CMD_bCallAbsPos" />
     </Wire>
     <Wire UId="152">
-      <IdentCon UId="40" />
-      <NameCon UId="128" Name="I_InLock_bEnableAxis" />
+      <IdentCon UId="39" />
+      <NameCon UId="129" Name="I_CMD_bRelPos" />
     </Wire>
     <Wire UId="153">
-      <IdentCon UId="41" />
-      <NameCon UId="128" Name="I_InLock_bResetAxis" />
+      <IdentCon UId="40" />
+      <NameCon UId="129" Name="I_InLock_bEnableAxis" />
     </Wire>
     <Wire UId="154">
-      <IdentCon UId="42" />
-      <NameCon UId="128" Name="I_InLock_bjogForward" />
+      <IdentCon UId="41" />
+      <NameCon UId="129" Name="I_InLock_bResetAxis" />
     </Wire>
     <Wire UId="155">
-      <IdentCon UId="43" />
-      <NameCon UId="128" Name="I_InLock_bjogBackward" />
+      <IdentCon UId="42" />
+      <NameCon UId="129" Name="I_InLock_bjogForward" />
     </Wire>
     <Wire UId="156">
-      <IdentCon UId="44" />
-      <NameCon UId="128" Name="I_InLock_bmoveVelocity" />
+      <IdentCon UId="43" />
+      <NameCon UId="129" Name="I_InLock_bjogBackward" />
     </Wire>
     <Wire UId="157">
-      <IdentCon UId="45" />
-      <NameCon UId="128" Name="I_InLock_bstop" />
+      <IdentCon UId="44" />
+      <NameCon UId="129" Name="I_InLock_bmoveVelocity" />
     </Wire>
     <Wire UId="158">
-      <IdentCon UId="46" />
-      <NameCon UId="128" Name="I_InLock_bfastStop" />
+      <IdentCon UId="45" />
+      <NameCon UId="129" Name="I_InLock_bstop" />
     </Wire>
     <Wire UId="159">
-      <IdentCon UId="47" />
-      <NameCon UId="128" Name="I_InLock_bHoming" />
+      <IdentCon UId="46" />
+      <NameCon UId="129" Name="I_InLock_bfastStop" />
     </Wire>
     <Wire UId="160">
-      <IdentCon UId="48" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos" />
+      <IdentCon UId="47" />
+      <NameCon UId="129" Name="I_InLock_bHoming" />
     </Wire>
     <Wire UId="161">
-      <IdentCon UId="49" />
-      <NameCon UId="128" Name="I_InLock_iGoToPos" />
+      <IdentCon UId="48" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos" />
     </Wire>
     <Wire UId="162">
-      <IdentCon UId="50" />
-      <NameCon UId="128" Name="I_InLock_bCallAbsPos" />
+      <IdentCon UId="49" />
+      <NameCon UId="129" Name="I_InLock_iGoToPos" />
     </Wire>
     <Wire UId="163">
-      <IdentCon UId="51" />
-      <NameCon UId="128" Name="I_InLock_bRelPos" />
+      <IdentCon UId="50" />
+      <NameCon UId="129" Name="I_InLock_bCallAbsPos" />
     </Wire>
     <Wire UId="164">
-      <IdentCon UId="52" />
-      <NameCon UId="128" Name="I_InLock_MyBool" />
+      <IdentCon UId="51" />
+      <NameCon UId="129" Name="I_InLock_bRelPos" />
     </Wire>
     <Wire UId="165">
-      <IdentCon UId="53" />
-      <NameCon UId="128" Name="I_HMI_bEnableAxis" />
+      <IdentCon UId="52" />
+      <NameCon UId="129" Name="I_InLock_MyBool" />
     </Wire>
     <Wire UId="166">
-      <IdentCon UId="54" />
-      <NameCon UId="128" Name="I_HMI_bResetAxis" />
+      <IdentCon UId="53" />
+      <NameCon UId="129" Name="I_HMI_bEnableAxis" />
     </Wire>
     <Wire UId="167">
-      <IdentCon UId="55" />
-      <NameCon UId="128" Name="I_HMI_bjogForward" />
+      <IdentCon UId="54" />
+      <NameCon UId="129" Name="I_HMI_bResetAxis" />
     </Wire>
     <Wire UId="168">
-      <IdentCon UId="56" />
-      <NameCon UId="128" Name="I_HMI_bjogBackward" />
+      <IdentCon UId="55" />
+      <NameCon UId="129" Name="I_HMI_bjogForward" />
     </Wire>
     <Wire UId="169">
-      <IdentCon UId="57" />
-      <NameCon UId="128" Name="I_HMI_bmoveVelocity" />
+      <IdentCon UId="56" />
+      <NameCon UId="129" Name="I_HMI_bjogBackward" />
     </Wire>
     <Wire UId="170">
-      <IdentCon UId="58" />
-      <NameCon UId="128" Name="I_HMI_bstop" />
+      <IdentCon UId="57" />
+      <NameCon UId="129" Name="I_HMI_bmoveVelocity" />
     </Wire>
     <Wire UId="171">
-      <IdentCon UId="59" />
-      <NameCon UId="128" Name="I_HMI_bfastStop" />
+      <IdentCon UId="58" />
+      <NameCon UId="129" Name="I_HMI_bstop" />
     </Wire>
     <Wire UId="172">
-      <IdentCon UId="60" />
-      <NameCon UId="128" Name="I_HMI_bHoming" />
+      <IdentCon UId="59" />
+      <NameCon UId="129" Name="I_HMI_bfastStop" />
     </Wire>
     <Wire UId="173">
-      <IdentCon UId="61" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos" />
+      <IdentCon UId="60" />
+      <NameCon UId="129" Name="I_HMI_bHoming" />
     </Wire>
     <Wire UId="174">
-      <IdentCon UId="62" />
-      <NameCon UId="128" Name="I_HMI_iGoToPos" />
+      <IdentCon UId="61" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos" />
     </Wire>
     <Wire UId="175">
-      <IdentCon UId="63" />
-      <NameCon UId="128" Name="I_HMI_bCallAbsPos" />
+      <IdentCon UId="62" />
+      <NameCon UId="129" Name="I_HMI_iGoToPos" />
     </Wire>
     <Wire UId="176">
-      <IdentCon UId="64" />
-      <NameCon UId="128" Name="I_HMI_bRelPos" />
+      <IdentCon UId="63" />
+      <NameCon UId="129" Name="I_HMI_bCallAbsPos" />
     </Wire>
     <Wire UId="177">
-      <IdentCon UId="65" />
-      <NameCon UId="128" Name="I_HMI_MyBool" />
+      <IdentCon UId="64" />
+      <NameCon UId="129" Name="I_HMI_bRelPos" />
     </Wire>
     <Wire UId="178">
-      <IdentCon UId="66" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_0" />
+      <IdentCon UId="65" />
+      <NameCon UId="129" Name="I_HMI_MyBool" />
     </Wire>
     <Wire UId="179">
-      <IdentCon UId="67" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_0" />
+      <IdentCon UId="66" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_0" />
     </Wire>
     <Wire UId="180">
-      <IdentCon UId="68" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_0" />
+      <IdentCon UId="67" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_0" />
     </Wire>
     <Wire UId="181">
-      <IdentCon UId="69" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_1" />
+      <IdentCon UId="68" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_0" />
     </Wire>
     <Wire UId="182">
-      <IdentCon UId="70" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_1" />
+      <IdentCon UId="69" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_1" />
     </Wire>
     <Wire UId="183">
-      <IdentCon UId="71" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_1" />
+      <IdentCon UId="70" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_1" />
     </Wire>
     <Wire UId="184">
-      <IdentCon UId="72" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_2" />
+      <IdentCon UId="71" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_1" />
     </Wire>
     <Wire UId="185">
-      <IdentCon UId="73" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_2" />
+      <IdentCon UId="72" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_2" />
     </Wire>
     <Wire UId="186">
-      <IdentCon UId="74" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_2" />
+      <IdentCon UId="73" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_2" />
     </Wire>
     <Wire UId="187">
-      <IdentCon UId="75" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_3" />
+      <IdentCon UId="74" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_2" />
     </Wire>
     <Wire UId="188">
-      <IdentCon UId="76" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_3" />
+      <IdentCon UId="75" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_3" />
     </Wire>
     <Wire UId="189">
-      <IdentCon UId="77" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_3" />
+      <IdentCon UId="76" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_3" />
     </Wire>
     <Wire UId="190">
-      <IdentCon UId="78" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_4" />
+      <IdentCon UId="77" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_3" />
     </Wire>
     <Wire UId="191">
-      <IdentCon UId="79" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_4" />
+      <IdentCon UId="78" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_4" />
     </Wire>
     <Wire UId="192">
-      <IdentCon UId="80" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_4" />
+      <IdentCon UId="79" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_4" />
     </Wire>
     <Wire UId="193">
-      <IdentCon UId="81" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_5" />
+      <IdentCon UId="80" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_4" />
     </Wire>
     <Wire UId="194">
-      <IdentCon UId="82" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_5" />
+      <IdentCon UId="81" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_5" />
     </Wire>
     <Wire UId="195">
-      <IdentCon UId="83" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_5" />
+      <IdentCon UId="82" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_5" />
     </Wire>
     <Wire UId="196">
-      <IdentCon UId="84" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_6" />
+      <IdentCon UId="83" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_5" />
     </Wire>
     <Wire UId="197">
-      <IdentCon UId="85" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_6" />
+      <IdentCon UId="84" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_6" />
     </Wire>
     <Wire UId="198">
-      <IdentCon UId="86" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_6" />
+      <IdentCon UId="85" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_6" />
     </Wire>
     <Wire UId="199">
-      <IdentCon UId="87" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_7" />
+      <IdentCon UId="86" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_6" />
     </Wire>
     <Wire UId="200">
-      <IdentCon UId="88" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_7" />
+      <IdentCon UId="87" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_7" />
     </Wire>
     <Wire UId="201">
-      <IdentCon UId="89" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_7" />
+      <IdentCon UId="88" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_7" />
     </Wire>
     <Wire UId="202">
-      <IdentCon UId="90" />
-      <NameCon UId="128" Name="I_CMD_bGoToPos_8" />
+      <IdentCon UId="89" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_7" />
     </Wire>
     <Wire UId="203">
-      <IdentCon UId="91" />
-      <NameCon UId="128" Name="I_InLock_bGoToPos_8" />
+      <IdentCon UId="90" />
+      <NameCon UId="129" Name="I_CMD_bGoToPos_8" />
     </Wire>
     <Wire UId="204">
-      <IdentCon UId="92" />
-      <NameCon UId="128" Name="I_HMI_bGoToPos_8" />
+      <IdentCon UId="91" />
+      <NameCon UId="129" Name="I_InLock_bGoToPos_8" />
     </Wire>
     <Wire UId="205">
-      <IdentCon UId="93" />
-      <NameCon UId="128" Name="I_Para_rJog_Speed" />
+      <IdentCon UId="92" />
+      <NameCon UId="129" Name="I_HMI_bGoToPos_8" />
     </Wire>
     <Wire UId="206">
-      <IdentCon UId="94" />
-      <NameCon UId="128" Name="I_Para_rMV_Speed" />
+      <IdentCon UId="93" />
+      <NameCon UId="129" Name="I_iHomeMode" />
     </Wire>
     <Wire UId="207">
-      <IdentCon UId="95" />
-      <NameCon UId="128" Name="I_Para_rStop_Dec" />
+      <IdentCon UId="94" />
+      <NameCon UId="129" Name="I_Para_rJog_Speed" />
     </Wire>
     <Wire UId="208">
-      <IdentCon UId="96" />
-      <NameCon UId="128" Name="I_Para_rEStop_Dec" />
+      <IdentCon UId="95" />
+      <NameCon UId="129" Name="I_Para_rMV_Speed" />
     </Wire>
     <Wire UId="209">
-      <OpenCon UId="130" />
-      <NameCon UId="128" Name="I_Para_iNum_Abspos" />
+      <IdentCon UId="96" />
+      <NameCon UId="129" Name="I_Para_rStop_Dec" />
     </Wire>
     <Wire UId="210">
       <IdentCon UId="97" />
-      <NameCon UId="128" Name="I_Para_rPos_Abs" />
+      <NameCon UId="129" Name="I_Para_rEStop_Dec" />
     </Wire>
     <Wire UId="211">
-      <IdentCon UId="98" />
-      <NameCon UId="128" Name="I_Para_rSpeed_Abs" />
+      <OpenCon UId="131" />
+      <NameCon UId="129" Name="I_Para_iNum_Abspos" />
     </Wire>
     <Wire UId="212">
-      <IdentCon UId="99" />
-      <NameCon UId="128" Name="I_Para_rAcc_Set" />
+      <IdentCon UId="98" />
+      <NameCon UId="129" Name="I_Para_rPos_Abs" />
     </Wire>
     <Wire UId="213">
-      <IdentCon UId="100" />
-      <NameCon UId="128" Name="I_Para_rDec_Set" />
+      <IdentCon UId="99" />
+      <NameCon UId="129" Name="I_Para_rSpeed_Abs" />
     </Wire>
     <Wire UId="214">
-      <IdentCon UId="101" />
-      <NameCon UId="128" Name="I_Para_rJerk_Set" />
+      <IdentCon UId="100" />
+      <NameCon UId="129" Name="I_Para_rAcc_Set" />
     </Wire>
     <Wire UId="215">
-      <OpenCon UId="131" />
-      <NameCon UId="128" Name="I_Para_rSpeedPercent" />
+      <IdentCon UId="101" />
+      <NameCon UId="129" Name="I_Para_rDec_Set" />
     </Wire>
     <Wire UId="216">
-      <NameCon UId="128" Name="O_Status_bAxisReady" />
       <IdentCon UId="102" />
+      <NameCon UId="129" Name="I_Para_rJerk_Set" />
     </Wire>
     <Wire UId="217">
-      <NameCon UId="128" Name="O_Status_bAxisEnabled" />
-      <IdentCon UId="103" />
+      <OpenCon UId="132" />
+      <NameCon UId="129" Name="I_Para_rSpeedPercent" />
     </Wire>
     <Wire UId="218">
-      <NameCon UId="128" Name="O_Status_bjogForward" />
-      <IdentCon UId="104" />
+      <NameCon UId="129" Name="O_Status_bAxisReady" />
+      <IdentCon UId="103" />
     </Wire>
     <Wire UId="219">
-      <NameCon UId="128" Name="O_Status_bjogBackward" />
-      <IdentCon UId="105" />
+      <NameCon UId="129" Name="O_Status_bAxisEnabled" />
+      <IdentCon UId="104" />
     </Wire>
     <Wire UId="220">
-      <NameCon UId="128" Name="O_Status_bHomed" />
-      <IdentCon UId="106" />
+      <NameCon UId="129" Name="O_Status_bjogForward" />
+      <IdentCon UId="105" />
     </Wire>
     <Wire UId="221">
-      <NameCon UId="128" Name="O_Status_bAtHome" />
-      <IdentCon UId="107" />
+      <NameCon UId="129" Name="O_Status_bjogBackward" />
+      <IdentCon UId="106" />
     </Wire>
     <Wire UId="222">
-      <NameCon UId="128" Name="O_Status_bSstill" />
-      <IdentCon UId="108" />
+      <NameCon UId="129" Name="O_Status_bHomed" />
+      <IdentCon UId="107" />
     </Wire>
     <Wire UId="223">
-      <NameCon UId="128" Name="O_Status_bAxisBusy" />
-      <IdentCon UId="109" />
+      <NameCon UId="129" Name="O_Status_bAtHome" />
+      <IdentCon UId="108" />
     </Wire>
     <Wire UId="224">
-      <NameCon UId="128" Name="O_Status_bAxisSyned" />
-      <IdentCon UId="110" />
+      <NameCon UId="129" Name="O_Status_bSstill" />
+      <IdentCon UId="109" />
     </Wire>
     <Wire UId="225">
-      <NameCon UId="128" Name="O_Status_bAxisError" />
-      <IdentCon UId="111" />
+      <NameCon UId="129" Name="O_Status_bAxisBusy" />
+      <IdentCon UId="110" />
     </Wire>
     <Wire UId="226">
-      <NameCon UId="128" Name="O_Status_bAtPos" />
-      <IdentCon UId="112" />
+      <NameCon UId="129" Name="O_Status_bAxisSyned" />
+      <IdentCon UId="111" />
     </Wire>
     <Wire UId="227">
-      <NameCon UId="128" Name="O_Status_bPosDone" />
-      <IdentCon UId="113" />
+      <NameCon UId="129" Name="O_Status_bAxisError" />
+      <IdentCon UId="112" />
     </Wire>
     <Wire UId="228">
-      <NameCon UId="128" Name="O_Status_bPosing" />
-      <IdentCon UId="114" />
+      <NameCon UId="129" Name="O_Status_bAtPos" />
+      <IdentCon UId="113" />
     </Wire>
     <Wire UId="229">
-      <NameCon UId="128" Name="O_Status_bRelPosDone" />
-      <IdentCon UId="115" />
+      <NameCon UId="129" Name="O_Status_bPosDone" />
+      <IdentCon UId="114" />
     </Wire>
     <Wire UId="230">
-      <NameCon UId="128" Name="O_Status_rActPos" />
-      <IdentCon UId="116" />
+      <NameCon UId="129" Name="O_Status_bPosing" />
+      <IdentCon UId="115" />
     </Wire>
     <Wire UId="231">
-      <NameCon UId="128" Name="O_Status_rActSpeed" />
-      <IdentCon UId="117" />
+      <NameCon UId="129" Name="O_Status_bRelPosDone" />
+      <IdentCon UId="116" />
     </Wire>
     <Wire UId="232">
-      <NameCon UId="128" Name="O_Status_iAxisFaultNum" />
-      <IdentCon UId="118" />
+      <NameCon UId="129" Name="O_Status_rActPos" />
+      <IdentCon UId="117" />
     </Wire>
     <Wire UId="233">
-      <NameCon UId="128" Name="O_Status_iDriveFaultNum" />
-      <IdentCon UId="119" />
+      <NameCon UId="129" Name="O_Status_rActSpeed" />
+      <IdentCon UId="118" />
     </Wire>
     <Wire UId="234">
-      <NameCon UId="128" Name="O_Status_iFBStatus" />
-      <IdentCon UId="120" />
+      <NameCon UId="129" Name="O_Status_iAxisFaultNum" />
+      <IdentCon UId="119" />
     </Wire>
     <Wire UId="235">
-      <NameCon UId="128" Name="O_Status_iMCStatus" />
-      <IdentCon UId="121" />
+      <NameCon UId="129" Name="O_Status_iDriveFaultNum" />
+      <IdentCon UId="120" />
     </Wire>
     <Wire UId="236">
-      <NameCon UId="128" Name="O_Status_rDriveTorque" />
-      <IdentCon UId="122" />
+      <NameCon UId="129" Name="O_Status_iFBStatus" />
+      <IdentCon UId="121" />
     </Wire>
     <Wire UId="237">
-      <NameCon UId="128" Name="O_Status_rDriveTemp" />
-      <IdentCon UId="123" />
+      <NameCon UId="129" Name="O_Status_iMCStatus" />
+      <IdentCon UId="122" />
     </Wire>
     <Wire UId="238">
-      <NameCon UId="128" Name="O_Status_rDriveRpm" />
-      <IdentCon UId="124" />
+      <NameCon UId="129" Name="O_Status_rDriveTorque" />
+      <IdentCon UId="123" />
     </Wire>
     <Wire UId="239">
-      <NameCon UId="128" Name="O_Status_AxisName" />
-      <IdentCon UId="125" />
+      <NameCon UId="129" Name="O_Status_rDriveTemp" />
+      <IdentCon UId="124" />
     </Wire>
     <Wire UId="240">
-      <NameCon UId="128" Name="O_Status_mybool" />
-      <IdentCon UId="126" />
+      <NameCon UId="129" Name="O_Status_rDriveRpm" />
+      <IdentCon UId="125" />
     </Wire>
     <Wire UId="241">
-      <NameCon UId="128" Name="O_Status_myLreal" />
+      <NameCon UId="129" Name="O_Status_AxisName" />
+      <IdentCon UId="126" />
+    </Wire>
+    <Wire UId="242">
+      <NameCon UId="129" Name="O_Status_mybool" />
       <IdentCon UId="127" />
+    </Wire>
+    <Wire UId="243">
+      <NameCon UId="129" Name="O_Status_myLreal" />
+      <IdentCon UId="128" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
